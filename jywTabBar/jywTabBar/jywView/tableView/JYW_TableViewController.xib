@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JYW_TableViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q57-Kc-smr">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="6aT-NY-fks"/>
+                        <outlet property="delegate" destination="-1" id="1fK-t3-YfQ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PmJ-l4-17Q" firstAttribute="trailing" secondItem="Q57-Kc-smr" secondAttribute="trailing" id="2OZ-GJ-rvW"/>
+                <constraint firstItem="Q57-Kc-smr" firstAttribute="leading" secondItem="PmJ-l4-17Q" secondAttribute="leading" id="2iS-jd-hCr"/>
+                <constraint firstItem="PmJ-l4-17Q" firstAttribute="bottom" secondItem="Q57-Kc-smr" secondAttribute="bottom" id="4bZ-qF-Ftp"/>
+                <constraint firstItem="Q57-Kc-smr" firstAttribute="top" secondItem="PmJ-l4-17Q" secondAttribute="top" id="J5H-ZX-G4O"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="PmJ-l4-17Q"/>
+            <point key="canvasLocation" x="139" y="133"/>
+        </view>
+    </objects>
+</document>

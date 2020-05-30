@@ -1,0 +1,6 @@
+framework module Pods_jywTabBarTests {
+  umbrella header "Pods-jywTabBarTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

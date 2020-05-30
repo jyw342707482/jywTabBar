@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B82AC4DA0F108571B323C77 /* Pods_jywTabBarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304C9E519AF97178502AF107 /* Pods_jywTabBarTests.framework */; };
+		1B060603B166B6D4CBBF3FFA /* Pods_jywTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63969FE334B18496FCE32BA5 /* Pods_jywTabBar.framework */; };
+		693F63B924809B680034AA2B /* JYW_FictionMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63B824809B670034AA2B /* JYW_FictionMainModel.m */; };
+		693F63BD2480A4320034AA2B /* JYW_SelectAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63BC2480A4320034AA2B /* JYW_SelectAudioView.m */; };
+		693F63C4248108580034AA2B /* UIView+JYW_Border.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63C3248108580034AA2B /* UIView+JYW_Border.m */; };
+		6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */; };
+		6940B876247E1CA200C74627 /* JYW_FictionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */; };
+		6940B879247E1FA100C74627 /* JYW_FictionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B878247E1FA100C74627 /* JYW_FictionModel.m */; };
+		6940B87C247E249500C74627 /* FictionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6940B87B247E249500C74627 /* FictionList.plist */; };
+		6940B882247F479300C74627 /* JYW_FictionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B881247F479300C74627 /* JYW_FictionViewModel.m */; };
+		6940B889247F586800C74627 /* JYW_FictionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B887247F586800C74627 /* JYW_FictionTableViewCell.m */; };
+		69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311A6247D35D70006EEB2 /* AppDelegate.m */; };
+		69D311AA247D35D70006EEB2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311A9247D35D70006EEB2 /* SceneDelegate.m */; };
+		69D311AD247D35D70006EEB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311AC247D35D70006EEB2 /* ViewController.m */; };
+		69D311B0247D35D70006EEB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D311AE247D35D70006EEB2 /* Main.storyboard */; };
+		69D311B2247D35D80006EEB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D311B1247D35D80006EEB2 /* Assets.xcassets */; };
+		69D311B5247D35D80006EEB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D311B3247D35D80006EEB2 /* LaunchScreen.storyboard */; };
+		69D311B8247D35D80006EEB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311B7247D35D80006EEB2 /* main.m */; };
+		69D311C2247D35D80006EEB2 /* jywTabBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311C1247D35D80006EEB2 /* jywTabBarTests.m */; };
+		69D311CD247D35D80006EEB2 /* jywTabBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311CC247D35D80006EEB2 /* jywTabBarUITests.m */; };
+		69D311DD247D36580006EEB2 /* JYW_TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311DB247D36580006EEB2 /* JYW_TestViewController.m */; };
+		69D311DE247D36580006EEB2 /* JYW_TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D311DC247D36580006EEB2 /* JYW_TestViewController.xib */; };
+		69D311EA247DF5A20006EEB2 /* JYW_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311E8247DF5A20006EEB2 /* JYW_TableViewController.m */; };
+		69D311EB247DF5A20006EEB2 /* JYW_TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D311E9247DF5A20006EEB2 /* JYW_TableViewController.xib */; };
+		69D311EF247DF5B30006EEB2 /* JYW_PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311ED247DF5B30006EEB2 /* JYW_PictureViewController.m */; };
+		69D311F0247DF5B30006EEB2 /* JYW_PictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D311EE247DF5B30006EEB2 /* JYW_PictureViewController.xib */; };
+		69D311F4247DF5C60006EEB2 /* JYW_CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311F2247DF5C60006EEB2 /* JYW_CollectionViewController.m */; };
+		69D311F5247DF5C60006EEB2 /* JYW_CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D311F3247DF5C60006EEB2 /* JYW_CollectionViewController.xib */; };
+		69D311F8247DF6190006EEB2 /* JYW_TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311F7247DF6190006EEB2 /* JYW_TabBarViewController.m */; };
+		FA5CD5270A41313CC716A252 /* Pods_jywTabBar_jywTabBarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4E576B8EC4788F29085CED /* Pods_jywTabBar_jywTabBarUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69D311BE247D35D80006EEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69D3119A247D35D70006EEB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69D311A1247D35D70006EEB2;
+			remoteInfo = jywTabBar;
+		};
+		69D311C9247D35D80006EEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69D3119A247D35D70006EEB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69D311A1247D35D70006EEB2;
+			remoteInfo = jywTabBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E2BD97C73334B5BF5C430C8 /* Pods-jywTabBarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jywTabBarTests.debug.xcconfig"; path = "Target Support Files/Pods-jywTabBarTests/Pods-jywTabBarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		304C9E519AF97178502AF107 /* Pods_jywTabBarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jywTabBarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63969FE334B18496FCE32BA5 /* Pods_jywTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jywTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		693F63B724809B670034AA2B /* JYW_FictionMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionMainModel.h; sourceTree = "<group>"; };
+		693F63B824809B670034AA2B /* JYW_FictionMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionMainModel.m; sourceTree = "<group>"; };
+		693F63BB2480A4320034AA2B /* JYW_SelectAudioView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_SelectAudioView.h; sourceTree = "<group>"; };
+		693F63BC2480A4320034AA2B /* JYW_SelectAudioView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_SelectAudioView.m; sourceTree = "<group>"; };
+		693F63C2248108580034AA2B /* UIView+JYW_Border.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JYW_Border.h"; sourceTree = "<group>"; };
+		693F63C3248108580034AA2B /* UIView+JYW_Border.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYW_Border.m"; sourceTree = "<group>"; };
+		6940B872247E1CA200C74627 /* JYW_FictionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionTableViewController.h; sourceTree = "<group>"; };
+		6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionTableViewController.m; sourceTree = "<group>"; };
+		6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_FictionTableViewController.xib; sourceTree = "<group>"; };
+		6940B877247E1FA100C74627 /* JYW_FictionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionModel.h; sourceTree = "<group>"; };
+		6940B878247E1FA100C74627 /* JYW_FictionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionModel.m; sourceTree = "<group>"; };
+		6940B87B247E249500C74627 /* FictionList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FictionList.plist; sourceTree = "<group>"; };
+		6940B880247F479300C74627 /* JYW_FictionViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionViewModel.h; sourceTree = "<group>"; };
+		6940B881247F479300C74627 /* JYW_FictionViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionViewModel.m; sourceTree = "<group>"; };
+		6940B886247F586800C74627 /* JYW_FictionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionTableViewCell.h; sourceTree = "<group>"; };
+		6940B887247F586800C74627 /* JYW_FictionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionTableViewCell.m; sourceTree = "<group>"; };
+		69D311A2247D35D70006EEB2 /* jywTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jywTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D311A5247D35D70006EEB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		69D311A6247D35D70006EEB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		69D311A8247D35D70006EEB2 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		69D311A9247D35D70006EEB2 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		69D311AB247D35D70006EEB2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		69D311AC247D35D70006EEB2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		69D311AF247D35D70006EEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69D311B1247D35D80006EEB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69D311B4247D35D80006EEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69D311B6247D35D80006EEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D311B7247D35D80006EEB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69D311BD247D35D80006EEB2 /* jywTabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jywTabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D311C1247D35D80006EEB2 /* jywTabBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jywTabBarTests.m; sourceTree = "<group>"; };
+		69D311C3247D35D80006EEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D311C8247D35D80006EEB2 /* jywTabBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jywTabBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D311CC247D35D80006EEB2 /* jywTabBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jywTabBarUITests.m; sourceTree = "<group>"; };
+		69D311CE247D35D80006EEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D311DA247D36580006EEB2 /* JYW_TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_TestViewController.h; sourceTree = "<group>"; };
+		69D311DB247D36580006EEB2 /* JYW_TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_TestViewController.m; sourceTree = "<group>"; };
+		69D311DC247D36580006EEB2 /* JYW_TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_TestViewController.xib; sourceTree = "<group>"; };
+		69D311E0247D39D30006EEB2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		69D311E7247DF5A20006EEB2 /* JYW_TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_TableViewController.h; sourceTree = "<group>"; };
+		69D311E8247DF5A20006EEB2 /* JYW_TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_TableViewController.m; sourceTree = "<group>"; };
+		69D311E9247DF5A20006EEB2 /* JYW_TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_TableViewController.xib; sourceTree = "<group>"; };
+		69D311EC247DF5B30006EEB2 /* JYW_PictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_PictureViewController.h; sourceTree = "<group>"; };
+		69D311ED247DF5B30006EEB2 /* JYW_PictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_PictureViewController.m; sourceTree = "<group>"; };
+		69D311EE247DF5B30006EEB2 /* JYW_PictureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_PictureViewController.xib; sourceTree = "<group>"; };
+		69D311F1247DF5C60006EEB2 /* JYW_CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_CollectionViewController.h; sourceTree = "<group>"; };
+		69D311F2247DF5C60006EEB2 /* JYW_CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_CollectionViewController.m; sourceTree = "<group>"; };
+		69D311F3247DF5C60006EEB2 /* JYW_CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_CollectionViewController.xib; sourceTree = "<group>"; };
+		69D311F6247DF6190006EEB2 /* JYW_TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_TabBarViewController.h; sourceTree = "<group>"; };
+		69D311F7247DF6190006EEB2 /* JYW_TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_TabBarViewController.m; sourceTree = "<group>"; };
+		8AC23B4C1307C69032B5FDB2 /* Pods-jywTabBarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jywTabBarTests.release.xcconfig"; path = "Target Support Files/Pods-jywTabBarTests/Pods-jywTabBarTests.release.xcconfig"; sourceTree = "<group>"; };
+		99AD6B72C2DDB01BE6D75FF7 /* Pods-jywTabBar-jywTabBarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jywTabBar-jywTabBarUITests.debug.xcconfig"; path = "Target Support Files/Pods-jywTabBar-jywTabBarUITests/Pods-jywTabBar-jywTabBarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9AA005224CDEDD943961E679 /* Pods-jywTabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jywTabBar.debug.xcconfig"; path = "Target Support Files/Pods-jywTabBar/Pods-jywTabBar.debug.xcconfig"; sourceTree = "<group>"; };
+		BACD84E316ED7A4FC93EDB24 /* Pods-jywTabBar-jywTabBarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jywTabBar-jywTabBarUITests.release.xcconfig"; path = "Target Support Files/Pods-jywTabBar-jywTabBarUITests/Pods-jywTabBar-jywTabBarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE96FADF194164775729F136 /* Pods-jywTabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jywTabBar.release.xcconfig"; path = "Target Support Files/Pods-jywTabBar/Pods-jywTabBar.release.xcconfig"; sourceTree = "<group>"; };
+		EC4E576B8EC4788F29085CED /* Pods_jywTabBar_jywTabBarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jywTabBar_jywTabBarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69D3119F247D35D70006EEB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B060603B166B6D4CBBF3FFA /* Pods_jywTabBar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D311BA247D35D80006EEB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B82AC4DA0F108571B323C77 /* Pods_jywTabBarTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D311C5247D35D80006EEB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5CD5270A41313CC716A252 /* Pods_jywTabBar_jywTabBarUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		693F63BA2480A39B0034AA2B /* selectAudioView */ = {
+			isa = PBXGroup;
+			children = (
+				693F63BB2480A4320034AA2B /* JYW_SelectAudioView.h */,
+				693F63BC2480A4320034AA2B /* JYW_SelectAudioView.m */,
+			);
+			path = selectAudioView;
+			sourceTree = "<group>";
+		};
+		693F63BE2481056D0034AA2B /* category */ = {
+			isa = PBXGroup;
+			children = (
+				693F63C2248108580034AA2B /* UIView+JYW_Border.h */,
+				693F63C3248108580034AA2B /* UIView+JYW_Border.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		6940B87A247E246300C74627 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6940B87B247E249500C74627 /* FictionList.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6940B88B247F586F00C74627 /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6940B886247F586800C74627 /* JYW_FictionTableViewCell.h */,
+				6940B887247F586800C74627 /* JYW_FictionTableViewCell.m */,
+			);
+			path = tableViewCell;
+			sourceTree = "<group>";
+		};
+		69D31199247D35D70006EEB2 = {
+			isa = PBXGroup;
+			children = (
+				69D311A4247D35D70006EEB2 /* jywTabBar */,
+				69D311C0247D35D80006EEB2 /* jywTabBarTests */,
+				69D311CB247D35D80006EEB2 /* jywTabBarUITests */,
+				69D311A3247D35D70006EEB2 /* Products */,
+				86D1D5B27583E8E35B85E36D /* Pods */,
+				A975A6A02A3A66D2D4FFB487 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69D311A3247D35D70006EEB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69D311A2247D35D70006EEB2 /* jywTabBar.app */,
+				69D311BD247D35D80006EEB2 /* jywTabBarTests.xctest */,
+				69D311C8247D35D80006EEB2 /* jywTabBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69D311A4247D35D70006EEB2 /* jywTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				693F63BE2481056D0034AA2B /* category */,
+				6940B87A247E246300C74627 /* Data */,
+				69D311E3247DF3810006EEB2 /* jywViewModel */,
+				69D311E2247DF3770006EEB2 /* jywModel */,
+				69D311E1247DF3680006EEB2 /* jywView */,
+				69D311F6247DF6190006EEB2 /* JYW_TabBarViewController.h */,
+				69D311F7247DF6190006EEB2 /* JYW_TabBarViewController.m */,
+				69D311A5247D35D70006EEB2 /* AppDelegate.h */,
+				69D311A6247D35D70006EEB2 /* AppDelegate.m */,
+				69D311A8247D35D70006EEB2 /* SceneDelegate.h */,
+				69D311A9247D35D70006EEB2 /* SceneDelegate.m */,
+				69D311AB247D35D70006EEB2 /* ViewController.h */,
+				69D311AC247D35D70006EEB2 /* ViewController.m */,
+				69D311AE247D35D70006EEB2 /* Main.storyboard */,
+				69D311B1247D35D80006EEB2 /* Assets.xcassets */,
+				69D311B3247D35D80006EEB2 /* LaunchScreen.storyboard */,
+				69D311B6247D35D80006EEB2 /* Info.plist */,
+				69D311B7247D35D80006EEB2 /* main.m */,
+				69D311DA247D36580006EEB2 /* JYW_TestViewController.h */,
+				69D311DB247D36580006EEB2 /* JYW_TestViewController.m */,
+				69D311DC247D36580006EEB2 /* JYW_TestViewController.xib */,
+				69D311E0247D39D30006EEB2 /* PrefixHeader.pch */,
+			);
+			path = jywTabBar;
+			sourceTree = "<group>";
+		};
+		69D311C0247D35D80006EEB2 /* jywTabBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				69D311C1247D35D80006EEB2 /* jywTabBarTests.m */,
+				69D311C3247D35D80006EEB2 /* Info.plist */,
+			);
+			path = jywTabBarTests;
+			sourceTree = "<group>";
+		};
+		69D311CB247D35D80006EEB2 /* jywTabBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				69D311CC247D35D80006EEB2 /* jywTabBarUITests.m */,
+				69D311CE247D35D80006EEB2 /* Info.plist */,
+			);
+			path = jywTabBarUITests;
+			sourceTree = "<group>";
+		};
+		69D311E1247DF3680006EEB2 /* jywView */ = {
+			isa = PBXGroup;
+			children = (
+				69D311E6247DF3C70006EEB2 /* collectionView */,
+				69D311E5247DF3B80006EEB2 /* pictureView */,
+				69D311E4247DF3A30006EEB2 /* tableView */,
+			);
+			path = jywView;
+			sourceTree = "<group>";
+		};
+		69D311E2247DF3770006EEB2 /* jywModel */ = {
+			isa = PBXGroup;
+			children = (
+				6940B877247E1FA100C74627 /* JYW_FictionModel.h */,
+				6940B878247E1FA100C74627 /* JYW_FictionModel.m */,
+				693F63B724809B670034AA2B /* JYW_FictionMainModel.h */,
+				693F63B824809B670034AA2B /* JYW_FictionMainModel.m */,
+			);
+			path = jywModel;
+			sourceTree = "<group>";
+		};
+		69D311E3247DF3810006EEB2 /* jywViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6940B880247F479300C74627 /* JYW_FictionViewModel.h */,
+				6940B881247F479300C74627 /* JYW_FictionViewModel.m */,
+			);
+			path = jywViewModel;
+			sourceTree = "<group>";
+		};
+		69D311E4247DF3A30006EEB2 /* tableView */ = {
+			isa = PBXGroup;
+			children = (
+				693F63BA2480A39B0034AA2B /* selectAudioView */,
+				6940B88B247F586F00C74627 /* tableViewCell */,
+				69D311E7247DF5A20006EEB2 /* JYW_TableViewController.h */,
+				69D311E8247DF5A20006EEB2 /* JYW_TableViewController.m */,
+				69D311E9247DF5A20006EEB2 /* JYW_TableViewController.xib */,
+				6940B872247E1CA200C74627 /* JYW_FictionTableViewController.h */,
+				6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */,
+				6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */,
+			);
+			path = tableView;
+			sourceTree = "<group>";
+		};
+		69D311E5247DF3B80006EEB2 /* pictureView */ = {
+			isa = PBXGroup;
+			children = (
+				69D311EC247DF5B30006EEB2 /* JYW_PictureViewController.h */,
+				69D311ED247DF5B30006EEB2 /* JYW_PictureViewController.m */,
+				69D311EE247DF5B30006EEB2 /* JYW_PictureViewController.xib */,
+			);
+			path = pictureView;
+			sourceTree = "<group>";
+		};
+		69D311E6247DF3C70006EEB2 /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				69D311F1247DF5C60006EEB2 /* JYW_CollectionViewController.h */,
+				69D311F2247DF5C60006EEB2 /* JYW_CollectionViewController.m */,
+				69D311F3247DF5C60006EEB2 /* JYW_CollectionViewController.xib */,
+			);
+			path = collectionView;
+			sourceTree = "<group>";
+		};
+		86D1D5B27583E8E35B85E36D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AA005224CDEDD943961E679 /* Pods-jywTabBar.debug.xcconfig */,
+				BE96FADF194164775729F136 /* Pods-jywTabBar.release.xcconfig */,
+				99AD6B72C2DDB01BE6D75FF7 /* Pods-jywTabBar-jywTabBarUITests.debug.xcconfig */,
+				BACD84E316ED7A4FC93EDB24 /* Pods-jywTabBar-jywTabBarUITests.release.xcconfig */,
+				2E2BD97C73334B5BF5C430C8 /* Pods-jywTabBarTests.debug.xcconfig */,
+				8AC23B4C1307C69032B5FDB2 /* Pods-jywTabBarTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A975A6A02A3A66D2D4FFB487 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63969FE334B18496FCE32BA5 /* Pods_jywTabBar.framework */,
+				EC4E576B8EC4788F29085CED /* Pods_jywTabBar_jywTabBarUITests.framework */,
+				304C9E519AF97178502AF107 /* Pods_jywTabBarTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69D311A1247D35D70006EEB2 /* jywTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D311D1247D35D80006EEB2 /* Build configuration list for PBXNativeTarget "jywTabBar" */;
+			buildPhases = (
+				CFE6F08CE90274D1A30180EA /* [CP] Check Pods Manifest.lock */,
+				69D3119E247D35D70006EEB2 /* Sources */,
+				69D3119F247D35D70006EEB2 /* Frameworks */,
+				69D311A0247D35D70006EEB2 /* Resources */,
+				F1701908867111B12E54C516 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jywTabBar;
+			productName = jywTabBar;
+			productReference = 69D311A2247D35D70006EEB2 /* jywTabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69D311BC247D35D80006EEB2 /* jywTabBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D311D4247D35D80006EEB2 /* Build configuration list for PBXNativeTarget "jywTabBarTests" */;
+			buildPhases = (
+				64AF82049A2550CFB52E4616 /* [CP] Check Pods Manifest.lock */,
+				69D311B9247D35D80006EEB2 /* Sources */,
+				69D311BA247D35D80006EEB2 /* Frameworks */,
+				69D311BB247D35D80006EEB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69D311BF247D35D80006EEB2 /* PBXTargetDependency */,
+			);
+			name = jywTabBarTests;
+			productName = jywTabBarTests;
+			productReference = 69D311BD247D35D80006EEB2 /* jywTabBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69D311C7247D35D80006EEB2 /* jywTabBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D311D7247D35D80006EEB2 /* Build configuration list for PBXNativeTarget "jywTabBarUITests" */;
+			buildPhases = (
+				3C72A162421C1BF468E2EAF2 /* [CP] Check Pods Manifest.lock */,
+				69D311C4247D35D80006EEB2 /* Sources */,
+				69D311C5247D35D80006EEB2 /* Frameworks */,
+				69D311C6247D35D80006EEB2 /* Resources */,
+				8E08DDDD0AF521F81FE20042 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69D311CA247D35D80006EEB2 /* PBXTargetDependency */,
+			);
+			name = jywTabBarUITests;
+			productName = jywTabBarUITests;
+			productReference = 69D311C8247D35D80006EEB2 /* jywTabBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69D3119A247D35D70006EEB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JYW_;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "姜益伟";
+				TargetAttributes = {
+					69D311A1247D35D70006EEB2 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					69D311BC247D35D80006EEB2 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 69D311A1247D35D70006EEB2;
+					};
+					69D311C7247D35D80006EEB2 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 69D311A1247D35D70006EEB2;
+					};
+				};
+			};
+			buildConfigurationList = 69D3119D247D35D70006EEB2 /* Build configuration list for PBXProject "jywTabBar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69D31199247D35D70006EEB2;
+			productRefGroup = 69D311A3247D35D70006EEB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69D311A1247D35D70006EEB2 /* jywTabBar */,
+				69D311BC247D35D80006EEB2 /* jywTabBarTests */,
+				69D311C7247D35D80006EEB2 /* jywTabBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69D311A0247D35D70006EEB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D311B5247D35D80006EEB2 /* LaunchScreen.storyboard in Resources */,
+				69D311B2247D35D80006EEB2 /* Assets.xcassets in Resources */,
+				6940B87C247E249500C74627 /* FictionList.plist in Resources */,
+				69D311F5247DF5C60006EEB2 /* JYW_CollectionViewController.xib in Resources */,
+				6940B876247E1CA200C74627 /* JYW_FictionTableViewController.xib in Resources */,
+				69D311EB247DF5A20006EEB2 /* JYW_TableViewController.xib in Resources */,
+				69D311B0247D35D70006EEB2 /* Main.storyboard in Resources */,
+				69D311F0247DF5B30006EEB2 /* JYW_PictureViewController.xib in Resources */,
+				69D311DE247D36580006EEB2 /* JYW_TestViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D311BB247D35D80006EEB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D311C6247D35D80006EEB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C72A162421C1BF468E2EAF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jywTabBar-jywTabBarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64AF82049A2550CFB52E4616 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jywTabBarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E08DDDD0AF521F81FE20042 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jywTabBar-jywTabBarUITests/Pods-jywTabBar-jywTabBarUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jywTabBar-jywTabBarUITests/Pods-jywTabBar-jywTabBarUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jywTabBar-jywTabBarUITests/Pods-jywTabBar-jywTabBarUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFE6F08CE90274D1A30180EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jywTabBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1701908867111B12E54C516 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jywTabBar/Pods-jywTabBar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jywTabBar/Pods-jywTabBar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jywTabBar/Pods-jywTabBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69D3119E247D35D70006EEB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D311EA247DF5A20006EEB2 /* JYW_TableViewController.m in Sources */,
+				693F63BD2480A4320034AA2B /* JYW_SelectAudioView.m in Sources */,
+				69D311EF247DF5B30006EEB2 /* JYW_PictureViewController.m in Sources */,
+				69D311AD247D35D70006EEB2 /* ViewController.m in Sources */,
+				69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */,
+				6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */,
+				6940B889247F586800C74627 /* JYW_FictionTableViewCell.m in Sources */,
+				693F63B924809B680034AA2B /* JYW_FictionMainModel.m in Sources */,
+				69D311DD247D36580006EEB2 /* JYW_TestViewController.m in Sources */,
+				693F63C4248108580034AA2B /* UIView+JYW_Border.m in Sources */,
+				6940B882247F479300C74627 /* JYW_FictionViewModel.m in Sources */,
+				69D311F8247DF6190006EEB2 /* JYW_TabBarViewController.m in Sources */,
+				69D311F4247DF5C60006EEB2 /* JYW_CollectionViewController.m in Sources */,
+				69D311B8247D35D80006EEB2 /* main.m in Sources */,
+				6940B879247E1FA100C74627 /* JYW_FictionModel.m in Sources */,
+				69D311AA247D35D70006EEB2 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D311B9247D35D80006EEB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D311C2247D35D80006EEB2 /* jywTabBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D311C4247D35D80006EEB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D311CD247D35D80006EEB2 /* jywTabBarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69D311BF247D35D80006EEB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69D311A1247D35D70006EEB2 /* jywTabBar */;
+			targetProxy = 69D311BE247D35D80006EEB2 /* PBXContainerItemProxy */;
+		};
+		69D311CA247D35D80006EEB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69D311A1247D35D70006EEB2 /* jywTabBar */;
+			targetProxy = 69D311C9247D35D80006EEB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69D311AE247D35D70006EEB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69D311AF247D35D70006EEB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69D311B3247D35D80006EEB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69D311B4247D35D80006EEB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69D311CF247D35D80006EEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		69D311D0247D35D80006EEB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69D311D2247D35D80006EEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA005224CDEDD943961E679 /* Pods-jywTabBar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSS8SSG5K;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
+				INFOPLIST_FILE = jywTabBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jyw.jyw.oc.jywTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		69D311D3247D35D80006EEB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE96FADF194164775729F136 /* Pods-jywTabBar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSS8SSG5K;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
+				INFOPLIST_FILE = jywTabBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jyw.jyw.oc.jywTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		69D311D5247D35D80006EEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E2BD97C73334B5BF5C430C8 /* Pods-jywTabBarTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSS8SSG5K;
+				INFOPLIST_FILE = jywTabBarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jyw.jyw.oc.jywTabBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jywTabBar.app/jywTabBar";
+			};
+			name = Debug;
+		};
+		69D311D6247D35D80006EEB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC23B4C1307C69032B5FDB2 /* Pods-jywTabBarTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSS8SSG5K;
+				INFOPLIST_FILE = jywTabBarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jyw.jyw.oc.jywTabBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jywTabBar.app/jywTabBar";
+			};
+			name = Release;
+		};
+		69D311D8247D35D80006EEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99AD6B72C2DDB01BE6D75FF7 /* Pods-jywTabBar-jywTabBarUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSS8SSG5K;
+				INFOPLIST_FILE = jywTabBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jyw.jyw.oc.jywTabBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = jywTabBar;
+			};
+			name = Debug;
+		};
+		69D311D9247D35D80006EEB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BACD84E316ED7A4FC93EDB24 /* Pods-jywTabBar-jywTabBarUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSS8SSG5K;
+				INFOPLIST_FILE = jywTabBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jyw.jyw.oc.jywTabBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = jywTabBar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69D3119D247D35D70006EEB2 /* Build configuration list for PBXProject "jywTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D311CF247D35D80006EEB2 /* Debug */,
+				69D311D0247D35D80006EEB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69D311D1247D35D80006EEB2 /* Build configuration list for PBXNativeTarget "jywTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D311D2247D35D80006EEB2 /* Debug */,
+				69D311D3247D35D80006EEB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69D311D4247D35D80006EEB2 /* Build configuration list for PBXNativeTarget "jywTabBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D311D5247D35D80006EEB2 /* Debug */,
+				69D311D6247D35D80006EEB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69D311D7247D35D80006EEB2 /* Build configuration list for PBXNativeTarget "jywTabBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D311D8247D35D80006EEB2 /* Debug */,
+				69D311D9247D35D80006EEB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69D3119A247D35D70006EEB2 /* Project object */;
+}

@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  jywTabBar
+//
+//  Created by 姜益伟 on 2020/5/26.
+//  Copyright © 2020 姜益伟. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+#define iOS13 @available(iOS 13.0, *)
+
+#endif /* PrefixHeader_pch */
