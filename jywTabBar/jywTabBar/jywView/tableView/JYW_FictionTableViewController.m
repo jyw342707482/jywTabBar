@@ -29,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     fvModel=[[JYW_FictionViewModel alloc] init];
+    fvModel.delegate=self;
     [self pageSettings];
     [self setControlData];
 }
@@ -64,7 +65,6 @@
         // 1. 远程请求数据
         [self requestAPIData];
         
-        
     }
 }
 
@@ -74,7 +74,7 @@
     //获取网络数据
     [fvModel getFictionDataWithPageSize:3 pageNum:2];
 }
--(void)fictionDataBack{
+-(void)fictionDataBackWithNSDictionary:(NSDictionary *)dic NSError:(NSError*)error{
     // 重新加载数据
     [self.fictionTableView reloadData];
     //结束刷新

@@ -11,9 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 //代理
 @protocol JYW_FictionViewModel_Delegate <NSObject>
--(void)fictionDataBack;
+-(void)fictionDataBackWithNSDictionary:(NSDictionary *)dic NSError:(NSError*)error;
 @end
 @interface JYW_FictionViewModel : NSObject
+
 //获取小说列表数据
 -(NSDictionary*)getFictionData;
 //获取小说列表数据,pageSize每页的条数，pageNum第几页

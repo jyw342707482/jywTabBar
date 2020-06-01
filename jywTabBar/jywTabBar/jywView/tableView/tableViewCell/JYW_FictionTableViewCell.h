@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
     IBOutlet UILabel *playedTimeLabel;
 }
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;
-@property(nonatomic, weak,readwrite)JYW_FictionModel *fm;
+@property(nonatomic,readwrite)JYW_FictionModel *fm;
 @end
 
 NS_ASSUME_NONNULL_END
