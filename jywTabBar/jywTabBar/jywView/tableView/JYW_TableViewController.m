@@ -8,6 +8,7 @@
 
 #import "JYW_TableViewController.h"
 #import "JYW_FictionTableViewController.h"
+#import "JYW_AddressBookViewController.h"
 @interface JYW_TableViewController ()
 {
     NSArray *tableDSArray;
@@ -25,7 +26,7 @@
 -(void)pageSettings{
     //设置导航标题
     self.title=@"列表";
-    tableDSArray=@[@"小说播放列表",@"Group"];
+    tableDSArray=@[@"小说播放列表",@"通讯录"];
     /*
     //添加导航右侧按钮，按钮类型为系统加号
     UIBarButtonItem *rightBarButton=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(tbViewAddRow:)];
@@ -99,9 +100,15 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    JYW_FictionTableViewController *ftvc=[[JYW_FictionTableViewController alloc] init];
-    
-    [self.navigationController pushViewController:ftvc animated:YES];
-   
+    if(indexPath.row==0)
+    {
+        JYW_FictionTableViewController *ftvc=[[JYW_FictionTableViewController alloc] init];
+        [self.navigationController pushViewController:ftvc animated:YES];
+    }
+    else
+    {
+        JYW_AddressBookViewController *abvc=[[JYW_AddressBookViewController alloc] init];
+        [self.navigationController pushViewController:abvc animated:YES];
+    }
 }
 @end

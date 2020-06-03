@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,12 @@
 		693F63B924809B680034AA2B /* JYW_FictionMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63B824809B670034AA2B /* JYW_FictionMainModel.m */; };
 		693F63BD2480A4320034AA2B /* JYW_SelectAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63BC2480A4320034AA2B /* JYW_SelectAudioView.m */; };
 		693F63C4248108580034AA2B /* UIView+JYW_Border.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63C3248108580034AA2B /* UIView+JYW_Border.m */; };
+		693F63C82484B84D0034AA2B /* JYW_AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63C62484B84D0034AA2B /* JYW_AddressBookViewController.m */; };
+		693F63C92484B84D0034AA2B /* JYW_AddressBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693F63C72484B84D0034AA2B /* JYW_AddressBookViewController.xib */; };
+		693F63CB2484BA9C0034AA2B /* AddressBookList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 693F63CA2484BA9C0034AA2B /* AddressBookList.plist */; };
+		693F63CE2484BCF30034AA2B /* JYW_AddressBookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63CD2484BCF30034AA2B /* JYW_AddressBookViewModel.m */; };
+		693F63D12484BD070034AA2B /* JYW_AddressBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63D02484BD070034AA2B /* JYW_AddressBookModel.m */; };
+		693F63D42484BD1E0034AA2B /* JYW_AddressBookGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63D32484BD1E0034AA2B /* JYW_AddressBookGroupModel.m */; };
 		6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */; };
 		6940B876247E1CA200C74627 /* JYW_FictionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */; };
 		6940B879247E1FA100C74627 /* JYW_FictionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B878247E1FA100C74627 /* JYW_FictionModel.m */; };
@@ -66,6 +72,16 @@
 		693F63BC2480A4320034AA2B /* JYW_SelectAudioView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_SelectAudioView.m; sourceTree = "<group>"; };
 		693F63C2248108580034AA2B /* UIView+JYW_Border.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JYW_Border.h"; sourceTree = "<group>"; };
 		693F63C3248108580034AA2B /* UIView+JYW_Border.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYW_Border.m"; sourceTree = "<group>"; };
+		693F63C52484B84D0034AA2B /* JYW_AddressBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AddressBookViewController.h; sourceTree = "<group>"; };
+		693F63C62484B84D0034AA2B /* JYW_AddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AddressBookViewController.m; sourceTree = "<group>"; };
+		693F63C72484B84D0034AA2B /* JYW_AddressBookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_AddressBookViewController.xib; sourceTree = "<group>"; };
+		693F63CA2484BA9C0034AA2B /* AddressBookList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AddressBookList.plist; sourceTree = "<group>"; };
+		693F63CC2484BCF30034AA2B /* JYW_AddressBookViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AddressBookViewModel.h; sourceTree = "<group>"; };
+		693F63CD2484BCF30034AA2B /* JYW_AddressBookViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AddressBookViewModel.m; sourceTree = "<group>"; };
+		693F63CF2484BD070034AA2B /* JYW_AddressBookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AddressBookModel.h; sourceTree = "<group>"; };
+		693F63D02484BD070034AA2B /* JYW_AddressBookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AddressBookModel.m; sourceTree = "<group>"; };
+		693F63D22484BD1E0034AA2B /* JYW_AddressBookGroupModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AddressBookGroupModel.h; sourceTree = "<group>"; };
+		693F63D32484BD1E0034AA2B /* JYW_AddressBookGroupModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AddressBookGroupModel.m; sourceTree = "<group>"; };
 		6940B872247E1CA200C74627 /* JYW_FictionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionTableViewController.h; sourceTree = "<group>"; };
 		6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionTableViewController.m; sourceTree = "<group>"; };
 		6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_FictionTableViewController.xib; sourceTree = "<group>"; };
@@ -167,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				6940B87B247E249500C74627 /* FictionList.plist */,
+				693F63CA2484BA9C0034AA2B /* AddressBookList.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -266,6 +283,10 @@
 				6940B878247E1FA100C74627 /* JYW_FictionModel.m */,
 				693F63B724809B670034AA2B /* JYW_FictionMainModel.h */,
 				693F63B824809B670034AA2B /* JYW_FictionMainModel.m */,
+				693F63CF2484BD070034AA2B /* JYW_AddressBookModel.h */,
+				693F63D02484BD070034AA2B /* JYW_AddressBookModel.m */,
+				693F63D22484BD1E0034AA2B /* JYW_AddressBookGroupModel.h */,
+				693F63D32484BD1E0034AA2B /* JYW_AddressBookGroupModel.m */,
 			);
 			path = jywModel;
 			sourceTree = "<group>";
@@ -275,6 +296,8 @@
 			children = (
 				6940B880247F479300C74627 /* JYW_FictionViewModel.h */,
 				6940B881247F479300C74627 /* JYW_FictionViewModel.m */,
+				693F63CC2484BCF30034AA2B /* JYW_AddressBookViewModel.h */,
+				693F63CD2484BCF30034AA2B /* JYW_AddressBookViewModel.m */,
 			);
 			path = jywViewModel;
 			sourceTree = "<group>";
@@ -290,6 +313,9 @@
 				6940B872247E1CA200C74627 /* JYW_FictionTableViewController.h */,
 				6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */,
 				6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */,
+				693F63C52484B84D0034AA2B /* JYW_AddressBookViewController.h */,
+				693F63C62484B84D0034AA2B /* JYW_AddressBookViewController.m */,
+				693F63C72484B84D0034AA2B /* JYW_AddressBookViewController.xib */,
 			);
 			path = tableView;
 			sourceTree = "<group>";
@@ -324,7 +350,6 @@
 				2E2BD97C73334B5BF5C430C8 /* Pods-jywTabBarTests.debug.xcconfig */,
 				8AC23B4C1307C69032B5FDB2 /* Pods-jywTabBarTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -447,7 +472,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693F63CB2484BA9C0034AA2B /* AddressBookList.plist in Resources */,
 				69D311B5247D35D80006EEB2 /* LaunchScreen.storyboard in Resources */,
+				693F63C92484B84D0034AA2B /* JYW_AddressBookViewController.xib in Resources */,
 				69D311B2247D35D80006EEB2 /* Assets.xcassets in Resources */,
 				6940B87C247E249500C74627 /* FictionList.plist in Resources */,
 				69D311F5247DF5C60006EEB2 /* JYW_CollectionViewController.xib in Resources */,
@@ -586,14 +613,18 @@
 				69D311EA247DF5A20006EEB2 /* JYW_TableViewController.m in Sources */,
 				693F63BD2480A4320034AA2B /* JYW_SelectAudioView.m in Sources */,
 				69D311EF247DF5B30006EEB2 /* JYW_PictureViewController.m in Sources */,
+				693F63CE2484BCF30034AA2B /* JYW_AddressBookViewModel.m in Sources */,
 				69D311AD247D35D70006EEB2 /* ViewController.m in Sources */,
 				69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */,
 				6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */,
+				693F63D12484BD070034AA2B /* JYW_AddressBookModel.m in Sources */,
 				6940B889247F586800C74627 /* JYW_FictionTableViewCell.m in Sources */,
+				693F63C82484B84D0034AA2B /* JYW_AddressBookViewController.m in Sources */,
 				693F63B924809B680034AA2B /* JYW_FictionMainModel.m in Sources */,
 				69D311DD247D36580006EEB2 /* JYW_TestViewController.m in Sources */,
 				693F63C4248108580034AA2B /* UIView+JYW_Border.m in Sources */,
 				6940B882247F479300C74627 /* JYW_FictionViewModel.m in Sources */,
+				693F63D42484BD1E0034AA2B /* JYW_AddressBookGroupModel.m in Sources */,
 				69D311F8247DF6190006EEB2 /* JYW_TabBarViewController.m in Sources */,
 				69D311F4247DF5C60006EEB2 /* JYW_CollectionViewController.m in Sources */,
 				69D311B8247D35D80006EEB2 /* main.m in Sources */,
