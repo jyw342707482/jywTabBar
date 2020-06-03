@@ -11,7 +11,8 @@
 @implementation JYW_FictionTableViewCell
 
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
-    if(self==[super initWithStyle:style reuseIdentifier:reuseIdentifier])
+    self=[super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if(self)
     {
         titleLabel=[[UILabel alloc] init];
         [self.contentView addSubview:titleLabel];

@@ -46,7 +46,7 @@
     self.tabBar.translucent=NO;
     JYW_TableViewController *jywTV=[[JYW_TableViewController alloc] init];
     UINavigationController *nc1=[[UINavigationController alloc] initWithRootViewController:jywTV];
-    nc1.title=@"tableView";
+    nc1.title=@"UITableView";
     nc1.navigationBar.hidden=NO;
     nc1.navigationBar.translucent=NO;
     
@@ -58,11 +58,11 @@
     
     JYW_CollectionViewController *jywCV=[[JYW_CollectionViewController alloc] init];
     UINavigationController *nc3=[[UINavigationController alloc] initWithRootViewController:jywCV];
-    nc3.title=@"collectionView";
+    nc3.title=@"UICollectionView";
     nc3.navigationBar.hidden=NO;
     nc3.navigationBar.translucent=NO;
     
-    self.viewControllers=@[nc1,nc2,nc3];
+    self.viewControllers=@[nc3,nc1,nc2];
 }
 
 @end

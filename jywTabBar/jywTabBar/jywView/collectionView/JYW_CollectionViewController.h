@@ -11,7 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JYW_CollectionViewController : UIViewController
-
+{
+    IBOutlet UICollectionView *collView;
+}
 @end
 
 NS_ASSUME_NONNULL_END

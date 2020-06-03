@@ -25,7 +25,7 @@
 //页面设置
 -(void)pageSettings{
     //设置导航标题
-    self.title=@"列表";
+    self.title=@"UITableView";
     tableDSArray=@[@"小说播放列表",@"通讯录"];
     /*
     //添加导航右侧按钮，按钮类型为系统加号
