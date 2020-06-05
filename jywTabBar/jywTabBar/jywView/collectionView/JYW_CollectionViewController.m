@@ -89,15 +89,16 @@ static NSString * headIdentifier = @"cxHeadID";
     titleLabel.textAlignment=NSTextAlignmentCenter;
     titleLabel.tag=indexPath.item;
     [cell.contentView addSubview:titleLabel];
-    //添加手势
-    titleLabel.userInteractionEnabled = YES;
-    UITapGestureRecognizer * titleLabel_tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(titleLabel_click:)];
-    [titleLabel addGestureRecognizer:titleLabel_tapGesture];
-    [titleLabel_tapGesture setNumberOfTapsRequired:1];
     return cell;
 }
--(IBAction)titleLabel_click:(UITapGestureRecognizer *)sender{
-    JYW_ProductListViewController *jywPLVVC=[[JYW_ProductListViewController alloc] init];
-    [self.navigationController pushViewController:jywPLVVC animated:YES];
+//item选中
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if(indexPath.item==0)
+    {
+        JYW_ProductListViewController *jywPLVVC=[[JYW_ProductListViewController alloc] init];
+        [self.navigationController pushViewController:jywPLVVC animated:YES];
+    }
+    [collectionView deselectItemAtIndexPath:indexPath animated:YES];//取消选中
+     //do something ...
 }
 @end

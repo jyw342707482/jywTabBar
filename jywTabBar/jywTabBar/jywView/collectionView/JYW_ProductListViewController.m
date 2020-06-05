@@ -55,12 +55,14 @@
     
     jyw_productListViewModel=[[JYW_ProductListViewModel alloc] init];
     pListArray=[jyw_productListViewModel getProductListDataWithArray:[jyw_productListViewModel getPageData]];
+    
     //自动网格布局
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc ] init];
+    
     CGFloat itemWidth = ([UIScreen mainScreen].bounds.size.width - 40) / 2;
     //设置单元格大小
     flowLayout.itemSize = CGSizeMake(itemWidth, itemWidth / 0.618+65);
-
+     
     //最小行间距(默认为10)
     flowLayout.minimumLineSpacing = 10;
 
@@ -75,6 +77,9 @@
 
     //sectionHeader的大小,如果是竖向滚动，只需设置Y值。如果是横向，只需设置X值。
     //flowLayout.headerReferenceSize = CGSizeMake(0,0);
+    //flowLayout.footerReferenceSize = CGSizeMake(0,0);
+    // 设置分区的头视图和尾视图 是否始终固定在屏幕上边和下边
+    //flowLayout.sectionFootersPinToVisibleBounds = YES;
     
     //网格布局
     productListView.collectionViewLayout=flowLayout;
@@ -82,7 +87,6 @@
     //注册cell
     //[productListView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:identifier];
     identifierDictionary=[[NSMutableDictionary alloc] init];
-    
 }
 //有多少的分组
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -93,7 +97,39 @@
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return pListArray.count;
 }
+/*
+//集合视图单元格大小
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    CGFloat itemWidth = ([UIScreen mainScreen].bounds.size.width - 40) / 2;
+    CGSize returnSize;
+    switch (indexPath.item) {
+        case 0:
+            returnSize=CGSizeMake(itemWidth, itemWidth / 0.618+65);
+            break;
+        case 1:
+            returnSize=CGSizeMake(itemWidth, itemWidth / 0.618+80);
+            break;
+        case 2:
+            returnSize=CGSizeMake(itemWidth, itemWidth / 0.618+90);
+            break;
+        case 3:
+            returnSize=CGSizeMake(itemWidth, itemWidth / 0.618+120);
+            break;
+        case 4:
+            returnSize=CGSizeMake(itemWidth, itemWidth / 0.618+65);
+            break;
+        default:
+            returnSize=CGSizeMake(itemWidth, itemWidth / 0.618+65);
+            break;
+    }
+    return returnSize;
+}
 
+//头部大小
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+    return CGSizeMake(0,100);
+}
+ */
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     // 每次先从字典中根据IndexPath取出唯一标识符
     NSString *identifier = [identifierDictionary objectForKey:[NSString stringWithFormat:@"%ld", indexPath.item]];

@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JYW_ProductListViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JYW_MeituanFoundViewController">
             <connections>
-                <outlet property="productListView" destination="dAt-Rg-UKW" id="Pj4-mw-UIB"/>
+                <outlet property="MFCollectionView" destination="6B0-iW-7EX" id="UIZ-rq-SFC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,30 +19,30 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dAt-Rg-UKW">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-iW-7EX">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lXV-S6-09g">
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="842-zA-8gt">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="wDw-Cg-gTL"/>
-                        <outlet property="delegate" destination="-1" id="stu-9P-MDB"/>
+                        <outlet property="dataSource" destination="-1" id="OcA-Ke-dpt"/>
+                        <outlet property="delegate" destination="-1" id="Pkk-rV-8io"/>
                     </connections>
                 </collectionView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="dAt-Rg-UKW" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="8wE-XE-7Os"/>
-                <constraint firstItem="dAt-Rg-UKW" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="GEa-Kb-ByR"/>
-                <constraint firstItem="dAt-Rg-UKW" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="MMg-18-zyk"/>
-                <constraint firstItem="dAt-Rg-UKW" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="VTS-gS-fL9"/>
+                <constraint firstItem="6B0-iW-7EX" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Hbt-Xm-szs"/>
+                <constraint firstItem="6B0-iW-7EX" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="SrI-pU-i6V"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="6B0-iW-7EX" secondAttribute="trailing" id="WDx-gE-hFr"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="6B0-iW-7EX" secondAttribute="bottom" id="fn3-IS-QE5"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="139" y="81"/>
+            <point key="canvasLocation" x="139" y="133"/>
         </view>
     </objects>
 </document>
