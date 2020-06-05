@@ -35,6 +35,7 @@
 		693F64042489F6E30034AA2B /* JYW_VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F64032489F6E30034AA2B /* JYW_VideoModel.m */; };
 		693F64082489FAD60034AA2B /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 693F64062489FAD60034AA2B /* video3.mp4 */; };
 		693F64092489FAD60034AA2B /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 693F64072489FAD60034AA2B /* video2.mp4 */; };
+		693F640C2489FBA80034AA2B /* JYW_AVPlayerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F640B2489FBA80034AA2B /* JYW_AVPlayerViewModel.m */; };
 		6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */; };
 		6940B876247E1CA200C74627 /* JYW_FictionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */; };
 		6940B879247E1FA100C74627 /* JYW_FictionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B878247E1FA100C74627 /* JYW_FictionModel.m */; };
@@ -125,6 +126,8 @@
 		693F64032489F6E30034AA2B /* JYW_VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_VideoModel.m; sourceTree = "<group>"; };
 		693F64062489FAD60034AA2B /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
 		693F64072489FAD60034AA2B /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+		693F640A2489FBA80034AA2B /* JYW_AVPlayerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AVPlayerViewModel.h; sourceTree = "<group>"; };
+		693F640B2489FBA80034AA2B /* JYW_AVPlayerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AVPlayerViewModel.m; sourceTree = "<group>"; };
 		6940B872247E1CA200C74627 /* JYW_FictionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionTableViewController.h; sourceTree = "<group>"; };
 		6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionTableViewController.m; sourceTree = "<group>"; };
 		6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_FictionTableViewController.xib; sourceTree = "<group>"; };
@@ -384,6 +387,8 @@
 				693F63CD2484BCF30034AA2B /* JYW_AddressBookViewModel.m */,
 				693F63EA2487627C0034AA2B /* JYW_ProductListViewModel.h */,
 				693F63EB2487627C0034AA2B /* JYW_ProductListViewModel.m */,
+				693F640A2489FBA80034AA2B /* JYW_AVPlayerViewModel.h */,
+				693F640B2489FBA80034AA2B /* JYW_AVPlayerViewModel.m */,
 			);
 			path = jywViewModel;
 			sourceTree = "<group>";
@@ -738,6 +743,7 @@
 				69D311F4247DF5C60006EEB2 /* JYW_CollectionViewController.m in Sources */,
 				69D311B8247D35D80006EEB2 /* main.m in Sources */,
 				6940B879247E1FA100C74627 /* JYW_FictionModel.m in Sources */,
+				693F640C2489FBA80034AA2B /* JYW_AVPlayerViewModel.m in Sources */,
 				69D311AA247D35D70006EEB2 /* SceneDelegate.m in Sources */,
 				693F64042489F6E30034AA2B /* JYW_VideoModel.m in Sources */,
 			);

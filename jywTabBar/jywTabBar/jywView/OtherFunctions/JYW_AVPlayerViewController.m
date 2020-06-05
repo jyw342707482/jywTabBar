@@ -8,11 +8,17 @@
 
 #import "JYW_AVPlayerViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "JYW_VideoModel.h"
+#import "JYW_AVPlayerViewModel.h"
 @interface JYW_AVPlayerViewController ()
 {
     AVPlayer *avPlayer;
     AVPlayerItem *avPlayerItem;
     AVPlayerLayer *avPlayerLayer;
+    NSMutableArray *videoArray;
+    
+    JYW_AVPlayerViewModel *jyw_AVPlayerViewModel;
+    long playVideoModelIndex;//当前播放的视频的index值
 }
 @end
 
@@ -25,34 +31,144 @@
 
 -(void)pageSetting{
     self.title=@"AVPlayer播放";
-    avPlayerViewHeight.constant=[UIScreen mainScreen].bounds.size.width*0.618;
-    //本地视频路径
-    NSString *localFilePath = [[NSBundle mainBundle] pathForResource:@"video1" ofType:@"mp4"];
-    NSURL *localVideoUrl = [NSURL fileURLWithPath:localFilePath];
+    jyw_AVPlayerViewModel=[[JYW_AVPlayerViewModel alloc] init];
+    videoArray=[jyw_AVPlayerViewModel getVideoList];
+    avPlayerBackGroundViewHeight.constant=[UIScreen mainScreen].bounds.size.width*0.618;
+
+    JYW_VideoModel *jywVM=videoArray[playVideoModelIndex];
+    //如果要切换视频需要调AVPlayer的replaceCurrentItemWithPlayerItem:方法
+    avPlayerItem=[AVPlayerItem playerItemWithURL:jywVM.filePath];
     
-    //获取视频的文件大小，和总时长秒
-    AVURLAsset * asset = [AVURLAsset assetWithURL:[NSURL fileURLWithPath:localFilePath]];
-    CMTime   time = [asset duration];
-    int seconds = ceil(time.value/time.timescale);
-    if(time.value%time.timescale>0)
-    {
-        seconds++;
-    }
-    NSInteger   fileSize = [[NSFileManager defaultManager] attributesOfItemAtPath:localFilePath error:nil].fileSize;
-    float fileSizeMB=fileSize/1024.0/1024.0;
-    //NSURL*playUrl = [NSURL URLWithString:@"http://baobab.wdjcdn.com/14573563182394.mp4"];
     //avPlayer = [[AVPlayer alloc] initWithURL:playUrl];
-    avPlayerItem = [AVPlayerItem playerItemWithURL:localVideoUrl];//如果要切换视频需要调AVPlayer的replaceCurrentItemWithPlayerItem:方法
-    
     avPlayer = [AVPlayer playerWithPlayerItem:avPlayerItem];
     //视频播放是否阻止显示和设备休眠
     //avPlayer.preventsDisplaySleepDuringVideoPlayback=YES;
     avPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:avPlayer];
-    avPlayerLayer.frame = avPlayerView.bounds;//放置播放器的视图
+    avPlayerLayer.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, avPlayerBackGroundViewHeight.constant);//放置播放器的视图
     [avPlayerView.layer addSublayer:avPlayerLayer];
+    
+    [self toobarViewSetting];
+    //通过KVO来观察status属性的变化，来获得播放之前的错误信息
+    [avPlayerItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
+    //[avPlayer play];
+}
+-(void)toobarViewSetting{
+    toobarBackGroundView.backgroundColor=[UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:0.0];
+    toobarView.backgroundColor=[UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:0.5];
+}
+//监听回调
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:
+(NSDictionary<NSString *,id> *)change context:(void *)context{
+    if ([keyPath isEqualToString:@"status"]) {
+        //取出status的新值
+        AVPlayerItemStatus status = [change[NSKeyValueChangeNewKey]intValue];
+        switch (status) {
+            case AVPlayerItemStatusFailed:
+                NSLog(@"item 有误");
+                break;
+            case AVPlayerItemStatusReadyToPlay:
+                NSLog(@"准好播放了");
+                [self videoPlay];
+                break;
+            case AVPlayerItemStatusUnknown:
+                NSLog(@"视频资源出现未知错误");
+                break;
+            default:
+                break;
+        }
+    }
+    //移除监听（观察者）
+    [object removeObserver:self forKeyPath:@"status"];
+}
+-(void)videoPlay{
+    JYW_VideoModel *vm=videoArray[playVideoModelIndex];
+    long vd=avPlayerItem.duration.value /avPlayerItem.duration.timescale;
+    //vm.videoDuration=avPlayerItem.duration.value /avPlayerItem.duration.timescale;
+    if(avPlayerItem.duration.value %avPlayerItem.duration.timescale>0)
+    {
+        vd++;
+    }
+    vm.videoDuration=vd;
+    playSlider.maximumValue = vm.videoDuration;
+    [startAndEndPlayButton setTitle:@"暂停" forState:UIControlStateNormal];
+    startAndEndPlayButton.enabled=YES;
+    timeLabel.text=[NSString stringWithFormat:@"00:00:00/%@",vm.videoDurationStr];
+    [self addPeriodicTimeObserver];
     [avPlayer play];
 }
-
+- (void)addPeriodicTimeObserver {
+    /*
+    // Invoke callback every half second
+    CMTime interval = CMTimeMakeWithSeconds(0.5, NSEC_PER_SEC);
+    // Queue on which to invoke the callback
+    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+    // Add time observer
+    self.timeObserverToken =
+        [self.player addPeriodicTimeObserverForInterval:interval
+                                                  queue:mainQueue
+                                             usingBlock:^(CMTime time) {
+            // Use weak reference to self
+            // Update player transport UI
+        }];
+     */
+    /// 添加监听.以及回调
+    __weak typeof(self) weakSelf = self;
+    [avPlayer addPeriodicTimeObserverForInterval:CMTimeMake(1.0, 1.0) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+        /// 更新播放进度
+        [weakSelf updateSliderValue];
+    }];
+}
+-(void)updateSliderValue{
+    float psValue=playSlider.value;
+    int s=psValue;
+    int m=s/60;
+    int h=0;
+    if(m>=60)
+    {
+        h=m/60;
+        m=m%60;
+        
+    }
+    s=s%60;
+    playSlider.value+=1.0;
+    JYW_VideoModel *vm=videoArray[playVideoModelIndex];
+    timeLabel.text=[NSString stringWithFormat:@"%d:%d:%d/%@",h,m,s,vm.videoDurationStr];
+    
+    //播完
+    if(psValue==playSlider.maximumValue){
+        NSLog(@"播完");
+    }
+    
+}
+//暂停/播放点击事件
+-(IBAction)startAndEndPlayButton_Click:(id)sender{
+    
+    if([startAndEndPlayButton.titleLabel.text isEqualToString:@"暂停"]){
+        [startAndEndPlayButton setTitle:@"播放" forState:UIControlStateNormal];
+        [avPlayer pause];
+    }
+    else{
+        [startAndEndPlayButton setTitle:@"暂停" forState:UIControlStateNormal];
+        [avPlayer play];
+    }
+}
+//视频播放速率+0.1点击事件
+-(IBAction)playRateUp_Click:(id)sender{
+    if(avPlayer.rate<=5.0)
+    {
+        avPlayer.rate+=0.5;
+        NSLog(@"%f",avPlayer.rate);
+    }
+}
+//视频播放速录-0.1点击事件
+-(IBAction)playRateDown_Click:(id)sender{
+    if(avPlayer.rate>0.5)
+    {
+        avPlayer.rate-=0.5;
+        NSLog(@"%f",avPlayer.rate);
+    }
+    
+}
 @end
 
 
