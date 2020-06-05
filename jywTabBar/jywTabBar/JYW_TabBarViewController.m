@@ -8,7 +8,7 @@
 
 #import "JYW_TabBarViewController.h"
 #import "JYW_TableViewController.h"
-#import "JYW_PictureViewController.h"
+#import "JYW_OtherFunctionsViewController.h"
 #import "JYW_CollectionViewController.h"
 @interface JYW_TabBarViewController ()<UITabBarControllerDelegate>
 
@@ -50,9 +50,9 @@
     nc1.navigationBar.hidden=NO;
     nc1.navigationBar.translucent=NO;
     
-    JYW_PictureViewController *jywPV=[[JYW_PictureViewController alloc] init];
-    UINavigationController *nc2=[[UINavigationController alloc] initWithRootViewController:jywPV];
-    nc2.title=@"pictureView";
+    JYW_OtherFunctionsViewController *jywOF=[[JYW_OtherFunctionsViewController alloc] init];
+    UINavigationController *nc2=[[UINavigationController alloc] initWithRootViewController:jywOF];
+    nc2.title=@"OtherFunctions";
     nc2.navigationBar.hidden=NO;
     nc2.navigationBar.translucent=NO;
     

@@ -28,6 +28,10 @@
 		693F63F2248899340034AA2B /* JYW_MeituanFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63F0248899340034AA2B /* JYW_MeituanFoundViewController.m */; };
 		693F63F3248899340034AA2B /* JYW_MeituanFoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693F63F1248899340034AA2B /* JYW_MeituanFoundViewController.xib */; };
 		693F63F62488A3EF0034AA2B /* JYW_FlowLayout1.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63F52488A3EF0034AA2B /* JYW_FlowLayout1.m */; };
+		693F63FB2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63F92489DCEC0034AA2B /* JYW_OtherFunctionsViewController.m */; };
+		693F63FC2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693F63FA2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.xib */; };
+		693F64002489DDC00034AA2B /* JYW_AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63FE2489DDBF0034AA2B /* JYW_AVPlayerViewController.m */; };
+		693F64012489DDC00034AA2B /* JYW_AVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693F63FF2489DDBF0034AA2B /* JYW_AVPlayerViewController.xib */; };
 		6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */; };
 		6940B876247E1CA200C74627 /* JYW_FictionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */; };
 		6940B879247E1FA100C74627 /* JYW_FictionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B878247E1FA100C74627 /* JYW_FictionModel.m */; };
@@ -108,6 +112,12 @@
 		693F63F1248899340034AA2B /* JYW_MeituanFoundViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_MeituanFoundViewController.xib; sourceTree = "<group>"; };
 		693F63F42488A3EF0034AA2B /* JYW_FlowLayout1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FlowLayout1.h; sourceTree = "<group>"; };
 		693F63F52488A3EF0034AA2B /* JYW_FlowLayout1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FlowLayout1.m; sourceTree = "<group>"; };
+		693F63F82489DCEC0034AA2B /* JYW_OtherFunctionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_OtherFunctionsViewController.h; sourceTree = "<group>"; };
+		693F63F92489DCEC0034AA2B /* JYW_OtherFunctionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_OtherFunctionsViewController.m; sourceTree = "<group>"; };
+		693F63FA2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_OtherFunctionsViewController.xib; sourceTree = "<group>"; };
+		693F63FD2489DDBF0034AA2B /* JYW_AVPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AVPlayerViewController.h; sourceTree = "<group>"; };
+		693F63FE2489DDBF0034AA2B /* JYW_AVPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AVPlayerViewController.m; sourceTree = "<group>"; };
+		693F63FF2489DDBF0034AA2B /* JYW_AVPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_AVPlayerViewController.xib; sourceTree = "<group>"; };
 		6940B872247E1CA200C74627 /* JYW_FictionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionTableViewController.h; sourceTree = "<group>"; };
 		6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionTableViewController.m; sourceTree = "<group>"; };
 		6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_FictionTableViewController.xib; sourceTree = "<group>"; };
@@ -216,6 +226,19 @@
 			path = collectionViewCell;
 			sourceTree = "<group>";
 		};
+		693F63F72489DCCA0034AA2B /* OtherFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				693F63F82489DCEC0034AA2B /* JYW_OtherFunctionsViewController.h */,
+				693F63F92489DCEC0034AA2B /* JYW_OtherFunctionsViewController.m */,
+				693F63FA2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.xib */,
+				693F63FD2489DDBF0034AA2B /* JYW_AVPlayerViewController.h */,
+				693F63FE2489DDBF0034AA2B /* JYW_AVPlayerViewController.m */,
+				693F63FF2489DDBF0034AA2B /* JYW_AVPlayerViewController.xib */,
+			);
+			path = OtherFunctions;
+			sourceTree = "<group>";
+		};
 		6940B87A247E246300C74627 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +331,7 @@
 		69D311E1247DF3680006EEB2 /* jywView */ = {
 			isa = PBXGroup;
 			children = (
+				693F63F72489DCCA0034AA2B /* OtherFunctions */,
 				69D311E6247DF3C70006EEB2 /* collectionView */,
 				69D311E5247DF3B80006EEB2 /* pictureView */,
 				69D311E4247DF3A30006EEB2 /* tableView */,
@@ -529,7 +553,9 @@
 				693F63E624875D920034AA2B /* ProductList.plist in Resources */,
 				69D311B2247D35D80006EEB2 /* Assets.xcassets in Resources */,
 				6940B87C247E249500C74627 /* FictionList.plist in Resources */,
+				693F64012489DDC00034AA2B /* JYW_AVPlayerViewController.xib in Resources */,
 				69D311F5247DF5C60006EEB2 /* JYW_CollectionViewController.xib in Resources */,
+				693F63FC2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.xib in Resources */,
 				6940B876247E1CA200C74627 /* JYW_FictionTableViewController.xib in Resources */,
 				69D311EB247DF5A20006EEB2 /* JYW_TableViewController.xib in Resources */,
 				69D311B0247D35D70006EEB2 /* Main.storyboard in Resources */,
@@ -679,9 +705,11 @@
 				693F63B924809B680034AA2B /* JYW_FictionMainModel.m in Sources */,
 				693F63E424875B760034AA2B /* JYW_ProductListCollectionViewCell.m in Sources */,
 				69D311DD247D36580006EEB2 /* JYW_TestViewController.m in Sources */,
+				693F64002489DDC00034AA2B /* JYW_AVPlayerViewController.m in Sources */,
 				693F63D8248746600034AA2B /* JYW_ProductListViewController.m in Sources */,
 				693F63C4248108580034AA2B /* UIView+JYW_Border.m in Sources */,
 				6940B882247F479300C74627 /* JYW_FictionViewModel.m in Sources */,
+				693F63FB2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.m in Sources */,
 				693F63D42484BD1E0034AA2B /* JYW_AddressBookGroupModel.m in Sources */,
 				69D311F8247DF6190006EEB2 /* JYW_TabBarViewController.m in Sources */,
 				693F63F2248899340034AA2B /* JYW_MeituanFoundViewController.m in Sources */,
