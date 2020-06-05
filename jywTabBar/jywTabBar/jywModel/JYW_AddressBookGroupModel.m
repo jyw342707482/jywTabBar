@@ -13,8 +13,11 @@
 @synthesize addressBookModelArray;
 -(instancetype)initWithGroupStr:(NSString*)gStr addressBookModelArray:(NSMutableArray *)abmArray{
     self=[super init];
-    groupStr=gStr;
-    addressBookModelArray=abmArray;
+    if(self){
+        groupStr=gStr;
+        addressBookModelArray=abmArray;
+    }
+    
     return self;
 }
 @end

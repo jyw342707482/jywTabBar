@@ -16,11 +16,14 @@
 @synthesize pinyin;
 -(instancetype)initWithAvatar:(NSString*)aName nickname:(NSString*)nn tagStr:(NSString*)tStr labelGroupIndex:(int)lgi pinyin:(NSString *)py{
     self=[super init];
-    avatar=aName;
-    nickname=nn;
-    tagStr=tStr;
-    labelGroupIndex=lgi;
-    pinyin=py;
+    if(self){
+        avatar=aName;
+        nickname=nn;
+        tagStr=tStr;
+        labelGroupIndex=lgi;
+        pinyin=py;
+    }
+    
     return self;
 }
 -(BOOL)setNicenameTransformPinYin:(NSString*)nickname{

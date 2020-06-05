@@ -16,15 +16,18 @@
 @synthesize fmArray;
 -(instancetype)initWithCustomerId:(int)cId playedIndex:(int)pIndex fictionModelArray:(NSMutableArray*)fictionModelArray{
     self=[super init];
-    customerId=cId;
-    playedIndex=pIndex;
-    NSMutableArray *fArray=[[NSMutableArray alloc] init];
-    for(NSDictionary *dic in fictionModelArray){
-        JYW_FictionModel *fm=[[JYW_FictionModel alloc] initWithTitle:[dic objectForKey:@"title"] fileSize:[[dic objectForKey:@"fileSize"] floatValue] playingTime:[[dic objectForKey:@"playingTime"] intValue] playingState:[[dic objectForKey:@"playingState"] intValue] playedTime:[[dic objectForKey:@"playedTime"] intValue] downloadState:[[dic objectForKey:@"downloadState"] intValue] fId:[[dic objectForKey:@"fId"] intValue]];
-        [fArray addObject:fm];
+    if(self){
+        customerId=cId;
+        playedIndex=pIndex;
+        NSMutableArray *fArray=[[NSMutableArray alloc] init];
+        for(NSDictionary *dic in fictionModelArray){
+            JYW_FictionModel *fm=[[JYW_FictionModel alloc] initWithTitle:[dic objectForKey:@"title"] fileSize:[[dic objectForKey:@"fileSize"] floatValue] playingTime:[[dic objectForKey:@"playingTime"] intValue] playingState:[[dic objectForKey:@"playingState"] intValue] playedTime:[[dic objectForKey:@"playedTime"] intValue] downloadState:[[dic objectForKey:@"downloadState"] intValue] fId:[[dic objectForKey:@"fId"] intValue]];
+            [fArray addObject:fm];
+        }
+        fmArray=fArray;
+        audioCount=(int)[fmArray count];
     }
-    fmArray=fArray;
-    audioCount=(int)[fmArray count];
+    
     return self;
 }
 @end

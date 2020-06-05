@@ -23,7 +23,7 @@
 //页面设置
 -(void)pageSettings{
     //设置导航标题
-    self.title=@"UITableView";
+    self.title=@"OtherFunctions";
     tableDSArray=@[@"视频播放AVPlayer"];
     /*
     //添加导航右侧按钮，按钮类型为系统加号

@@ -7,15 +7,11 @@
 //
 
 #import "JYW_ProductListViewController.h"
-//#import <AVFoundation/AVFoundation.h>
 #import "JYW_ProductListViewModel.h"
 #import "JYW_ProductListCollectionViewCell.h"
 //static NSString * identifier = @"cxCellID";
 @interface JYW_ProductListViewController ()
 {
-    //AVPlayer *avPlayer;
-    //AVPlayerItem *avPlayerItem;
-    //AVPlayerLayer *avPlayerLayer;
     NSMutableArray *pListArray;
     JYW_ProductListViewModel *jyw_productListViewModel;
     
@@ -27,26 +23,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    /*
-    //本地视频路径
-    NSString *localFilePath = [[NSBundle mainBundle] pathForResource:@"video1" ofType:@"mp4"];
-    NSURL *localVideoUrl = [NSURL fileURLWithPath:localFilePath];
-    
-    //NSURL*playUrl = [NSURL URLWithString:@"http://baobab.wdjcdn.com/14573563182394.mp4"];
-
-    //avPlayer = [[AVPlayer alloc] initWithURL:playUrl];
-    avPlayerItem = [AVPlayerItem playerItemWithURL:localVideoUrl];//如果要切换视频需要调AVPlayer的replaceCurrentItemWithPlayerItem:方法
-
-    avPlayer = [AVPlayer playerWithPlayerItem:avPlayerItem];
-
-    avPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:avPlayer];
-
-    avPlayerLayer.frame = playerView.bounds;//放置播放器的视图
-
-    [playerView.layer addSublayer:avPlayerLayer];
-
-    [avPlayer play];
-     */
     [self pageSettings];
 }
 

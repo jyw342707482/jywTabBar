@@ -16,11 +16,14 @@
 @synthesize numberOfSales;
 -(instancetype)initWithPImagePath:(NSString *)pImgPath title:(NSString *)t tags:(NSArray *)ts sellingPrice:(float)sp numberOfSales:(int)nos{
     self=[super init];
-    pImagePath=pImgPath;
-    title=t;
-    tags=ts;
-    sellingPrice=sp;
-    numberOfSales=nos;
+    if(self){
+        pImagePath=pImgPath;
+        title=t;
+        tags=ts;
+        sellingPrice=sp;
+        numberOfSales=nos;
+    }
+    
     return self;
 }
 @end

@@ -18,13 +18,16 @@
 @synthesize fId;
 -(instancetype)initWithTitle:(NSString*)t fileSize:(float)fs playingTime:(int)pt playingState:(int)ps playedTime:(int)pdt downloadState:(int)ds fId:(int)ID{
     self=[super init];
-    title=t;
-    fileSize=fs;
-    playingTime=pt;
-    playingState=ps;
-    playedTime=pdt;
-    downloadState=ds;
-    fId=ID;
+    if(self){
+        title=t;
+        fileSize=fs;
+        playingTime=pt;
+        playingState=ps;
+        playedTime=pdt;
+        downloadState=ds;
+        fId=ID;
+    }
+    
     return self;
 }
 @end

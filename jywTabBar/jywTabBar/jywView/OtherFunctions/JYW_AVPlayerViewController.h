@@ -11,7 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JYW_AVPlayerViewController : UIViewController
-
+{
+    IBOutlet UIView *avPlayerView;
+    IBOutlet NSLayoutConstraint *avPlayerViewHeight;
+}
 @end
 
 NS_ASSUME_NONNULL_END
