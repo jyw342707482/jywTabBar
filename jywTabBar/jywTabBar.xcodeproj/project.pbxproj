@@ -36,12 +36,17 @@
 		693F64082489FAD60034AA2B /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 693F64062489FAD60034AA2B /* video3.mp4 */; };
 		693F64092489FAD60034AA2B /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 693F64072489FAD60034AA2B /* video2.mp4 */; };
 		693F640C2489FBA80034AA2B /* JYW_AVPlayerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F640B2489FBA80034AA2B /* JYW_AVPlayerViewModel.m */; };
+		693F6413248B1F6A0034AA2B /* JYW_AVPlayerToobarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F6412248B1F6A0034AA2B /* JYW_AVPlayerToobarView.m */; };
+		693F6419248B21690034AA2B /* JYW_AVPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F6418248B21690034AA2B /* JYW_AVPlayerModel.m */; };
+		693F6421248B2DDC0034AA2B /* JYW_AVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F6420248B2DDC0034AA2B /* JYW_AVPlayerView.m */; };
 		6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */; };
 		6940B876247E1CA200C74627 /* JYW_FictionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */; };
 		6940B879247E1FA100C74627 /* JYW_FictionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B878247E1FA100C74627 /* JYW_FictionModel.m */; };
 		6940B87C247E249500C74627 /* FictionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6940B87B247E249500C74627 /* FictionList.plist */; };
 		6940B882247F479300C74627 /* JYW_FictionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B881247F479300C74627 /* JYW_FictionViewModel.m */; };
 		6940B889247F586800C74627 /* JYW_FictionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B887247F586800C74627 /* JYW_FictionTableViewCell.m */; };
+		69452FE4248B526600EB0361 /* NSString+JYW_StringWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = 69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */; };
+		69452FEB248DC9E000EB0361 /* JYW_NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69452FEA248DC9E000EB0361 /* JYW_NavigationViewController.m */; };
 		69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311A6247D35D70006EEB2 /* AppDelegate.m */; };
 		69D311AA247D35D70006EEB2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311A9247D35D70006EEB2 /* SceneDelegate.m */; };
 		69D311AD247D35D70006EEB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311AC247D35D70006EEB2 /* ViewController.m */; };
@@ -128,6 +133,12 @@
 		693F64072489FAD60034AA2B /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
 		693F640A2489FBA80034AA2B /* JYW_AVPlayerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AVPlayerViewModel.h; sourceTree = "<group>"; };
 		693F640B2489FBA80034AA2B /* JYW_AVPlayerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AVPlayerViewModel.m; sourceTree = "<group>"; };
+		693F6411248B1F6A0034AA2B /* JYW_AVPlayerToobarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AVPlayerToobarView.h; sourceTree = "<group>"; };
+		693F6412248B1F6A0034AA2B /* JYW_AVPlayerToobarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AVPlayerToobarView.m; sourceTree = "<group>"; };
+		693F6417248B21690034AA2B /* JYW_AVPlayerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AVPlayerModel.h; sourceTree = "<group>"; };
+		693F6418248B21690034AA2B /* JYW_AVPlayerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AVPlayerModel.m; sourceTree = "<group>"; };
+		693F641F248B2DDC0034AA2B /* JYW_AVPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AVPlayerView.h; sourceTree = "<group>"; };
+		693F6420248B2DDC0034AA2B /* JYW_AVPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AVPlayerView.m; sourceTree = "<group>"; };
 		6940B872247E1CA200C74627 /* JYW_FictionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionTableViewController.h; sourceTree = "<group>"; };
 		6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionTableViewController.m; sourceTree = "<group>"; };
 		6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_FictionTableViewController.xib; sourceTree = "<group>"; };
@@ -138,6 +149,10 @@
 		6940B881247F479300C74627 /* JYW_FictionViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionViewModel.m; sourceTree = "<group>"; };
 		6940B886247F586800C74627 /* JYW_FictionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionTableViewCell.h; sourceTree = "<group>"; };
 		6940B887247F586800C74627 /* JYW_FictionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionTableViewCell.m; sourceTree = "<group>"; };
+		69452FE2248B526600EB0361 /* NSString+JYW_StringWidth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYW_StringWidth.h"; sourceTree = "<group>"; };
+		69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JYW_StringWidth.m"; sourceTree = "<group>"; };
+		69452FE9248DC9E000EB0361 /* JYW_NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_NavigationViewController.h; sourceTree = "<group>"; };
+		69452FEA248DC9E000EB0361 /* JYW_NavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_NavigationViewController.m; sourceTree = "<group>"; };
 		69D311A2247D35D70006EEB2 /* jywTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jywTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D311A5247D35D70006EEB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69D311A6247D35D70006EEB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -221,6 +236,8 @@
 			children = (
 				693F63C2248108580034AA2B /* UIView+JYW_Border.h */,
 				693F63C3248108580034AA2B /* UIView+JYW_Border.m */,
+				69452FE2248B526600EB0361 /* NSString+JYW_StringWidth.h */,
+				69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -239,6 +256,7 @@
 		693F63F72489DCCA0034AA2B /* OtherFunctions */ = {
 			isa = PBXGroup;
 			children = (
+				693F640D248B1EB90034AA2B /* JYW_AVPlayerView */,
 				693F63F82489DCEC0034AA2B /* JYW_OtherFunctionsViewController.h */,
 				693F63F92489DCEC0034AA2B /* JYW_OtherFunctionsViewController.m */,
 				693F63FA2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.xib */,
@@ -259,6 +277,19 @@
 			path = video;
 			sourceTree = "<group>";
 		};
+		693F640D248B1EB90034AA2B /* JYW_AVPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				693F6411248B1F6A0034AA2B /* JYW_AVPlayerToobarView.h */,
+				693F6412248B1F6A0034AA2B /* JYW_AVPlayerToobarView.m */,
+				693F6417248B21690034AA2B /* JYW_AVPlayerModel.h */,
+				693F6418248B21690034AA2B /* JYW_AVPlayerModel.m */,
+				693F641F248B2DDC0034AA2B /* JYW_AVPlayerView.h */,
+				693F6420248B2DDC0034AA2B /* JYW_AVPlayerView.m */,
+			);
+			path = JYW_AVPlayerView;
+			sourceTree = "<group>";
+		};
 		6940B87A247E246300C74627 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +308,15 @@
 				6940B887247F586800C74627 /* JYW_FictionTableViewCell.m */,
 			);
 			path = tableViewCell;
+			sourceTree = "<group>";
+		};
+		69452FE8248DC98300EB0361 /* NavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				69452FE9248DC9E000EB0361 /* JYW_NavigationViewController.h */,
+				69452FEA248DC9E000EB0361 /* JYW_NavigationViewController.m */,
+			);
+			path = NavigationViewController;
 			sourceTree = "<group>";
 		};
 		69D31199247D35D70006EEB2 = {
@@ -304,6 +344,7 @@
 		69D311A4247D35D70006EEB2 /* jywTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				69452FE8248DC98300EB0361 /* NavigationViewController */,
 				693F63BE2481056D0034AA2B /* category */,
 				6940B87A247E246300C74627 /* Data */,
 				69D311E3247DF3810006EEB2 /* jywViewModel */,
@@ -721,6 +762,7 @@
 				69D311EF247DF5B30006EEB2 /* JYW_PictureViewController.m in Sources */,
 				693F63CE2484BCF30034AA2B /* JYW_AddressBookViewModel.m in Sources */,
 				69D311AD247D35D70006EEB2 /* ViewController.m in Sources */,
+				69452FEB248DC9E000EB0361 /* JYW_NavigationViewController.m in Sources */,
 				69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */,
 				6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */,
 				693F63EC2487627C0034AA2B /* JYW_ProductListViewModel.m in Sources */,
@@ -731,13 +773,17 @@
 				693F63B924809B680034AA2B /* JYW_FictionMainModel.m in Sources */,
 				693F63E424875B760034AA2B /* JYW_ProductListCollectionViewCell.m in Sources */,
 				69D311DD247D36580006EEB2 /* JYW_TestViewController.m in Sources */,
+				693F6421248B2DDC0034AA2B /* JYW_AVPlayerView.m in Sources */,
 				693F64002489DDC00034AA2B /* JYW_AVPlayerViewController.m in Sources */,
 				693F63D8248746600034AA2B /* JYW_ProductListViewController.m in Sources */,
+				693F6413248B1F6A0034AA2B /* JYW_AVPlayerToobarView.m in Sources */,
 				693F63C4248108580034AA2B /* UIView+JYW_Border.m in Sources */,
 				6940B882247F479300C74627 /* JYW_FictionViewModel.m in Sources */,
 				693F63FB2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.m in Sources */,
+				69452FE4248B526600EB0361 /* NSString+JYW_StringWidth.m in Sources */,
 				693F63D42484BD1E0034AA2B /* JYW_AddressBookGroupModel.m in Sources */,
 				69D311F8247DF6190006EEB2 /* JYW_TabBarViewController.m in Sources */,
+				693F6419248B21690034AA2B /* JYW_AVPlayerModel.m in Sources */,
 				693F63F2248899340034AA2B /* JYW_MeituanFoundViewController.m in Sources */,
 				693F63E92487601F0034AA2B /* JYW_ProductModel.m in Sources */,
 				69D311F4247DF5C60006EEB2 /* JYW_CollectionViewController.m in Sources */,

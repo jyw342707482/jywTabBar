@@ -25,7 +25,9 @@
     [super viewDidLoad];
     [self pageSettings];
 }
-
+-(BOOL)shouldAutorotate{
+    return YES;
+}
 -(void)pageSettings{
     self.title=@"产品列表";
     

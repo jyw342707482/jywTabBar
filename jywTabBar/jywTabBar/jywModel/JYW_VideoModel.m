@@ -36,7 +36,16 @@
     //format of second
     NSString *str_second = [NSString stringWithFormat:@"%02ld",seconds%60];
     //format of time
-    NSString *format_time = [NSString stringWithFormat:@"%@:%@:%@",str_hour,str_minute,str_second];
+    NSString *format_time;
+    if(![str_second isEqualToString:@"00"]){
+        format_time = str_second;
+    }
+    if(![str_minute isEqualToString:@""]){
+        format_time = [NSString stringWithFormat:@"%@:%@",str_minute,format_time];
+    }
+    if(![str_hour isEqualToString:@""]){
+        format_time = [NSString stringWithFormat:@"%@:%@",str_hour,format_time];
+    }
 
     videoDurationStr=format_time;
 }

@@ -18,7 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
-
+-(BOOL)shouldAutorotate{
+    return YES;
+}
 -(void)pageSetting{
     self.title=@"美团-发现";
     

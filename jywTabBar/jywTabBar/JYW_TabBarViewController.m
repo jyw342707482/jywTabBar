@@ -10,59 +10,44 @@
 #import "JYW_TableViewController.h"
 #import "JYW_OtherFunctionsViewController.h"
 #import "JYW_CollectionViewController.h"
+#import "JYW_NavigationViewController.h"
 @interface JYW_TabBarViewController ()<UITabBarControllerDelegate>
 
 @end
 
 @implementation JYW_TabBarViewController
-/*
--(instancetype)init{
-    self=[super init];
-    if(self){
-        CGRect tbFrame=self.view.frame;
-        tbFrame.size.height+=0;
-        self.view.frame=tbFrame;
-    }
-    return self;
-}*/
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setTabBarItem];
-}
-/*
-//修改tbbar的高度
--(void)viewDidLayoutSubviews{
-    [super viewDidLayoutSubviews];
-    CGRect tbFrame=self.tabBar.frame;
-    tbFrame.size.height+=10;
-    tbFrame.origin.y=self.view.frame.size.height-tbFrame.size.height;
-    self.tabBar.frame=tbFrame;
-    
-}
- */
-//设置items
--(void)setTabBarItem{
     self.delegate=self;
     self.tabBar.translucent=NO;
-    JYW_TableViewController *jywTV=[[JYW_TableViewController alloc] init];
-    UINavigationController *nc1=[[UINavigationController alloc] initWithRootViewController:jywTV];
-    nc1.title=@"UITableView";
-    nc1.navigationBar.hidden=NO;
-    nc1.navigationBar.translucent=NO;
+    [self addChildVC:[JYW_TableViewController new] Title:@"UITableView"];
+    [self addChildVC:[JYW_OtherFunctionsViewController new] Title:@"OtherFunctions"];
+    [self addChildVC:[JYW_CollectionViewController new] Title:@"UICollectionView"];
     
-    JYW_OtherFunctionsViewController *jywOF=[[JYW_OtherFunctionsViewController alloc] init];
-    UINavigationController *nc2=[[UINavigationController alloc] initWithRootViewController:jywOF];
-    nc2.title=@"OtherFunctions";
-    nc2.navigationBar.hidden=NO;
-    nc2.navigationBar.translucent=NO;
-    
-    JYW_CollectionViewController *jywCV=[[JYW_CollectionViewController alloc] init];
-    UINavigationController *nc3=[[UINavigationController alloc] initWithRootViewController:jywCV];
-    nc3.title=@"UICollectionView";
-    nc3.navigationBar.hidden=NO;
-    nc3.navigationBar.translucent=NO;
-    
-    self.viewControllers=@[nc3,nc1,nc2];
 }
 
+-(void)addChildVC:(UIViewController *)childVC Title:(NSString *)title{
+    //UIViewController *vc=[[childVC alloc] init];
+    JYW_NavigationViewController *nvc=[[JYW_NavigationViewController alloc] initWithRootViewController:childVC];
+    nvc.title=title;
+    nvc.navigationBar.hidden=NO;
+    nvc.navigationBar.translucent=NO;
+    [self addChildViewController:nvc];
+}
+# pragma Mark -锁定屏幕方向
+/*此方法只能在rootViewController下设置可用，其它位置设置无效**/
+- (BOOL)shouldAutorotate{
+    return YES;
+}
+//返回视图控制器支持的所有界面方向。
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+//返回呈现视图控制器时要使用的界面方向。
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
+}
 @end

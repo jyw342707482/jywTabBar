@@ -20,6 +20,9 @@
     [super viewDidLoad];
     [self pageSettings];
 }
+-(BOOL)shouldAutorotate{
+    return YES;
+}
 //页面设置
 -(void)pageSettings{
     //设置导航标题

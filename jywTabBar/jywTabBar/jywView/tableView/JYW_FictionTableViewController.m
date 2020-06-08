@@ -33,6 +33,9 @@
     [self pageSettings];
     [self setControlData];
 }
+-(BOOL)shouldAutorotate{
+    return YES;
+}
 //设置控件的值
 -(void)setControlData{
     self.audioLabel.text=[NSString stringWithFormat:@"共%d集",fictionMainModel.audioCount];
