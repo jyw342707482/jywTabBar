@@ -46,6 +46,7 @@
 		6942AEE52491B2F100C5E570 /* JYWPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942AEE42491B2F100C5E570 /* JYWPlayerModel.m */; };
 		6942AEE82491E7DC00C5E570 /* JYW_PlayerFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942AEE72491E7DC00C5E570 /* JYW_PlayerFullScreenViewController.m */; };
 		6942AEEB2491EFA100C5E570 /* JYWPlayerToobarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942AEEA2491EFA100C5E570 /* JYWPlayerToobarView.m */; };
+		6942AEEE24946E3B00C5E570 /* JYWAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942AEED24946E3B00C5E570 /* JYWAnimationView.m */; };
 		69452FE4248B526600EB0361 /* NSString+JYW_StringWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = 69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */; };
 		69452FEB248DC9E000EB0361 /* JYW_NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69452FEA248DC9E000EB0361 /* JYW_NavigationViewController.m */; };
 		69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311A6247D35D70006EEB2 /* AppDelegate.m */; };
@@ -152,6 +153,8 @@
 		6942AEE72491E7DC00C5E570 /* JYW_PlayerFullScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_PlayerFullScreenViewController.m; sourceTree = "<group>"; };
 		6942AEE92491EFA100C5E570 /* JYWPlayerToobarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWPlayerToobarView.h; sourceTree = "<group>"; };
 		6942AEEA2491EFA100C5E570 /* JYWPlayerToobarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWPlayerToobarView.m; sourceTree = "<group>"; };
+		6942AEEC24946E3B00C5E570 /* JYWAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWAnimationView.h; sourceTree = "<group>"; };
+		6942AEED24946E3B00C5E570 /* JYWAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWAnimationView.m; sourceTree = "<group>"; };
 		69452FE2248B526600EB0361 /* NSString+JYW_StringWidth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYW_StringWidth.h"; sourceTree = "<group>"; };
 		69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JYW_StringWidth.m"; sourceTree = "<group>"; };
 		69452FE9248DC9E000EB0361 /* JYW_NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_NavigationViewController.h; sourceTree = "<group>"; };
@@ -311,6 +314,8 @@
 				6942AEE72491E7DC00C5E570 /* JYW_PlayerFullScreenViewController.m */,
 				6942AEE92491EFA100C5E570 /* JYWPlayerToobarView.h */,
 				6942AEEA2491EFA100C5E570 /* JYWPlayerToobarView.m */,
+				6942AEEC24946E3B00C5E570 /* JYWAnimationView.h */,
+				6942AEED24946E3B00C5E570 /* JYWAnimationView.m */,
 			);
 			path = JYWPlayerView;
 			sourceTree = "<group>";
@@ -790,6 +795,7 @@
 				693F63D42484BD1E0034AA2B /* JYW_AddressBookGroupModel.m in Sources */,
 				69D311F8247DF6190006EEB2 /* JYW_TabBarViewController.m in Sources */,
 				693F63F2248899340034AA2B /* JYW_MeituanFoundViewController.m in Sources */,
+				6942AEEE24946E3B00C5E570 /* JYWAnimationView.m in Sources */,
 				693F63E92487601F0034AA2B /* JYW_ProductModel.m in Sources */,
 				69D311F4247DF5C60006EEB2 /* JYW_CollectionViewController.m in Sources */,
 				69D311B8247D35D80006EEB2 /* main.m in Sources */,

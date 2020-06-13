@@ -46,10 +46,9 @@
     UIBarButtonItem *leftBarButton1=[[UIBarButtonItem alloc] initWithTitle:@"＜返回" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButton_Back:)];
     self.navigationItem.leftBarButtonItem=leftBarButton1;
     
-    
     videoArray=@[@"video1",@"video2",@"video3"];
-    [self createPlayerFrame];
-    //[self createPlayerConstraint];
+    //[self createPlayerFrame];
+    [self createPlayerConstraint];
     /*
     if(appDelegate.tabBarJYWPlayerView==nil){
         [self createPlayer];
@@ -87,6 +86,7 @@
         playerViewConfig.superVC=self;
         playerViewConfig.superView=self.playerView;
         appDelegate.tabBarJYWPlayerView=[[JYWPlayerView alloc] initWithConfig:playerViewConfig];
+        [self.playerView addSubview:appDelegate.tabBarJYWPlayerView];
         /*
         appDelegate.tabBarJYWPlayerView=[[JYWPlayerView alloc] initWithTitle:videoArray[videoPlayIndex] filePath:videoArray[videoPlayIndex]];
         appDelegate.tabBarJYWPlayerView.jywPlayerViewConfig.superView=self.playerView;
@@ -96,9 +96,11 @@
     else{
         appDelegate.tabBarJYWPlayerView.jywPlayerViewConfig.superVC=self;
         appDelegate.tabBarJYWPlayerView.jywPlayerViewConfig.superView=self.playerView;
+        [self.playerView addSubview:appDelegate.tabBarJYWPlayerView];
         [appDelegate.tabBarJYWPlayerView JYW_ReplaceVideoWithTitleStr:videoArray[videoPlayIndex] VideoFilePath:videoArray[videoPlayIndex]];
+        [appDelegate.tabBarJYWPlayerView initPlayerViewConstraint];
     }
-    [self.playerView addSubview:appDelegate.tabBarJYWPlayerView];
+    
     [appDelegate.tabBarJYWPlayerView JYW_Play];
     [self.videoTableView selectRowAtIndexPath:[NSIndexPath indexPathForItem:videoPlayIndex inSection:0] animated:YES scrollPosition:UITableViewScrollPositionNone];
 }

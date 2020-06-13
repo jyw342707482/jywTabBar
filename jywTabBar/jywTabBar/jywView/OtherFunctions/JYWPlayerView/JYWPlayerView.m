@@ -116,7 +116,7 @@ https://www.jianshu.com/p/f22c5d6d80af
 #pragma mark -重写updateConstraints
 - (void)updateConstraints NS_AVAILABLE_IOS(6_0) NS_REQUIRES_SUPER{
     [super updateConstraints];
-    [self avPlayerViewConstraint];
+    [self initPlayerViewConstraint];
     [self initToobarViewConstraint];
 }
 //注销KVO监听
@@ -289,14 +289,41 @@ https://www.jianshu.com/p/f22c5d6d80af
     else if ([keyPath isEqualToString:@"loadedTimeRanges"]) {  //监听播放器的下载进度
         
         NSArray *loadedTimeRanges = [self.avPlayerItem loadedTimeRanges];
-        CMTimeRange timeRange = [loadedTimeRanges.firstObject CMTimeRangeValue];// 获取缓冲区域
+        // 获取缓冲区域
+        CMTimeRange timeRange = [loadedTimeRanges.firstObject CMTimeRangeValue];
         float startSeconds = CMTimeGetSeconds(timeRange.start);
         float durationSeconds = CMTimeGetSeconds(timeRange.duration);
-        NSTimeInterval timeInterval = startSeconds + durationSeconds;// 计算缓冲总进度
+        // 计算缓冲总进度
+        NSTimeInterval timeInterval = startSeconds + durationSeconds;
         CMTime duration = self.avPlayerItem.duration;
         CGFloat totalDuration = CMTimeGetSeconds(duration);
         self.jywPlayerToobarView.playProgressView.progress= timeInterval / totalDuration;
         NSLog(@"下载进度：%.2f   %f  %f", timeInterval / totalDuration,timeInterval,totalDuration);
+        /*
+        //加载总进度，是否大于当前播放时间+5
+        if(timeInterval>self.avPlayer.currentTime.value/self.avPlayer.currentTime.timescale+5){
+            NSLog(@"缓冲时长大于播放时长");
+            if(nowPlaying==NO){//当前是在暂停播放
+                [self JYW_Play];
+                NSLog(@"播放111");
+            }
+        }
+        else{
+            NSLog(@"缓冲时长小于播放时长");
+        }*/
+        //return self.avPlayerItem.value / self.avPlayerItem.timescale;
+        /*
+        if (timeInterval > self.getCurrentPlayingTime+5){ // 缓存 大于 播放 当前时长+5
+
+            if ([self.status_playType  isEqual: @"等待播放"]) { // 接着之前 播放时长 继续播放
+                [self.player play];
+                self.status_playType = @"正在播放";
+            }
+        }else{
+            self.status_playType = @"等待播放"; // 出现问题，等待播放
+            NSLog(@"等待播放，网络出现问题");
+        }
+        */
         /*
         CGFloat timeee = [[NSString stringWithFormat:@"%.3f",timeInterval] floatValue];
         CGFloat totall = [[NSString stringWithFormat:@"%.3f",totalDuration] floatValue];
@@ -356,12 +383,16 @@ https://www.jianshu.com/p/f22c5d6d80af
         
         NSLog(@"缓冲不足暂停了");
         [self JYW_Pause];
-        //[self startAnimation];
+        //开启加载转子，并显示
+        [self.jywPlayerToobarView.animationView startAnimation];
+        self.jywPlayerToobarView.animationView.hidden=NO;
         
     } else if ([keyPath isEqualToString:@"playbackLikelyToKeepUp"]) {
         
         NSLog(@"缓冲达到可播放程度了");
-        //[self stopAnimation];
+        //暂停加载转子，并隐藏
+        [self.jywPlayerToobarView.animationView stopAnimation];
+        self.jywPlayerToobarView.animationView.hidden=YES;
         [self JYW_Play];
         
     }
@@ -499,7 +530,7 @@ https://www.jianshu.com/p/f22c5d6d80af
     [self.jywPlayerViewConfig.superVC presentViewController:self.jywPlayerViewConfig.fullScreenVC animated:YES completion:nil];
     self.jywPlayerToobarView.backButton.hidden=NO;
     if(layouType==ConstraintType){
-        [self avPlayerViewConstraint];
+        [self initPlayerViewConstraint];
     }
     else{
         self.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
@@ -534,7 +565,7 @@ https://www.jianshu.com/p/f22c5d6d80af
     }
     else
     {
-        [self avPlayerViewConstraint];
+        [self initPlayerViewConstraint];
     }
     
 }
@@ -588,7 +619,7 @@ https://www.jianshu.com/p/f22c5d6d80af
 }
 #pragma mark -约束
 //设置当前播放器窗口的Constraint
--(void)avPlayerViewConstraint{
+-(void)initPlayerViewConstraint{
     //设置当前播放窗口
     //设置左停靠
     [self.superview addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.superview attribute:NSLayoutAttributeLeading multiplier:1.0f constant:0.0f]];

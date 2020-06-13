@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JYWAnimationView.h"
 NS_ASSUME_NONNULL_BEGIN
 //委托代理
 @protocol JYWPlayerToobarView_Delegate <NSObject>
@@ -41,6 +42,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) IBOutlet UIProgressView *playProgressView;//缓冲进度条
 @property(nonatomic) IBOutlet UILabel *playTimeLabel;//播放总时间
 @property(nonatomic) IBOutlet UILabel *playTimeNowLabel;//当前播放时长
+
+@property(nonatomic) IBOutlet JYWAnimationView *animationView;//加载等待动画
 
 @property(nonatomic) NSString *title;//标题
 @property(nonatomic) NSString *playTime;//总播放时长

@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import "JYW_AVPlayerToobarView.h"
 #import "JYW_PlayerFullScreenViewController.h"
 #import "JYWPlayerToobarView.h"
 NS_ASSUME_NONNULL_BEGIN
@@ -110,6 +109,8 @@ typedef NS_ENUM(NSInteger, LayoutType) {
 -(void)JYW_Dealloc;
 //注销KVO监听
 -(void)JYW_DeallocKVO;
+//添加约束，
+-(void)initPlayerViewConstraint;
 @end
 
 NS_ASSUME_NONNULL_END

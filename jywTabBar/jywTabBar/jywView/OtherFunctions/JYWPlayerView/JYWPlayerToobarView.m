@@ -46,7 +46,7 @@
     //暂停时的播放大图标
     [self addSubview:self.toobarPlayButton];
     //等待
-    //[self addSubview:self.jyw_AnimationView];
+    [self addSubview:self.animationView];
     
     UITapGestureRecognizer *toobarView_Tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(toobarView_Tap:)];
     [toobarView_Tap setNumberOfTouchesRequired:1];
@@ -291,6 +291,16 @@
     }
     return _playProgressView;
 }
+//加载等待
+-(JYWAnimationView*)animationView{
+    if(_animationView==nil){
+        _animationView=[[JYWAnimationView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+        _animationView.translatesAutoresizingMaskIntoConstraints=NO;
+        _animationView.hidden=YES;
+        //[_animationView startAnimation];
+    }
+    return _animationView;
+}
 
 
 #pragma mark -约束
@@ -406,12 +416,15 @@
     //设置水平居中
     [self.toobarView addConstraint:[NSLayoutConstraint constraintWithItem:self.playProgressView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.toobarView attribute:NSLayoutAttributeCenterY multiplier:1.0f constant:0.0f]];
     
-    //jyw_AnimationView
-    /*
+    //animationView
+    
     //水平居中
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.jyw_AnimationView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1.0f constant:0.0f]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.animationView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1.0f constant:0.0f]];
     //垂直居中
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.jyw_AnimationView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1.0f constant:0.0f]];
-     */
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.animationView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1.0f constant:0.0f]];
+     //设置高度
+     [self.animationView addConstraint:[NSLayoutConstraint constraintWithItem:self.animationView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0f constant:40.0f]];
+    //设置高度
+    [self.animationView addConstraint:[NSLayoutConstraint constraintWithItem:self.animationView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0f constant:40.0f]];
 }
 @end

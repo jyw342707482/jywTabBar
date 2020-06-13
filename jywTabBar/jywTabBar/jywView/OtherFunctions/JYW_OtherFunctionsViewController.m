@@ -7,7 +7,6 @@
 //
 
 #import "JYW_OtherFunctionsViewController.h"
-#import "JYW_AVPlayerViewController.h"
 #import "JYW_AVViewController.h"
 @interface JYW_OtherFunctionsViewController ()
 {
@@ -28,7 +27,7 @@
 -(void)pageSettings{
     //设置导航标题
     self.title=@"OtherFunctions";
-    tableDSArray=@[@"视频播放AVPlayer",@"视频播放AVPlayer"];
+    tableDSArray=@[@"自定义AVPlayer播放器"];
     /*
     //添加导航右侧按钮，按钮类型为系统加号
     UIBarButtonItem *rightBarButton=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(tbViewAddRow:)];
@@ -104,12 +103,11 @@
 {
     if(indexPath.row==0)
     {
-        JYW_AVPlayerViewController *avPlayerView=[[JYW_AVPlayerViewController alloc] init];
-        [self.navigationController pushViewController:avPlayerView animated:YES];
-    }
-    else {
         JYW_AVViewController *avPlayerView1=[[JYW_AVViewController alloc] init];
         [self.navigationController pushViewController:avPlayerView1 animated:YES];
+    }
+    else {
+        
     }
 }
 
