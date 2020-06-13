@@ -1,8 +1,8 @@
 //
-//  JYW_AVPlayerViewController.h
+//  JYW_PlayerFullScreenViewController.h
 //  jywTabBar
 //
-//  Created by 姜益伟 on 2020/6/5.
+//  Created by 姜益伟 on 2020/6/11.
 //  Copyright © 2020 姜益伟. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JYW_AVPlayerViewController : UIViewController
+@interface JYW_PlayerFullScreenViewController : UIViewController
 
 @end
 

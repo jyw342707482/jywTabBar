@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "JYWPlayerView.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+@property(nonatomic,strong) JYWPlayerView *tabBarJYWPlayerView;
 @property (nonatomic,strong)UIWindow *window;
 @end
 
