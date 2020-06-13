@@ -115,9 +115,9 @@ https://www.jianshu.com/p/f22c5d6d80af
 }
 #pragma mark -重写updateConstraints
 - (void)updateConstraints NS_AVAILABLE_IOS(6_0) NS_REQUIRES_SUPER{
-    [super updateConstraints];
     [self initPlayerViewConstraint];
     [self initToobarViewConstraint];
+    [super updateConstraints];
 }
 //注销KVO监听
 -(void)JYW_DeallocKVO{
@@ -492,6 +492,8 @@ https://www.jianshu.com/p/f22c5d6d80af
 //开始播放
 -(void)JYW_Play{
     [self.avPlayer play];
+    //播放的同时，回复缓冲
+    self.avPlayerItem.canUseNetworkResourcesForLiveStreamingWhilePaused=YES;
     [self.jywPlayerToobarView.startAndEndPlayButton setSelected:YES];
     [self.jywPlayerToobarView.toobarPlayButton setSelected:YES];
     //是否正在播放no暂停，yes播放
@@ -500,6 +502,8 @@ https://www.jianshu.com/p/f22c5d6d80af
 //暂停播放
 -(void)JYW_Pause{
     [self.avPlayer pause];
+    //暂停的同时，暂停缓冲
+    self.avPlayerItem.canUseNetworkResourcesForLiveStreamingWhilePaused=NO;
     [self.jywPlayerToobarView.startAndEndPlayButton setSelected:NO];
     [self.jywPlayerToobarView.toobarPlayButton setSelected:NO];
     nowPlaying=NO;

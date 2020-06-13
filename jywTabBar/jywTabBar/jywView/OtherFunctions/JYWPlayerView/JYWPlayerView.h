@@ -111,6 +111,7 @@ typedef NS_ENUM(NSInteger, LayoutType) {
 -(void)JYW_DeallocKVO;
 //添加约束，
 -(void)initPlayerViewConstraint;
+-(void)initToobarViewConstraint;
 @end
 
 NS_ASSUME_NONNULL_END

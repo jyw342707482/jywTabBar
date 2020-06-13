@@ -47,6 +47,8 @@
 		6942AEE82491E7DC00C5E570 /* JYW_PlayerFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942AEE72491E7DC00C5E570 /* JYW_PlayerFullScreenViewController.m */; };
 		6942AEEB2491EFA100C5E570 /* JYWPlayerToobarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942AEEA2491EFA100C5E570 /* JYWPlayerToobarView.m */; };
 		6942AEEE24946E3B00C5E570 /* JYWAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942AEED24946E3B00C5E570 /* JYWAnimationView.m */; };
+		6942AEF224948A4B00C5E570 /* JYW_AVListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942AEF024948A4B00C5E570 /* JYW_AVListViewController.m */; };
+		6942AEF324948A4B00C5E570 /* JYW_AVListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6942AEF124948A4B00C5E570 /* JYW_AVListViewController.xib */; };
 		69452FE4248B526600EB0361 /* NSString+JYW_StringWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = 69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */; };
 		69452FEB248DC9E000EB0361 /* JYW_NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69452FEA248DC9E000EB0361 /* JYW_NavigationViewController.m */; };
 		69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311A6247D35D70006EEB2 /* AppDelegate.m */; };
@@ -155,6 +157,9 @@
 		6942AEEA2491EFA100C5E570 /* JYWPlayerToobarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWPlayerToobarView.m; sourceTree = "<group>"; };
 		6942AEEC24946E3B00C5E570 /* JYWAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWAnimationView.h; sourceTree = "<group>"; };
 		6942AEED24946E3B00C5E570 /* JYWAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWAnimationView.m; sourceTree = "<group>"; };
+		6942AEEF24948A4B00C5E570 /* JYW_AVListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AVListViewController.h; sourceTree = "<group>"; };
+		6942AEF024948A4B00C5E570 /* JYW_AVListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AVListViewController.m; sourceTree = "<group>"; };
+		6942AEF124948A4B00C5E570 /* JYW_AVListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_AVListViewController.xib; sourceTree = "<group>"; };
 		69452FE2248B526600EB0361 /* NSString+JYW_StringWidth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYW_StringWidth.h"; sourceTree = "<group>"; };
 		69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JYW_StringWidth.m"; sourceTree = "<group>"; };
 		69452FE9248DC9E000EB0361 /* JYW_NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_NavigationViewController.h; sourceTree = "<group>"; };
@@ -269,6 +274,9 @@
 				6942AEDA2491AE2600C5E570 /* JYW_AVViewController.h */,
 				6942AEDB2491AE2600C5E570 /* JYW_AVViewController.m */,
 				6942AEDC2491AE2600C5E570 /* JYW_AVViewController.xib */,
+				6942AEEF24948A4B00C5E570 /* JYW_AVListViewController.h */,
+				6942AEF024948A4B00C5E570 /* JYW_AVListViewController.m */,
+				6942AEF124948A4B00C5E570 /* JYW_AVListViewController.xib */,
 			);
 			path = OtherFunctions;
 			sourceTree = "<group>";
@@ -625,6 +633,7 @@
 				693F64082489FAD60034AA2B /* video3.mp4 in Resources */,
 				693F63EE24879F5F0034AA2B /* video1.mp4 in Resources */,
 				69D311B5247D35D80006EEB2 /* LaunchScreen.storyboard in Resources */,
+				6942AEF324948A4B00C5E570 /* JYW_AVListViewController.xib in Resources */,
 				693F63C92484B84D0034AA2B /* JYW_AddressBookViewController.xib in Resources */,
 				693F63E624875D920034AA2B /* ProductList.plist in Resources */,
 				69D311B2247D35D80006EEB2 /* Assets.xcassets in Resources */,
@@ -775,6 +784,7 @@
 				6942AEEB2491EFA100C5E570 /* JYWPlayerToobarView.m in Sources */,
 				69452FEB248DC9E000EB0361 /* JYW_NavigationViewController.m in Sources */,
 				69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */,
+				6942AEF224948A4B00C5E570 /* JYW_AVListViewController.m in Sources */,
 				6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */,
 				693F63EC2487627C0034AA2B /* JYW_ProductListViewModel.m in Sources */,
 				693F63D12484BD070034AA2B /* JYW_AddressBookModel.m in Sources */,

@@ -62,11 +62,12 @@
 }
 #pragma mark -重写updateConstraints
 - (void)updateConstraints NS_AVAILABLE_IOS(6_0) NS_REQUIRES_SUPER{
-    [super updateConstraints];
+    
     ///设置titleView
     [self setTitleView];
     ///设置toobarView
     [self setToobarView];
+    [super updateConstraints];
 }
 
 
