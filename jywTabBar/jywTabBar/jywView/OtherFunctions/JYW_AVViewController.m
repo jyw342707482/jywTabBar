@@ -44,8 +44,8 @@
     self.navigationItem.leftBarButtonItem=leftBarButton1;
     
     videoArray=@[@"video1",@"video2",@"video3"];
-    [self createPlayerFrame];
-    //[self createPlayerConstraint];
+    //[self createPlayerFrame];
+    [self createPlayerConstraint];
     /*
     if(appDelegate.tabBarJYWPlayerView==nil){
         [self createPlayer];

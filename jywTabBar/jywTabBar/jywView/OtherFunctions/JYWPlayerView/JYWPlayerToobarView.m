@@ -51,6 +51,8 @@
     UITapGestureRecognizer *toobarView_Tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(toobarView_Tap:)];
     [toobarView_Tap setNumberOfTouchesRequired:1];
     [self addGestureRecognizer:toobarView_Tap];
+    
+    //[self initGestureRecognizer];
 }
 #pragma mark -重置新视频video
 //重置视频播放数据
@@ -154,7 +156,6 @@
         [_toobarPlayButton setImage:[UIImage imageNamed:@"pauseBtn"] forState:UIControlStateSelected];
         _toobarPlayButton.translatesAutoresizingMaskIntoConstraints=NO;
         [_toobarPlayButton addTarget:self action:@selector(startAndEndPlayButtonAction_Click:) forControlEvents:UIControlEventTouchUpInside];
-        _toobarPlayButton.translatesAutoresizingMaskIntoConstraints=NO;
     }
     return _toobarPlayButton;
 }

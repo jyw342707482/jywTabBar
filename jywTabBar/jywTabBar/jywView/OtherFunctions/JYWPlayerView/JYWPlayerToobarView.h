@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 //播放器滑块抬起事件
 -(void)JYWPlayerToobarView_PlaySlider_TouchUp;
 @end
-@interface JYWPlayerToobarView : UIView
+@interface JYWPlayerToobarView : UIView<UIGestureRecognizerDelegate>
 @property(nonatomic) IBOutlet UIButton *toobarPlayButton;//暂停时的播放/暂停大图标
 @property(nonatomic) IBOutlet UIView *titleView;//标题
 @property(nonatomic) IBOutlet UILabel *titleLabel;//标题
@@ -42,6 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) IBOutlet UIProgressView *playProgressView;//缓冲进度条
 @property(nonatomic) IBOutlet UILabel *playTimeLabel;//播放总时间
 @property(nonatomic) IBOutlet UILabel *playTimeNowLabel;//当前播放时长
+
 
 @property(nonatomic) IBOutlet JYWAnimationView *animationView;//加载等待动画
 

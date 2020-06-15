@@ -22,7 +22,12 @@ typedef NS_ENUM(NSInteger, LayoutType) {
     ConstraintType = 0,//约束
     FrameType = 1//cgRect
 };
+typedef NS_ENUM(NSInteger, PanDirection){
+    PanDirectionHorizontalMoved = 0,//横向
+    PanDirectionVerticalMoved = 1//纵向
+};//手势方向
 @interface JYWPlayerViewConfig : NSObject
+
 //自动播放
 //工具条自动隐藏时长,默认5秒
 @property (nonatomic) int toobarHiddenTime;
@@ -62,12 +67,18 @@ typedef NS_ENUM(NSInteger, LayoutType) {
 @end
 
 
-@interface JYWPlayerView : UIView<JYWPlayerToobarView_Delegate>
+@interface JYWPlayerView : UIView<JYWPlayerToobarView_Delegate,UIGestureRecognizerDelegate>
 {
     //全屏，还是窗口
     FullScreenOrWindowType fullScreenOrWindow;
     //布局方式,视用约束，还是用固定大小
     LayoutType layouType;
+    //手势移动方向
+    PanDirection panDirection;
+    //保存快进总时长
+    CGFloat sumTime;
+    //是否是音量调节，Yes音量调节，No亮度调节
+    BOOL isVolume;
     //是否正在播放no暂停，yes播放
     BOOL nowPlaying;
     //工具栏隐藏时间控件
@@ -75,6 +86,8 @@ typedef NS_ENUM(NSInteger, LayoutType) {
     id playerObserve;
     //窗口frame;
     CGRect windowFrame;
+    //音量调节空间
+    UISlider *volumeSlider;
     
 }
 //工具条自动隐藏时长
@@ -91,6 +104,8 @@ typedef NS_ENUM(NSInteger, LayoutType) {
 @property (nonatomic) AVPlayerItem *avPlayerItem;
 @property (nonatomic) AVPlayerLayer *avPlayerLayer;
 @property (nonatomic) JYWPlayerToobarView *jywPlayerToobarView;
+@property (nonatomic) UIProgressView *avPlayerVolumeProgressView;//播放器音量控制
+@property (nonatomic) UIProgressView *avPlayerBrightnessProgressView;//播放器亮度控制
 
 -(instancetype)initWithFrame:(CGRect)frame Config:(JYWPlayerViewConfig*)config;
 -(instancetype)initWithConfig:(JYWPlayerViewConfig*)config;
@@ -112,6 +127,7 @@ typedef NS_ENUM(NSInteger, LayoutType) {
 //添加约束，
 -(void)initPlayerViewConstraint;
 -(void)initToobarViewConstraint;
+-(void)initVolumeAndBrightnessProgressViewConstratint;
 @end
 
 NS_ASSUME_NONNULL_END

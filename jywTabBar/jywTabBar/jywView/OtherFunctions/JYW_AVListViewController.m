@@ -111,8 +111,8 @@ static NSString *tableViewCellIdentifier = @"tableViewCellIdentifier";
 -(IBAction)videoImage_Tap:(UITapGestureRecognizer*)sender{
     videoPlayIndex=sender.view.tag;
     NSLog(@"%f-%f",sender.view.superview.frame.size.width,sender.view.superview.frame.size.height);
-    //[self createPlayerConstraintWithSuperView:sender.view];
-    [self createPlayerFrame:sender.view.frame superView:sender.view];
+    [self createPlayerConstraintWithSuperView:sender.view];
+    //[self createPlayerFrame:sender.view.frame superView:sender.view];
 }
 #pragma mark -创建播放器
 -(void)createPlayerFrame:(CGRect)frame superView:(UIView*)superView{
@@ -126,6 +126,7 @@ static NSString *tableViewCellIdentifier = @"tableViewCellIdentifier";
         appDelegate.tabBarJYWPlayerView.backgroundColor=[UIColor blackColor];
         [superView addSubview:appDelegate.tabBarJYWPlayerView];
         [appDelegate.tabBarJYWPlayerView initToobarViewConstraint];
+        //[appDelegate.tabBarJYWPlayerView initVolumeAndBrightnessProgressViewConstratint];
     }
     else{
         appDelegate.tabBarJYWPlayerView.jywPlayerViewConfig.superVC=self;

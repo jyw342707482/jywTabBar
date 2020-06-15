@@ -7,6 +7,7 @@
 //
 
 #import "JYWPlayerView.h"
+#import <MediaPlayer/MPVolumeView.h>
 @implementation JYWPlayerViewConfig
 //设置默认值
 +(instancetype)defaultConfig{
@@ -117,6 +118,7 @@ https://www.jianshu.com/p/f22c5d6d80af
 - (void)updateConstraints NS_AVAILABLE_IOS(6_0) NS_REQUIRES_SUPER{
     [self initPlayerViewConstraint];
     [self initToobarViewConstraint];
+    [self initVolumeAndBrightnessProgressViewConstratint];
     [super updateConstraints];
 }
 //注销KVO监听
@@ -161,7 +163,11 @@ https://www.jianshu.com/p/f22c5d6d80af
         windowFrame=frame;
         [self initAVPlayerFrame:frame];
         [self initToobarView];
+        [self initVolumeAndBrightnessProgressView];
+        //[self configVolume];
         [self initNotificationAndKVO];
+        [self initGestureRecognizer];
+        
     }
     return self;
 }
@@ -174,7 +180,10 @@ https://www.jianshu.com/p/f22c5d6d80af
         self.translatesAutoresizingMaskIntoConstraints=NO;
         [self initAVPlayerConstraint];
         [self initToobarView];
+        [self initVolumeAndBrightnessProgressView];
+        //[self configVolume];
         [self initNotificationAndKVO];
+        [self initGestureRecognizer];
     }
     return self;
 }
@@ -493,7 +502,7 @@ https://www.jianshu.com/p/f22c5d6d80af
 -(void)JYW_Play{
     [self.avPlayer play];
     //播放的同时，回复缓冲
-    self.avPlayerItem.canUseNetworkResourcesForLiveStreamingWhilePaused=YES;
+    //self.avPlayerItem.canUseNetworkResourcesForLiveStreamingWhilePaused=YES;
     [self.jywPlayerToobarView.startAndEndPlayButton setSelected:YES];
     [self.jywPlayerToobarView.toobarPlayButton setSelected:YES];
     //是否正在播放no暂停，yes播放
@@ -503,7 +512,7 @@ https://www.jianshu.com/p/f22c5d6d80af
 -(void)JYW_Pause{
     [self.avPlayer pause];
     //暂停的同时，暂停缓冲
-    self.avPlayerItem.canUseNetworkResourcesForLiveStreamingWhilePaused=NO;
+    //self.avPlayerItem.canUseNetworkResourcesForLiveStreamingWhilePaused=NO;
     [self.jywPlayerToobarView.startAndEndPlayButton setSelected:NO];
     [self.jywPlayerToobarView.toobarPlayButton setSelected:NO];
     nowPlaying=NO;
@@ -621,6 +630,149 @@ https://www.jianshu.com/p/f22c5d6d80af
         [self toobarHidden];
     }
 }
+#pragma mark -添加手势
+-(void)initGestureRecognizer{
+    //添加平移手势，负责音量和亮度的调整
+    UIPanGestureRecognizer* panGes = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGes:)];
+    //识别手势最大手指数
+    panGes.maximumNumberOfTouches=2;
+    //识别手最小手指数
+    panGes.minimumNumberOfTouches=1;
+    panGes.delegate=self;
+    [self addGestureRecognizer:panGes];
+}
+-(void)panGes:(UIPanGestureRecognizer*)ges{
+    // 获取平移的坐标点
+    CGPoint transPoint =  [ges translationInView:self];
+    //NSLog(@"x:%f,y:%f",transPoint.x,transPoint.y);
+    //根据在view上Pan的位置，确定是调音量还是亮度
+    CGPoint locationPoint = [ges locationInView:self];
+    // 我们要响应水平移动和垂直移动
+    // 根据上次和本次移动的位置，算出一个速率的point
+    CGPoint veloctyPoint  = [ges velocityInView:self];
+    // 判断是垂直移动还是水平移动
+    switch (ges.state) {
+        case UIGestureRecognizerStateBegan:{ // 开始移动
+            // 使用绝对值来判断移动的方向
+            CGFloat x = fabs(veloctyPoint.x);
+            CGFloat y = fabs(veloctyPoint.y);
+            if (x > y) { // 水平移动
+                [self JYW_Pause];
+                panDirection=PanDirectionHorizontalMoved;
+                NSLog(@"水平移动");
+                // 给sumTime初值
+                CMTime time = self.avPlayer.currentTime;
+                sumTime = time.value/time.timescale;
+                //NSLog(@"sumTime=%f,timeValue=%f,timescale=%f",sumTime,time.value,time.timescale);
+            }
+            else if (x < y){ // 垂直移动
+                panDirection=PanDirectionVerticalMoved;
+                NSLog(@"垂直移动");
+                // 开始滑动的时候,状态改为正在控制音量
+                NSLog(@"isVolume=%f,width:%f,locationPointX=%f",self.bounds.size.width / 2,self.bounds.size.width,locationPoint.x);
+                if (locationPoint.x > self.bounds.size.width / 2) {
+                    isVolume = YES;
+                    self.avPlayerVolumeProgressView.hidden=NO;
+                }else { // 状态改为显示亮度调节
+                    isVolume = NO;
+                    self.avPlayerBrightnessProgressView.hidden=NO;
+                }
+                
+            }
+            break;
+        }
+        case UIGestureRecognizerStateChanged:{ // 正在移动
+            switch (panDirection) {
+                case PanDirectionHorizontalMoved://横向移动
+                    NSLog(@"x:%f",veloctyPoint.x);
+                    CGFloat value=veloctyPoint.x;
+                    // 每次滑动需要叠加时间
+                    sumTime = sumTime+value/200.0;
+                    // 需要限定sumTime的范围
+                    CMTime totalTime= self.avPlayerItem.duration;
+                    CGFloat totalMovieDuration = (CGFloat)totalTime.value/totalTime.timescale;
+                    if (sumTime > totalMovieDuration){
+                        sumTime = totalMovieDuration;
+                    }
+                    if (sumTime < 0) {
+                        sumTime = 0;
+                    }
+                    //self.isDragged             = YES;
+                    //计算出拖动的当前秒数
+                    CGFloat dragedSeconds = sumTime;
+                    //滑杆进度
+                    CGFloat sliderValue = dragedSeconds/totalMovieDuration;
+                    NSLog(@"sliderValue=%f",sliderValue);
+                    [self JYWPlayerToobarView_ChangePlayProgress:sliderValue];
+                    //设置滑杆
+                    self.jywPlayerToobarView.playSlider.value = sliderValue;
+                    /*
+                    //转换成CMTime才能给player来控制播放进度
+                    CMTime dragedCMTime        = CMTimeMake(dragedSeconds, 1);
+                    [_player seekToTime:dragedCMTime toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero];
+                    NSInteger proMin                    = (NSInteger)CMTimeGetSeconds(dragedCMTime) / 60;//当前秒
+                    NSInteger proSec                    = (NSInteger)CMTimeGetSeconds(dragedCMTime) % 60;//当前分钟
+                    self.maskView.currentTimeLabel.text = [NSString stringWithFormat:@"%02ld:%02ld", (long)proMin, (long)proSec];
+                     */
+                    break;
+                case PanDirectionVerticalMoved://纵向移动
+                    if(isVolume){
+                        self.avPlayerVolumeProgressView.progress-=veloctyPoint.y/10000.0f;
+                        self.avPlayer.volume=self.avPlayerVolumeProgressView.progress;
+                    }
+                    else {
+                        [UIScreen mainScreen].brightness-=veloctyPoint.y/10000.0f;
+                    }
+                    break;
+                default:
+                    break;
+            }
+            break;
+        }
+        case UIGestureRecognizerStateEnded:{ // 移动停止
+            switch (panDirection) {
+                case PanDirectionHorizontalMoved://横向移动
+                    sumTime=0;
+                    [self JYW_Play];
+                    break;
+                case PanDirectionVerticalMoved://纵向移动
+                    if(isVolume)
+                    {
+                        self.avPlayerVolumeProgressView.hidden=YES;
+                    }
+                    else
+                    {
+                        self.avPlayerBrightnessProgressView.hidden=YES;
+                    }
+                    isVolume=NO;
+                    break;
+                default:
+                    break;
+            }
+            break;
+        }
+        default:
+            break;
+    }
+}
+#pragma mark -获取系统音量和亮度
+
+-(void)initVolumeAndBrightnessProgressView{
+    //添加音量控制
+    self.avPlayerVolumeProgressView=[[UIProgressView alloc] init];
+    self.avPlayerVolumeProgressView.progress=self.avPlayer.volume;
+    self.avPlayerVolumeProgressView.translatesAutoresizingMaskIntoConstraints=NO;
+    self.avPlayerVolumeProgressView.transform=CGAffineTransformMakeRotation(-M_PI_2);
+    self.avPlayerVolumeProgressView.hidden=YES;
+    [self addSubview:self.avPlayerVolumeProgressView];
+    ///添加亮度控制
+    self.avPlayerBrightnessProgressView=[[UIProgressView alloc] init];
+    self.avPlayerBrightnessProgressView.progress=[UIScreen mainScreen].brightness;
+    self.avPlayerBrightnessProgressView.translatesAutoresizingMaskIntoConstraints=NO;
+    self.avPlayerBrightnessProgressView.transform=CGAffineTransformMakeRotation(-M_PI_2);
+    self.avPlayerBrightnessProgressView.hidden=YES;
+    [self addSubview:self.avPlayerBrightnessProgressView];
+}
 #pragma mark -约束
 //设置当前播放器窗口的Constraint
 -(void)initPlayerViewConstraint{
@@ -645,5 +797,27 @@ https://www.jianshu.com/p/f22c5d6d80af
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.jywPlayerToobarView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.jywPlayerToobarView.superview attribute:NSLayoutAttributeBottom multiplier:1.0f constant:0.0f]];
     //设置上停靠
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.jywPlayerToobarView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.jywPlayerToobarView.superview attribute:NSLayoutAttributeTop multiplier:1.0f constant:0.0f]];
+}
+//设置volumeSlider的约束
+-(void)initVolumeAndBrightnessProgressViewConstratint{
+    //volume
+    //设置左停靠
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.avPlayerVolumeProgressView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.avPlayerVolumeProgressView.superview attribute:NSLayoutAttributeLeading multiplier:1.0f constant:0.0f]];
+    //设置宽
+    [self.avPlayerVolumeProgressView addConstraint:[NSLayoutConstraint constraintWithItem:self.avPlayerVolumeProgressView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0f constant:100.0f]];
+    //设置高
+    [self.avPlayerVolumeProgressView addConstraint:[NSLayoutConstraint constraintWithItem:self.avPlayerVolumeProgressView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0f constant:5.0f]];
+    //设置Y轴居中
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.avPlayerVolumeProgressView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.avPlayerVolumeProgressView.superview attribute:NSLayoutAttributeCenterY multiplier:1.0f constant:0.0f]];
+    
+    //Brightness
+    //设置右停靠
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.avPlayerBrightnessProgressView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.avPlayerBrightnessProgressView.superview attribute:NSLayoutAttributeTrailing multiplier:1.0f constant:0.0f]];
+    //设置宽
+    [self.avPlayerBrightnessProgressView addConstraint:[NSLayoutConstraint constraintWithItem:self.avPlayerBrightnessProgressView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0f constant:100.0f]];
+    //设置高
+    [self.avPlayerBrightnessProgressView addConstraint:[NSLayoutConstraint constraintWithItem:self.avPlayerBrightnessProgressView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0f constant:5.0f]];
+    //设置Y轴居中
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.avPlayerBrightnessProgressView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.avPlayerBrightnessProgressView.superview attribute:NSLayoutAttributeCenterY multiplier:1.0f constant:0.0f]];
 }
 @end
