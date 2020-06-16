@@ -17,7 +17,8 @@
     NSString *ContactPersonCount;
 }
 @end
-
+static NSString *AddressBookCellIdentifier = @"AddressBookCellIdentifier";
+static NSString *LetterCellIdentifier = @"CellTableIdentifier";
 @implementation JYW_AddressBookViewController
 
 - (void)viewDidLoad {
@@ -78,18 +79,31 @@
 //返回节头部视图
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    JYW_AddressBookGroupModel *jywABGM=addressBookArray[section];
-    UIView *headerView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 40)];
-    headerView.backgroundColor=[UIColor grayColor];
-    UILabel *titleLabel=[[UILabel alloc] initWithFrame:CGRectMake(16, 0, 30, 40)];
-    titleLabel.text=jywABGM.groupStr;
-    titleLabel.font=[UIFont systemFontOfSize:14];
-    [headerView addSubview:titleLabel];
-    return headerView;
+    if(tableView==addressBookTableView){
+        JYW_AddressBookGroupModel *jywABGM=addressBookArray[section];
+        UIView *headerView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 40)];
+        //headerView.backgroundColor=[UIColor grayColor];
+        UILabel *titleLabel=[[UILabel alloc] initWithFrame:CGRectMake(16, 0, 30, 40)];
+        titleLabel.text=jywABGM.groupStr;
+        titleLabel.font=[UIFont systemFontOfSize:14];
+        [headerView addSubview:titleLabel];
+        return headerView;
+    }
+    else{
+        UIView *headerView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, CGFLOAT_MIN)];
+        return headerView;
+    }
+        
 }
 //返回节头部视图高度
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 40;
+    if(tableView==addressBookTableView){
+        return 40;
+    }
+    else{
+        return CGFLOAT_MIN;
+    }
+    
 }
 //返回节尾部视图
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
@@ -133,59 +147,115 @@
 //返回列表节数量
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return addressBookArray.count;
+    if(tableView==addressBookTableView){
+        return addressBookArray.count;
+    }
+    else{
+        return 1;
+    }
 }
 //返回每节的行数量
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    JYW_AddressBookGroupModel *jywABGM=addressBookArray[section];
-    return jywABGM.addressBookModelArray.count;
+    if(tableView==addressBookTableView){
+        JYW_AddressBookGroupModel *jywABGM=addressBookArray[section];
+        return jywABGM.addressBookModelArray.count;
+    }
+    else{
+        return labelGroupArray.count;
+    }
 }
 //返回每行高度
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
-    return 50;
+    if(tableView==addressBookTableView){
+        return 50;
+    }
+    else{
+        return 20;
+    }
 }
 //返回每行的视图
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellTableIndentifier = @"CellTableIdentifier";
-    //单元格ID
-    //重用单元格
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellTableIndentifier];
-    //初始化单元格
-    if(cell == nil)
+    if(tableView==addressBookTableView)
     {
-        /*
-         UITableViewCellStyle:
-         UITableViewCellStyleDefault
-         具有文本标签（黑色和左对齐）和可选图像视图的单元格的简单样式。
-         UITableViewCellStyleValue1
-         单元格的样式，在单元格的左侧带有标签，带有左对齐和黑色文本； 右侧是带有较小蓝色文本并且右对齐的标签。 设置应用程序使用此样式的单元格。
-         UITableViewCellStyleValue2
-         单元格的样式，该单元格的左侧具有标签，标签的文本右对齐且为蓝色； 单元格右侧的另一个标签是较小的文本，该文本左对齐并且为黑色。 “电话/联系人”应用程序使用此样式的单元格。
-         UITableViewCellStyleSubtitle
-         单元格的样式，该单元格的顶部带有左对齐标签，而其下方则是带有较小灰色文本的左对齐标签。
-         */
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellTableIndentifier];
-        //自带有两种基础的tableView样式，UITableViewCellStyleValue1、2. 后面的文章会讲解自定义样式
-        /*
-         accessoryType:
-         UITableViewCellAccessoryNone、
-         UITableViewCellAccessoryDisclosureIndicator、
-         UITableViewCellAccessoryDetailDisclosureButton、
-         UITableViewCellAccessoryCheckmark、
-         UITableViewCellAccessoryDetailButton、
-         */
-        cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+        //重用单元格
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:AddressBookCellIdentifier];
+        //初始化单元格
+        if(cell == nil)
+        {
+            /*
+             UITableViewCellStyle:
+             UITableViewCellStyleDefault
+             具有文本标签（黑色和左对齐）和可选图像视图的单元格的简单样式。
+             UITableViewCellStyleValue1
+             单元格的样式，在单元格的左侧带有标签，带有左对齐和黑色文本； 右侧是带有较小蓝色文本并且右对齐的标签。 设置应用程序使用此样式的单元格。
+             UITableViewCellStyleValue2
+             单元格的样式，该单元格的左侧具有标签，标签的文本右对齐且为蓝色； 单元格右侧的另一个标签是较小的文本，该文本左对齐并且为黑色。 “电话/联系人”应用程序使用此样式的单元格。
+             UITableViewCellStyleSubtitle
+             单元格的样式，该单元格的顶部带有左对齐标签，而其下方则是带有较小灰色文本的左对齐标签。
+             */
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:AddressBookCellIdentifier];
+            //自带有两种基础的tableView样式，UITableViewCellStyleValue1、2. 后面的文章会讲解自定义样式
+            /*
+             accessoryType:
+             UITableViewCellAccessoryNone、
+             UITableViewCellAccessoryDisclosureIndicator、
+             UITableViewCellAccessoryDetailDisclosureButton、
+             UITableViewCellAccessoryCheckmark、
+             UITableViewCellAccessoryDetailButton、
+             */
+            //cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+        }
+        
+        JYW_AddressBookGroupModel *jywABGM=addressBookArray[indexPath.section];
+        JYW_AddressBookModel *jywABM=jywABGM.addressBookModelArray[indexPath.row];
+        UIImage *img = [UIImage imageNamed:jywABM.avatar];
+        cell.imageView.image = img;
+        //添加图片
+        cell.textLabel.text =[NSString stringWithFormat:@"%@(%@)",jywABM.nickname,jywABM.tagStr];
+        
+        
+        return cell;
     }
-    JYW_AddressBookGroupModel *jywABGM=addressBookArray[indexPath.section];
-    JYW_AddressBookModel *jywABM=jywABGM.addressBookModelArray[indexPath.row];
-    UIImage *img = [UIImage imageNamed:jywABM.avatar];
-    cell.imageView.image = img;
-    //添加图片
-    cell.textLabel.text =[NSString stringWithFormat:@"%@(%@)",jywABM.nickname,jywABM.tagStr];
-    
-    
-    return cell;
+    else
+    {
+        //重用单元格
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:LetterCellIdentifier];
+        //初始化单元格
+        if(cell == nil)
+        {
+            /*
+             UITableViewCellStyle:
+             UITableViewCellStyleDefault
+             具有文本标签（黑色和左对齐）和可选图像视图的单元格的简单样式。
+             UITableViewCellStyleValue1
+             单元格的样式，在单元格的左侧带有标签，带有左对齐和黑色文本； 右侧是带有较小蓝色文本并且右对齐的标签。 设置应用程序使用此样式的单元格。
+             UITableViewCellStyleValue2
+             单元格的样式，该单元格的左侧具有标签，标签的文本右对齐且为蓝色； 单元格右侧的另一个标签是较小的文本，该文本左对齐并且为黑色。 “电话/联系人”应用程序使用此样式的单元格。
+             UITableViewCellStyleSubtitle
+             单元格的样式，该单元格的顶部带有左对齐标签，而其下方则是带有较小灰色文本的左对齐标签。
+             */
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:LetterCellIdentifier];
+            //自带有两种基础的tableView样式，UITableViewCellStyleValue1、2. 后面的文章会讲解自定义样式
+            /*
+             accessoryType:
+             UITableViewCellAccessoryNone、
+             UITableViewCellAccessoryDisclosureIndicator、
+             UITableViewCellAccessoryDetailDisclosureButton、
+             UITableViewCellAccessoryCheckmark、
+             UITableViewCellAccessoryDetailButton、
+             */
+            //cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+        }
+        cell.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.0];
+        cell.textLabel.text =[NSString stringWithFormat:@"%@",labelGroupArray[indexPath.row]];
+        cell.textLabel.tag=indexPath.section;
+        cell.textLabel.textAlignment=NSTextAlignmentCenter;
+        cell.textLabel.font=[UIFont systemFontOfSize:12.0f];
+        cell.textLabel.textColor=[UIColor colorWithRed:203.0/255.0 green:203.0/255.0 blue:203.0/255.0 alpha:1.0];
+        //cell.textLabel.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.0];
+        return cell;
+    }
 }
 @end

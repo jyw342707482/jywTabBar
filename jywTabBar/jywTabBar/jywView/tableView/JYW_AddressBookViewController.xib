@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JYW_AddressBookViewController">
             <connections>
                 <outlet property="addressBookTableView" destination="UDD-00-yMQ" id="zJf-Qx-xej"/>
+                <outlet property="letterTableView" destination="cCb-37-9sJ" id="K3E-YB-15T"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="UDD-00-yMQ">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="UDD-00-yMQ" userLabel="addressBookTableView">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <connections>
@@ -27,13 +28,27 @@
                         <outlet property="delegate" destination="-1" id="lTc-9W-fUT"/>
                     </connections>
                 </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-37-9sJ" userLabel="letterTableView">
+                    <rect key="frame" x="374" y="44" width="40" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="plR-2m-75b"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="g1H-5s-MIs"/>
+                        <outlet property="delegate" destination="-1" id="LMf-r1-Emn"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="UDD-00-yMQ" secondAttribute="trailing" id="Hnd-ZF-5nY"/>
+                <constraint firstItem="cCb-37-9sJ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="PFG-eI-PCX"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="UDD-00-yMQ" secondAttribute="bottom" id="VXk-3D-5bx"/>
                 <constraint firstItem="UDD-00-yMQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="WiS-mY-4CV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="cCb-37-9sJ" secondAttribute="trailing" id="j8m-SV-Kw8"/>
                 <constraint firstItem="UDD-00-yMQ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="obK-CP-smT"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="cCb-37-9sJ" secondAttribute="bottom" id="wHW-4o-h61"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="139" y="81"/>

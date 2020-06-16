@@ -52,5 +52,42 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "03197B4F-8D77-4631-AC7F-CB06AB564D44"
+            shouldBeEnabled = "No"
+            nameForDebugger = "toobarPlayButton"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "toobarPlayButton"
+            moduleName = "">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+            <Locations>
+               <Location
+                  uuid = "03197B4F-8D77-4631-AC7F-CB06AB564D44 - 99ba99956a0f5d33"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JYWPlayerToobarView toobarPlayButton]"
+                  moduleName = "jywTabBar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiangyiwei/Desktop/OCTestProject/jywTabBar/jywTabBar/jywTabBar/jywView/OtherFunctions/JYWPlayerView/JYWPlayerToobarView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
