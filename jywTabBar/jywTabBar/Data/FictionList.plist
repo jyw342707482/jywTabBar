@@ -16,7 +16,7 @@
 			<key>playedTime</key>
 			<string>0</string>
 			<key>downloadState</key>
-			<string>0</string>
+			<string>1</string>
 			<key>fId</key>
 			<string>1</string>
 		</dict>
@@ -32,7 +32,7 @@
 			<key>playedTime</key>
 			<string>0</string>
 			<key>downloadState</key>
-			<string>0</string>
+			<string>1</string>
 			<key>fId</key>
 			<string>2</string>
 		</dict>
@@ -48,7 +48,7 @@
 			<key>playedTime</key>
 			<string>0</string>
 			<key>downloadState</key>
-			<string>0</string>
+			<string>2</string>
 			<key>fId</key>
 			<string>3</string>
 		</dict>
@@ -64,7 +64,7 @@
 			<key>playedTime</key>
 			<string>0</string>
 			<key>downloadState</key>
-			<string>0</string>
+			<string>2</string>
 			<key>fId</key>
 			<string>4</string>
 		</dict>
@@ -167,6 +167,198 @@
 		<dict>
 			<key>title</key>
 			<string>第11章</string>
+			<key>fileSize</key>
+			<string>21.32</string>
+			<key>playingTime</key>
+			<string>361</string>
+			<key>playingState</key>
+			<string>0</string>
+			<key>playedTime</key>
+			<string>0</string>
+			<key>downloadState</key>
+			<string>0</string>
+			<key>fId</key>
+			<string>11</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>第12章</string>
+			<key>fileSize</key>
+			<string>21.32</string>
+			<key>playingTime</key>
+			<string>361</string>
+			<key>playingState</key>
+			<string>0</string>
+			<key>playedTime</key>
+			<string>0</string>
+			<key>downloadState</key>
+			<string>0</string>
+			<key>fId</key>
+			<string>11</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>第13章</string>
+			<key>fileSize</key>
+			<string>21.32</string>
+			<key>playingTime</key>
+			<string>361</string>
+			<key>playingState</key>
+			<string>0</string>
+			<key>playedTime</key>
+			<string>0</string>
+			<key>downloadState</key>
+			<string>0</string>
+			<key>fId</key>
+			<string>11</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>第14章</string>
+			<key>fileSize</key>
+			<string>21.32</string>
+			<key>playingTime</key>
+			<string>361</string>
+			<key>playingState</key>
+			<string>0</string>
+			<key>playedTime</key>
+			<string>0</string>
+			<key>downloadState</key>
+			<string>0</string>
+			<key>fId</key>
+			<string>11</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>第15章</string>
+			<key>fileSize</key>
+			<string>21.32</string>
+			<key>playingTime</key>
+			<string>361</string>
+			<key>playingState</key>
+			<string>0</string>
+			<key>playedTime</key>
+			<string>0</string>
+			<key>downloadState</key>
+			<string>0</string>
+			<key>fId</key>
+			<string>11</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>第16章</string>
+			<key>fileSize</key>
+			<string>21.32</string>
+			<key>playingTime</key>
+			<string>361</string>
+			<key>playingState</key>
+			<string>0</string>
+			<key>playedTime</key>
+			<string>0</string>
+			<key>downloadState</key>
+			<string>0</string>
+			<key>fId</key>
+			<string>11</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>第17章</string>
+			<key>fileSize</key>
+			<string>21.32</string>
+			<key>playingTime</key>
+			<string>361</string>
+			<key>playingState</key>
+			<string>0</string>
+			<key>playedTime</key>
+			<string>0</string>
+			<key>downloadState</key>
+			<string>0</string>
+			<key>fId</key>
+			<string>11</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>第18章</string>
+			<key>fileSize</key>
+			<string>21.32</string>
+			<key>playingTime</key>
+			<string>361</string>
+			<key>playingState</key>
+			<string>0</string>
+			<key>playedTime</key>
+			<string>0</string>
+			<key>downloadState</key>
+			<string>0</string>
+			<key>fId</key>
+			<string>11</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>第19章</string>
+			<key>fileSize</key>
+			<string>21.32</string>
+			<key>playingTime</key>
+			<string>361</string>
+			<key>playingState</key>
+			<string>0</string>
+			<key>playedTime</key>
+			<string>0</string>
+			<key>downloadState</key>
+			<string>0</string>
+			<key>fId</key>
+			<string>11</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>第20章</string>
+			<key>fileSize</key>
+			<string>21.32</string>
+			<key>playingTime</key>
+			<string>361</string>
+			<key>playingState</key>
+			<string>0</string>
+			<key>playedTime</key>
+			<string>0</string>
+			<key>downloadState</key>
+			<string>0</string>
+			<key>fId</key>
+			<string>11</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>第21章</string>
+			<key>fileSize</key>
+			<string>21.32</string>
+			<key>playingTime</key>
+			<string>361</string>
+			<key>playingState</key>
+			<string>0</string>
+			<key>playedTime</key>
+			<string>0</string>
+			<key>downloadState</key>
+			<string>0</string>
+			<key>fId</key>
+			<string>11</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>第22章</string>
+			<key>fileSize</key>
+			<string>21.32</string>
+			<key>playingTime</key>
+			<string>361</string>
+			<key>playingState</key>
+			<string>0</string>
+			<key>playedTime</key>
+			<string>0</string>
+			<key>downloadState</key>
+			<string>0</string>
+			<key>fId</key>
+			<string>11</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>第23章</string>
 			<key>fileSize</key>
 			<string>21.32</string>
 			<key>playingTime</key>

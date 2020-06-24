@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0B82AC4DA0F108571B323C77 /* Pods_jywTabBarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304C9E519AF97178502AF107 /* Pods_jywTabBarTests.framework */; };
 		1B060603B166B6D4CBBF3FFA /* Pods_jywTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63969FE334B18496FCE32BA5 /* Pods_jywTabBar.framework */; };
+		693EEBE9249B08CE00E5EAB3 /* JYWProgressRing1.m in Sources */ = {isa = PBXBuildFile; fileRef = 693EEBE8249B08CE00E5EAB3 /* JYWProgressRing1.m */; };
 		693F63B924809B680034AA2B /* JYW_FictionMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63B824809B670034AA2B /* JYW_FictionMainModel.m */; };
 		693F63BD2480A4320034AA2B /* JYW_SelectAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63BC2480A4320034AA2B /* JYW_SelectAudioView.m */; };
 		693F63C4248108580034AA2B /* UIView+JYW_Border.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F63C3248108580034AA2B /* UIView+JYW_Border.m */; };
@@ -49,6 +50,17 @@
 		6942AEEE24946E3B00C5E570 /* JYWAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942AEED24946E3B00C5E570 /* JYWAnimationView.m */; };
 		6942AEF224948A4B00C5E570 /* JYW_AVListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942AEF024948A4B00C5E570 /* JYW_AVListViewController.m */; };
 		6942AEF324948A4B00C5E570 /* JYW_AVListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6942AEF124948A4B00C5E570 /* JYW_AVListViewController.xib */; };
+		6942B312249B0DAB006AA736 /* JYW_AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942B310249B0DAB006AA736 /* JYW_AnimationViewController.m */; };
+		6942B313249B0DAB006AA736 /* JYW_AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6942B311249B0DAB006AA736 /* JYW_AnimationViewController.xib */; };
+		6942B316249B5BA4006AA736 /* JYWFinish.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942B315249B5BA4006AA736 /* JYWFinish.m */; };
+		6942B36B249C5CCD006AA736 /* JYWFireworks.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942B36A249C5CCD006AA736 /* JYWFireworks.m */; };
+		6942B36E249C818B006AA736 /* JYW_Snowflake.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942B36D249C818B006AA736 /* JYW_Snowflake.m */; };
+		6942B372249CA6AF006AA736 /* JYW_FireworksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942B370249CA6AF006AA736 /* JYW_FireworksViewController.m */; };
+		6942B373249CA6AF006AA736 /* JYW_FireworksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6942B371249CA6AF006AA736 /* JYW_FireworksViewController.xib */; };
+		6942B377249CA702006AA736 /* JYW_SnowflakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942B375249CA702006AA736 /* JYW_SnowflakeViewController.m */; };
+		6942B378249CA702006AA736 /* JYW_SnowflakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6942B376249CA702006AA736 /* JYW_SnowflakeViewController.xib */; };
+		6942B37B249D96A2006AA736 /* JYWGrade.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942B37A249D96A2006AA736 /* JYWGrade.m */; };
+		6942B37E249DCB46006AA736 /* JYWGradeRing.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942B37D249DCB46006AA736 /* JYWGradeRing.m */; };
 		69452FE4248B526600EB0361 /* NSString+JYW_StringWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = 69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */; };
 		69452FEB248DC9E000EB0361 /* JYW_NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69452FEA248DC9E000EB0361 /* JYW_NavigationViewController.m */; };
 		69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311A6247D35D70006EEB2 /* AppDelegate.m */; };
@@ -93,6 +105,8 @@
 		2E2BD97C73334B5BF5C430C8 /* Pods-jywTabBarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jywTabBarTests.debug.xcconfig"; path = "Target Support Files/Pods-jywTabBarTests/Pods-jywTabBarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		304C9E519AF97178502AF107 /* Pods_jywTabBarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jywTabBarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63969FE334B18496FCE32BA5 /* Pods_jywTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jywTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		693EEBE7249B08CE00E5EAB3 /* JYWProgressRing1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWProgressRing1.h; sourceTree = "<group>"; };
+		693EEBE8249B08CE00E5EAB3 /* JYWProgressRing1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWProgressRing1.m; sourceTree = "<group>"; };
 		693F63B724809B670034AA2B /* JYW_FictionMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionMainModel.h; sourceTree = "<group>"; };
 		693F63B824809B670034AA2B /* JYW_FictionMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionMainModel.m; sourceTree = "<group>"; };
 		693F63BB2480A4320034AA2B /* JYW_SelectAudioView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_SelectAudioView.h; sourceTree = "<group>"; };
@@ -160,6 +174,26 @@
 		6942AEEF24948A4B00C5E570 /* JYW_AVListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AVListViewController.h; sourceTree = "<group>"; };
 		6942AEF024948A4B00C5E570 /* JYW_AVListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AVListViewController.m; sourceTree = "<group>"; };
 		6942AEF124948A4B00C5E570 /* JYW_AVListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_AVListViewController.xib; sourceTree = "<group>"; };
+		6942B30F249B0DAB006AA736 /* JYW_AnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AnimationViewController.h; sourceTree = "<group>"; };
+		6942B310249B0DAB006AA736 /* JYW_AnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AnimationViewController.m; sourceTree = "<group>"; };
+		6942B311249B0DAB006AA736 /* JYW_AnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_AnimationViewController.xib; sourceTree = "<group>"; };
+		6942B314249B5BA4006AA736 /* JYWFinish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWFinish.h; sourceTree = "<group>"; };
+		6942B315249B5BA4006AA736 /* JYWFinish.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWFinish.m; sourceTree = "<group>"; };
+		6942B31F249C4FCD006AA736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6942B369249C5CCD006AA736 /* JYWFireworks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWFireworks.h; sourceTree = "<group>"; };
+		6942B36A249C5CCD006AA736 /* JYWFireworks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWFireworks.m; sourceTree = "<group>"; };
+		6942B36C249C818B006AA736 /* JYW_Snowflake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_Snowflake.h; sourceTree = "<group>"; };
+		6942B36D249C818B006AA736 /* JYW_Snowflake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_Snowflake.m; sourceTree = "<group>"; };
+		6942B36F249CA6AF006AA736 /* JYW_FireworksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FireworksViewController.h; sourceTree = "<group>"; };
+		6942B370249CA6AF006AA736 /* JYW_FireworksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FireworksViewController.m; sourceTree = "<group>"; };
+		6942B371249CA6AF006AA736 /* JYW_FireworksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_FireworksViewController.xib; sourceTree = "<group>"; };
+		6942B374249CA702006AA736 /* JYW_SnowflakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_SnowflakeViewController.h; sourceTree = "<group>"; };
+		6942B375249CA702006AA736 /* JYW_SnowflakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_SnowflakeViewController.m; sourceTree = "<group>"; };
+		6942B376249CA702006AA736 /* JYW_SnowflakeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_SnowflakeViewController.xib; sourceTree = "<group>"; };
+		6942B379249D96A2006AA736 /* JYWGrade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWGrade.h; sourceTree = "<group>"; };
+		6942B37A249D96A2006AA736 /* JYWGrade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWGrade.m; sourceTree = "<group>"; };
+		6942B37C249DCB46006AA736 /* JYWGradeRing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWGradeRing.h; sourceTree = "<group>"; };
+		6942B37D249DCB46006AA736 /* JYWGradeRing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWGradeRing.m; sourceTree = "<group>"; };
 		69452FE2248B526600EB0361 /* NSString+JYW_StringWidth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYW_StringWidth.h"; sourceTree = "<group>"; };
 		69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JYW_StringWidth.m"; sourceTree = "<group>"; };
 		69452FE9248DC9E000EB0361 /* JYW_NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_NavigationViewController.h; sourceTree = "<group>"; };
@@ -233,6 +267,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		693EEBE6249B080F00E5EAB3 /* JYWAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				693EEBE7249B08CE00E5EAB3 /* JYWProgressRing1.h */,
+				693EEBE8249B08CE00E5EAB3 /* JYWProgressRing1.m */,
+				6942B314249B5BA4006AA736 /* JYWFinish.h */,
+				6942B315249B5BA4006AA736 /* JYWFinish.m */,
+				6942B369249C5CCD006AA736 /* JYWFireworks.h */,
+				6942B36A249C5CCD006AA736 /* JYWFireworks.m */,
+				6942B36C249C818B006AA736 /* JYW_Snowflake.h */,
+				6942B36D249C818B006AA736 /* JYW_Snowflake.m */,
+				6942B379249D96A2006AA736 /* JYWGrade.h */,
+				6942B37A249D96A2006AA736 /* JYWGrade.m */,
+				6942B37C249DCB46006AA736 /* JYWGradeRing.h */,
+				6942B37D249DCB46006AA736 /* JYWGradeRing.m */,
+			);
+			path = JYWAnimation;
+			sourceTree = "<group>";
+		};
 		693F63BA2480A39B0034AA2B /* selectAudioView */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +320,7 @@
 		693F63F72489DCCA0034AA2B /* OtherFunctions */ = {
 			isa = PBXGroup;
 			children = (
+				693EEBE6249B080F00E5EAB3 /* JYWAnimation */,
 				6942AEDF2491B1C200C5E570 /* JYWPlayerView */,
 				693F63F82489DCEC0034AA2B /* JYW_OtherFunctionsViewController.h */,
 				693F63F92489DCEC0034AA2B /* JYW_OtherFunctionsViewController.m */,
@@ -277,6 +331,15 @@
 				6942AEEF24948A4B00C5E570 /* JYW_AVListViewController.h */,
 				6942AEF024948A4B00C5E570 /* JYW_AVListViewController.m */,
 				6942AEF124948A4B00C5E570 /* JYW_AVListViewController.xib */,
+				6942B30F249B0DAB006AA736 /* JYW_AnimationViewController.h */,
+				6942B310249B0DAB006AA736 /* JYW_AnimationViewController.m */,
+				6942B311249B0DAB006AA736 /* JYW_AnimationViewController.xib */,
+				6942B36F249CA6AF006AA736 /* JYW_FireworksViewController.h */,
+				6942B370249CA6AF006AA736 /* JYW_FireworksViewController.m */,
+				6942B371249CA6AF006AA736 /* JYW_FireworksViewController.xib */,
+				6942B374249CA702006AA736 /* JYW_SnowflakeViewController.h */,
+				6942B375249CA702006AA736 /* JYW_SnowflakeViewController.m */,
+				6942B376249CA702006AA736 /* JYW_SnowflakeViewController.xib */,
 			);
 			path = OtherFunctions;
 			sourceTree = "<group>";
@@ -328,6 +391,14 @@
 			path = JYWPlayerView;
 			sourceTree = "<group>";
 		};
+		6942B31E249C4FCD006AA736 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				6942B31F249C4FCD006AA736 /* Info.plist */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		69452FE8248DC98300EB0361 /* NavigationViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +414,7 @@
 				69D311A4247D35D70006EEB2 /* jywTabBar */,
 				69D311C0247D35D80006EEB2 /* jywTabBarTests */,
 				69D311CB247D35D80006EEB2 /* jywTabBarUITests */,
+				6942B31E249C4FCD006AA736 /* image */,
 				69D311A3247D35D70006EEB2 /* Products */,
 				86D1D5B27583E8E35B85E36D /* Pods */,
 				A975A6A02A3A66D2D4FFB487 /* Frameworks */,
@@ -631,8 +703,10 @@
 			files = (
 				693F63CB2484BA9C0034AA2B /* AddressBookList.plist in Resources */,
 				693F64082489FAD60034AA2B /* video3.mp4 in Resources */,
+				6942B373249CA6AF006AA736 /* JYW_FireworksViewController.xib in Resources */,
 				693F63EE24879F5F0034AA2B /* video1.mp4 in Resources */,
 				69D311B5247D35D80006EEB2 /* LaunchScreen.storyboard in Resources */,
+				6942B313249B0DAB006AA736 /* JYW_AnimationViewController.xib in Resources */,
 				6942AEF324948A4B00C5E570 /* JYW_AVListViewController.xib in Resources */,
 				693F63C92484B84D0034AA2B /* JYW_AddressBookViewController.xib in Resources */,
 				693F63E624875D920034AA2B /* ProductList.plist in Resources */,
@@ -647,6 +721,7 @@
 				693F63D9248746600034AA2B /* JYW_ProductListViewController.xib in Resources */,
 				693F63F3248899340034AA2B /* JYW_MeituanFoundViewController.xib in Resources */,
 				69D311F0247DF5B30006EEB2 /* JYW_PictureViewController.xib in Resources */,
+				6942B378249CA702006AA736 /* JYW_SnowflakeViewController.xib in Resources */,
 				693F64092489FAD60034AA2B /* video2.mp4 in Resources */,
 				69D311DE247D36580006EEB2 /* JYW_TestViewController.xib in Resources */,
 			);
@@ -776,34 +851,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6942B372249CA6AF006AA736 /* JYW_FireworksViewController.m in Sources */,
 				69D311EA247DF5A20006EEB2 /* JYW_TableViewController.m in Sources */,
 				693F63BD2480A4320034AA2B /* JYW_SelectAudioView.m in Sources */,
+				6942B316249B5BA4006AA736 /* JYWFinish.m in Sources */,
 				69D311EF247DF5B30006EEB2 /* JYW_PictureViewController.m in Sources */,
 				693F63CE2484BCF30034AA2B /* JYW_AddressBookViewModel.m in Sources */,
 				69D311AD247D35D70006EEB2 /* ViewController.m in Sources */,
 				6942AEEB2491EFA100C5E570 /* JYWPlayerToobarView.m in Sources */,
 				69452FEB248DC9E000EB0361 /* JYW_NavigationViewController.m in Sources */,
 				69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */,
+				6942B312249B0DAB006AA736 /* JYW_AnimationViewController.m in Sources */,
 				6942AEF224948A4B00C5E570 /* JYW_AVListViewController.m in Sources */,
 				6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */,
+				6942B37E249DCB46006AA736 /* JYWGradeRing.m in Sources */,
 				693F63EC2487627C0034AA2B /* JYW_ProductListViewModel.m in Sources */,
 				693F63D12484BD070034AA2B /* JYW_AddressBookModel.m in Sources */,
 				6942AEDD2491AE2600C5E570 /* JYW_AVViewController.m in Sources */,
 				6940B889247F586800C74627 /* JYW_FictionTableViewCell.m in Sources */,
 				693F63F62488A3EF0034AA2B /* JYW_FlowLayout1.m in Sources */,
+				6942B36E249C818B006AA736 /* JYW_Snowflake.m in Sources */,
 				693F63C82484B84D0034AA2B /* JYW_AddressBookViewController.m in Sources */,
 				693F63B924809B680034AA2B /* JYW_FictionMainModel.m in Sources */,
 				693F63E424875B760034AA2B /* JYW_ProductListCollectionViewCell.m in Sources */,
 				69D311DD247D36580006EEB2 /* JYW_TestViewController.m in Sources */,
 				693F63D8248746600034AA2B /* JYW_ProductListViewController.m in Sources */,
+				693EEBE9249B08CE00E5EAB3 /* JYWProgressRing1.m in Sources */,
+				6942B377249CA702006AA736 /* JYW_SnowflakeViewController.m in Sources */,
 				693F63C4248108580034AA2B /* UIView+JYW_Border.m in Sources */,
 				6942AEE52491B2F100C5E570 /* JYWPlayerModel.m in Sources */,
 				6940B882247F479300C74627 /* JYW_FictionViewModel.m in Sources */,
 				6942AEE22491B20200C5E570 /* JYWPlayerView.m in Sources */,
+				6942B37B249D96A2006AA736 /* JYWGrade.m in Sources */,
 				693F63FB2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.m in Sources */,
 				69452FE4248B526600EB0361 /* NSString+JYW_StringWidth.m in Sources */,
 				693F63D42484BD1E0034AA2B /* JYW_AddressBookGroupModel.m in Sources */,
 				69D311F8247DF6190006EEB2 /* JYW_TabBarViewController.m in Sources */,
+				6942B36B249C5CCD006AA736 /* JYWFireworks.m in Sources */,
 				693F63F2248899340034AA2B /* JYW_MeituanFoundViewController.m in Sources */,
 				6942AEEE24946E3B00C5E570 /* JYWAnimationView.m in Sources */,
 				693F63E92487601F0034AA2B /* JYW_ProductModel.m in Sources */,

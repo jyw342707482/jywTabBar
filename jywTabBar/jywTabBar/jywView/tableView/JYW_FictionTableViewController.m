@@ -61,6 +61,11 @@
     [fictionTableViewRefreshContol addTarget:self action:@selector(fictionTableViewRefreshContolAction:) forControlEvents:UIControlEventValueChanged];
     [self.fictionTableView addSubview:fictionTableViewRefreshContol];
     
+    //设置fictionAudioListBackgroundView点击事件
+    self.fictionAudioListBackgroundView.userInteractionEnabled=YES;
+    UITapGestureRecognizer *fictionAudioListBackgroundView_Tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(fictionAudioListBackgroundView_Tap:)];
+    [fictionAudioListBackgroundView_Tap setNumberOfTouchesRequired:1];
+    [self.fictionAudioListBackgroundView addGestureRecognizer:fictionAudioListBackgroundView_Tap];
 }
 -(IBAction)fictionTableViewRefreshContolAction:(UIRefreshControl *)rControl{
     if (rControl.refreshing) {
@@ -70,7 +75,9 @@
         
     }
 }
-
+-(IBAction)fictionAudioListBackgroundView_Tap:(UITapGestureRecognizer *)sender{
+    [self audioLabel_click:self.view];
+}
 - (void)requestAPIData {
     // 模拟远程请求所耗费的时间
     [NSThread sleepForTimeInterval:2];
@@ -85,7 +92,11 @@
 }
 //fictionAudioListView，标签点击事件
 -(void)JYW_SelectAudioView_LabelClick:(long)index{
-    
+    //滑动到某一行
+    NSIndexPath *scrollIndexPath = [NSIndexPath indexPathForRow:index*5 inSection:0];
+    [self.fictionTableView scrollToRowAtIndexPath:scrollIndexPath
+                                    atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    [self audioLabel_click:self.view];
 }
 
 //展开fictionAudioListView点击事件

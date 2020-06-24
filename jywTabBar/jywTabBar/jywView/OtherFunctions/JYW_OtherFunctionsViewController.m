@@ -9,6 +9,10 @@
 #import "JYW_OtherFunctionsViewController.h"
 #import "JYW_AVViewController.h"
 #import "JYW_AVListViewController.h"
+#import "JYW_AnimationViewController.h"
+#import "JYW_FireworksViewController.h"
+#import "JYW_SnowflakeViewController.h"
+#import "JYW_TestViewController.h"
 @interface JYW_OtherFunctionsViewController ()
 {
     NSArray *tableDSArray;
@@ -28,7 +32,7 @@
 -(void)pageSettings{
     //设置导航标题
     self.title=@"OtherFunctions";
-    tableDSArray=@[@"自定义AVPlayer播放器",@"视频列表"];
+    tableDSArray=@[@"自定义AVPlayer播放器",@"视频列表",@"动画",@"烟花动画",@"下雪动画",@"测试"];
     /*
     //添加导航右侧按钮，按钮类型为系统加号
     UIBarButtonItem *rightBarButton=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(tbViewAddRow:)];
@@ -107,9 +111,28 @@
         JYW_AVViewController *avPlayerView1=[[JYW_AVViewController alloc] init];
         [self.navigationController pushViewController:avPlayerView1 animated:YES];
     }
-    else {
+    else if(indexPath.row==1){
         JYW_AVListViewController *avPlayerView2=[[JYW_AVListViewController alloc] init];
         [self.navigationController pushViewController:avPlayerView2 animated:YES];
+    }
+    else if(indexPath.row==2){
+        JYW_AnimationViewController *avc=[[JYW_AnimationViewController alloc] init];
+        [self.navigationController pushViewController:avc animated:YES];
+    }
+    else if(indexPath.row==3){
+        JYW_FireworksViewController *fvc=[[JYW_FireworksViewController alloc] init];
+        //fvc.modalPresentationStyle=UIModalPresentationFullScreen;
+        //[self presentViewController:fvc animated:YES completion:nil];
+        [self.navigationController pushViewController:fvc animated:YES];
+    }
+    else if(indexPath.row==4){
+        JYW_SnowflakeViewController *svc=[[JYW_SnowflakeViewController alloc] init];
+        //[self presentViewController:svc animated:YES completion:nil];
+        [self.navigationController pushViewController:svc animated:YES];
+    }
+    else{
+        JYW_TestViewController *avc=[[JYW_TestViewController alloc] init];
+        [self.navigationController pushViewController:avc animated:YES];
     }
 }
 

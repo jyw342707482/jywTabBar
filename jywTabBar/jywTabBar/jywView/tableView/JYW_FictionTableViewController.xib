@@ -28,9 +28,21 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVz-g7-T2h" userLabel="messageView">
                     <rect key="frame" x="0.0" y="50" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广告、消息位" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rk4-1U-CCs">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Jn7-Cp-AoG"/>
+                        <constraint firstItem="rk4-1U-CCs" firstAttribute="leading" secondItem="iVz-g7-T2h" secondAttribute="leading" id="V2R-eM-NXF"/>
+                        <constraint firstItem="rk4-1U-CCs" firstAttribute="top" secondItem="iVz-g7-T2h" secondAttribute="top" id="WeS-Tk-RZJ"/>
+                        <constraint firstAttribute="bottom" secondItem="rk4-1U-CCs" secondAttribute="bottom" id="Z4l-HQ-err"/>
+                        <constraint firstAttribute="trailing" secondItem="rk4-1U-CCs" secondAttribute="trailing" id="p1H-sr-noO"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="giF-Ya-Qbb" userLabel="fictionTableView">

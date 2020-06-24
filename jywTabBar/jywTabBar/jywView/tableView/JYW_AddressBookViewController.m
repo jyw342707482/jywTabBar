@@ -9,12 +9,16 @@
 #import "JYW_AddressBookViewController.h"
 #import "JYW_AddressBookViewModel.h"
 #import "JYW_AddressBookGroupModel.h"
+#import <objc/runtime.h>
 @interface JYW_AddressBookViewController ()
 {
     JYW_AddressBookViewModel *jyw_addressBookViewModel;
     NSMutableArray *addressBookArray;
     NSArray *labelGroupArray;
     NSString *ContactPersonCount;
+    
+    //letterTableView,选中的标签
+    UIButton *letterButtonSelected;
 }
 @end
 static NSString *AddressBookCellIdentifier = @"AddressBookCellIdentifier";
@@ -49,6 +53,7 @@ static NSString *LetterCellIdentifier = @"CellTableIdentifier";
     [jyw_addressBookViewModel getAddressBookDataWithAddressBookArray:[jywPageData objectForKey:@"addressBookArray"] JYW_AddressBookGroupModelArray:addressBookArray];
     labelGroupArray=[jywPageData objectForKey:@"labelGroup"];
     
+    
     /*
     //列表头部视图
     UIView *tableHeaderView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 100)];
@@ -82,7 +87,7 @@ static NSString *LetterCellIdentifier = @"CellTableIdentifier";
     if(tableView==addressBookTableView){
         JYW_AddressBookGroupModel *jywABGM=addressBookArray[section];
         UIView *headerView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 40)];
-        //headerView.backgroundColor=[UIColor grayColor];
+        headerView.backgroundColor=[UIColor colorWithRed:213.0/255.0 green:213.0/255.0 blue:213.0/255.0 alpha:1.0];
         UILabel *titleLabel=[[UILabel alloc] initWithFrame:CGRectMake(16, 0, 30, 40)];
         titleLabel.text=jywABGM.groupStr;
         titleLabel.font=[UIFont systemFontOfSize:14];
@@ -248,14 +253,60 @@ static NSString *LetterCellIdentifier = @"CellTableIdentifier";
              */
             //cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
         }
-        cell.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.0];
-        cell.textLabel.text =[NSString stringWithFormat:@"%@",labelGroupArray[indexPath.row]];
-        cell.textLabel.tag=indexPath.section;
-        cell.textLabel.textAlignment=NSTextAlignmentCenter;
-        cell.textLabel.font=[UIFont systemFontOfSize:12.0f];
-        cell.textLabel.textColor=[UIColor colorWithRed:203.0/255.0 green:203.0/255.0 blue:203.0/255.0 alpha:1.0];
-        //cell.textLabel.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.0];
+        UIButton *letterButton=[UIButton buttonWithType:UIButtonTypeCustom];
+        letterButton.tag=indexPath.row;
+        letterButton.layer.masksToBounds=YES;
+        letterButton.layer.cornerRadius=10;
+        letterButton.frame=CGRectMake(0, 0, 20, 20);
+        letterButton.backgroundColor=[UIColor clearColor];
+        [letterButton setTitle:labelGroupArray[indexPath.row] forState:UIControlStateNormal];
+        [letterButton setTitleColor:[UIColor colorWithRed:63.0/255.0 green:63.0/255.0 blue:63.0/255.0 alpha:1.0] forState:UIControlStateNormal];
+        [letterButton setTitle:labelGroupArray[indexPath.row] forState:UIControlStateSelected];
+        [letterButton setTitleColor:[UIColor colorWithRed:225.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0] forState:UIControlStateSelected];
+        letterButton.titleLabel.font=[UIFont systemFontOfSize:12.0f];
+        [letterButton addTarget:self action:@selector(letterButton_TouchDown:) forControlEvents:UIControlEventTouchDown];
+        [letterButton addTarget:self action:@selector(letterButton_TouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+        //添加关联属性
+        objc_setAssociatedObject(letterButton, @"indexpath", indexPath,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        //OBJC_ASSOCIATION_RETAIN_NONATOMIC
+        [cell.contentView addSubview:letterButton];
+        cell.backgroundColor=[UIColor clearColor];
         return cell;
     }
 }
+-(IBAction)letterButton_TouchDown:(UIButton *)sender{
+    if(sender!=letterButtonSelected){
+        letterButtonSelected.backgroundColor=[UIColor clearColor];
+    }
+    letterButtonSelected=sender;
+    sender.selected=YES;
+    sender.backgroundColor=[UIColor greenColor];
+    //获取关联属性
+    NSIndexPath *indexpath=objc_getAssociatedObject(letterButtonSelected, @"indexpath");
+    
+    JYW_AddressBookGroupModel *jywABGM=addressBookArray[indexpath.row];
+    if(jywABGM.addressBookModelArray.count>0){
+        //JYW_AddressBookModel *jywABM=jywABGM.addressBookModelArray[indexpath.row];
+        //滑动到某一行
+        NSIndexPath *scrollIndexPath = [NSIndexPath indexPathForRow:0 inSection:indexpath.row];
+        [addressBookTableView scrollToRowAtIndexPath:scrollIndexPath
+                                 atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    }
+}
+-(IBAction)letterButton_TouchUpInside:(UIButton *)sender{
+    sender.selected=NO;
+    //sender.backgroundColor=[UIColor greenColor];
+}
+/*
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat offsetY = scrollView.contentOffset.y;
+    CGFloat tableHeaderViewHeight = CGRectGetHeight(addressBookTableView.tableHeaderView.bounds);
+    // 差值 = 头视图高度 - 导航条高度
+    if (offsetY >= tableHeaderViewHeight - 40) {
+        // 顶部偏移距离：导航条高度
+        addressBookTableView.contentInset = UIEdgeInsetsMake(40, 0, 0, 0);
+    } else {
+        addressBookTableView.contentInset = UIEdgeInsetsZero;
+    }
+}*/
 @end

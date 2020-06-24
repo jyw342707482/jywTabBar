@@ -84,7 +84,7 @@
     titleLabel.font=[UIFont systemFontOfSize:15];
     
     downloadStateImageView.frame=CGRectMake(cellWith-36, 8, 20, 20);
-    downloadStateImageView.image=[UIImage imageNamed:@"下载"];
+    //downloadStateImageView.image=[UIImage imageNamed:@"下载"];
     
     float line2X=16;
     fileSizeImageView.frame=CGRectMake(line2X, 36, 20, 20);
@@ -118,14 +118,17 @@
         if(fm.downloadState==0)
         {
             playedTimeLabel.text=@"未下载";
+            downloadStateImageView.image=[UIImage imageNamed:@"下载"];
         }
         else if(fm.downloadState==1)
         {
             playedTimeLabel.text=@"下载中";
+            downloadStateImageView.image=[UIImage imageNamed:@"下载"];
         }
         else
         {
             playedTimeLabel.text=@"已下载";
+            downloadStateImageView.image=[UIImage imageNamed:@"已下载"];
         }
         playedTimeLabel.textColor=[UIColor blueColor];
     }
