@@ -79,7 +79,7 @@
     emitterLayer.shadowColor  = [[UIColor whiteColor] CGColor];
     
     emitterLayer.emitterCells=@[
-        [self addCAEmitterCellWithScale:0.1 BirthRate:15],
+        [self addCAEmitterCellWithScale:0.03 BirthRate:self.birthRate],
         //[self addCAEmitterCellWithScale:0.08 BirthRate:4],
         //[self addCAEmitterCellWithScale:0.06 BirthRate:5],
         //[self addCAEmitterCellWithScale:0.04 BirthRate:10],
@@ -118,7 +118,7 @@
     //eCell.emissionLongitude=M_PI_2;
     //是个CGImageRef的对象,既粒子要展现的图片
     //CFBridgingRelease将非Objective-C指针移动到Objective-C，还将所有权转移到ARC。
-    eCell.contents = CFBridgingRelease([[UIImage imageNamed:@"snow"] CGImage]);
+    eCell.contents = (id)[[UIImage imageNamed:@"snow"] CGImage];
     //粒子颜色
     eCell.color=[UIColor whiteColor].CGColor;
     // 一个粒子的颜色green 能改变的范围

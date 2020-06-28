@@ -25,6 +25,7 @@
     }
     snowflake=[[JYW_Snowflake alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-snowflakeHeight)];
     [self.view addSubview:snowflake];
+    snowflake.birthRate=10;
     [snowflake play];
     //添加导航右侧按钮
     //添加导航右侧按钮，按钮类型为系统加号

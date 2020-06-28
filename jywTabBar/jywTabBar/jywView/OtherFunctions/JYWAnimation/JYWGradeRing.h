@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "JYWGradeRing.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JYWGradeRing : UIView

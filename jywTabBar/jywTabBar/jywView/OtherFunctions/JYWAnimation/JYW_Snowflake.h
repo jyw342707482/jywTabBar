@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 {
     CAEmitterLayer *emitterLayer;
 }
+@property (nonatomic,assign)int birthRate;//雪花数量
 -(void)play;//播放动画
 -(void)stop;//停止动画
 @end

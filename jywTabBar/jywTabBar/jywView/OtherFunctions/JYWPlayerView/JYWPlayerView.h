@@ -58,6 +58,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
 //设置默认值
 +(instancetype)defaultConfig;
 @end
+
 //委托代理
 @protocol JYWPlayerView_Delegate <NSObject>
 //返回播放错误信息

@@ -72,7 +72,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpJ-PH-yzL">
                             <rect key="frame" x="16" y="0.0" width="382" height="50"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmF-xc-mL6">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmF-xc-mL6" customClass="UIControl">
                                     <rect key="frame" x="0.0" y="0.0" width="232" height="50"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zI5-V5-dcg">
@@ -97,6 +97,9 @@
                                         <constraint firstItem="zI5-V5-dcg" firstAttribute="leading" secondItem="ZmF-xc-mL6" secondAttribute="leading" id="S9A-ey-QrZ"/>
                                         <constraint firstItem="zI5-V5-dcg" firstAttribute="centerY" secondItem="ZmF-xc-mL6" secondAttribute="centerY" id="bCi-E5-317"/>
                                     </constraints>
+                                    <connections>
+                                        <action selector="playerButton_Click:" destination="-1" eventType="touchDown" id="GXn-vk-OrI"/>
+                                    </connections>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2t-Tc-x7b" customClass="UIControl">
                                     <rect key="frame" x="232" y="0.0" width="150" height="50"/>

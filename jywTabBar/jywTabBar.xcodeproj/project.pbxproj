@@ -35,6 +35,13 @@
 		693F64082489FAD60034AA2B /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 693F64062489FAD60034AA2B /* video3.mp4 */; };
 		693F64092489FAD60034AA2B /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 693F64072489FAD60034AA2B /* video2.mp4 */; };
 		693F640C2489FBA80034AA2B /* JYW_AVPlayerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F640B2489FBA80034AA2B /* JYW_AVPlayerViewModel.m */; };
+		693FB36424A5A8ED003E06AC /* audio1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 693FB36224A5A8ED003E06AC /* audio1.mp3 */; };
+		693FB36524A5A8ED003E06AC /* audio2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 693FB36324A5A8ED003E06AC /* audio2.mp3 */; };
+		693FB36924A5E358003E06AC /* JYW_CarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FB36724A5E358003E06AC /* JYW_CarouselViewController.m */; };
+		693FB36A24A5E358003E06AC /* JYW_CarouselViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FB36824A5E358003E06AC /* JYW_CarouselViewController.xib */; };
+		693FB36E24A5E3D3003E06AC /* JYW_Carousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FB36D24A5E3D3003E06AC /* JYW_Carousel.m */; };
+		693FB37124A6D518003E06AC /* JYW_CarouselFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FB37024A6D518003E06AC /* JYW_CarouselFlowLayout.m */; };
+		693FB37724A731BA003E06AC /* JYW_CarouselCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FB37624A731BA003E06AC /* JYW_CarouselCollectionViewCell.m */; };
 		6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */; };
 		6940B876247E1CA200C74627 /* JYW_FictionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */; };
 		6940B879247E1FA100C74627 /* JYW_FictionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B878247E1FA100C74627 /* JYW_FictionModel.m */; };
@@ -61,6 +68,10 @@
 		6942B378249CA702006AA736 /* JYW_SnowflakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6942B376249CA702006AA736 /* JYW_SnowflakeViewController.xib */; };
 		6942B37B249D96A2006AA736 /* JYWGrade.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942B37A249D96A2006AA736 /* JYWGrade.m */; };
 		6942B37E249DCB46006AA736 /* JYWGradeRing.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942B37D249DCB46006AA736 /* JYWGradeRing.m */; };
+		6942B38224A30531006AA736 /* JYW_FictionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942B38024A30531006AA736 /* JYW_FictionDetailViewController.m */; };
+		6942B38324A30531006AA736 /* JYW_FictionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6942B38124A30531006AA736 /* JYW_FictionDetailViewController.xib */; };
+		6942B38724A41F8F006AA736 /* JYWAudioPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6942B38624A41F8F006AA736 /* JYWAudioPlayerView.m */; };
+		6942B38A24A432AF006AA736 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6942B38924A432AF006AA736 /* audio.mp3 */; };
 		69452FE4248B526600EB0361 /* NSString+JYW_StringWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = 69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */; };
 		69452FEB248DC9E000EB0361 /* JYW_NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69452FEA248DC9E000EB0361 /* JYW_NavigationViewController.m */; };
 		69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311A6247D35D70006EEB2 /* AppDelegate.m */; };
@@ -148,6 +159,17 @@
 		693F64072489FAD60034AA2B /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
 		693F640A2489FBA80034AA2B /* JYW_AVPlayerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AVPlayerViewModel.h; sourceTree = "<group>"; };
 		693F640B2489FBA80034AA2B /* JYW_AVPlayerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AVPlayerViewModel.m; sourceTree = "<group>"; };
+		693FB36224A5A8ED003E06AC /* audio1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio1.mp3; sourceTree = "<group>"; };
+		693FB36324A5A8ED003E06AC /* audio2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio2.mp3; sourceTree = "<group>"; };
+		693FB36624A5E358003E06AC /* JYW_CarouselViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_CarouselViewController.h; sourceTree = "<group>"; };
+		693FB36724A5E358003E06AC /* JYW_CarouselViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_CarouselViewController.m; sourceTree = "<group>"; };
+		693FB36824A5E358003E06AC /* JYW_CarouselViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_CarouselViewController.xib; sourceTree = "<group>"; };
+		693FB36C24A5E3D3003E06AC /* JYW_Carousel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_Carousel.h; sourceTree = "<group>"; };
+		693FB36D24A5E3D3003E06AC /* JYW_Carousel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_Carousel.m; sourceTree = "<group>"; };
+		693FB36F24A6D518003E06AC /* JYW_CarouselFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_CarouselFlowLayout.h; sourceTree = "<group>"; };
+		693FB37024A6D518003E06AC /* JYW_CarouselFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_CarouselFlowLayout.m; sourceTree = "<group>"; };
+		693FB37524A731BA003E06AC /* JYW_CarouselCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_CarouselCollectionViewCell.h; sourceTree = "<group>"; };
+		693FB37624A731BA003E06AC /* JYW_CarouselCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_CarouselCollectionViewCell.m; sourceTree = "<group>"; };
 		6940B872247E1CA200C74627 /* JYW_FictionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionTableViewController.h; sourceTree = "<group>"; };
 		6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionTableViewController.m; sourceTree = "<group>"; };
 		6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_FictionTableViewController.xib; sourceTree = "<group>"; };
@@ -194,6 +216,12 @@
 		6942B37A249D96A2006AA736 /* JYWGrade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWGrade.m; sourceTree = "<group>"; };
 		6942B37C249DCB46006AA736 /* JYWGradeRing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWGradeRing.h; sourceTree = "<group>"; };
 		6942B37D249DCB46006AA736 /* JYWGradeRing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWGradeRing.m; sourceTree = "<group>"; };
+		6942B37F24A30531006AA736 /* JYW_FictionDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionDetailViewController.h; sourceTree = "<group>"; };
+		6942B38024A30531006AA736 /* JYW_FictionDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionDetailViewController.m; sourceTree = "<group>"; };
+		6942B38124A30531006AA736 /* JYW_FictionDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_FictionDetailViewController.xib; sourceTree = "<group>"; };
+		6942B38524A41F8F006AA736 /* JYWAudioPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWAudioPlayerView.h; sourceTree = "<group>"; };
+		6942B38624A41F8F006AA736 /* JYWAudioPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWAudioPlayerView.m; sourceTree = "<group>"; };
+		6942B38924A432AF006AA736 /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
 		69452FE2248B526600EB0361 /* NSString+JYW_StringWidth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYW_StringWidth.h"; sourceTree = "<group>"; };
 		69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JYW_StringWidth.m"; sourceTree = "<group>"; };
 		69452FE9248DC9E000EB0361 /* JYW_NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_NavigationViewController.h; sourceTree = "<group>"; };
@@ -354,9 +382,23 @@
 			path = video;
 			sourceTree = "<group>";
 		};
+		693FB36B24A5E374003E06AC /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				693FB36C24A5E3D3003E06AC /* JYW_Carousel.h */,
+				693FB36D24A5E3D3003E06AC /* JYW_Carousel.m */,
+				693FB36F24A6D518003E06AC /* JYW_CarouselFlowLayout.h */,
+				693FB37024A6D518003E06AC /* JYW_CarouselFlowLayout.m */,
+				693FB37524A731BA003E06AC /* JYW_CarouselCollectionViewCell.h */,
+				693FB37624A731BA003E06AC /* JYW_CarouselCollectionViewCell.m */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
 		6940B87A247E246300C74627 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				6942B38824A43275006AA736 /* mp3 */,
 				693F64052489FAA50034AA2B /* video */,
 				6940B87B247E249500C74627 /* FictionList.plist */,
 				693F63CA2484BA9C0034AA2B /* AddressBookList.plist */,
@@ -397,6 +439,25 @@
 				6942B31F249C4FCD006AA736 /* Info.plist */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		6942B38424A41E37006AA736 /* JYWAudioPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				6942B38524A41F8F006AA736 /* JYWAudioPlayerView.h */,
+				6942B38624A41F8F006AA736 /* JYWAudioPlayerView.m */,
+			);
+			path = JYWAudioPlayerView;
+			sourceTree = "<group>";
+		};
+		6942B38824A43275006AA736 /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				693FB36224A5A8ED003E06AC /* audio1.mp3 */,
+				693FB36324A5A8ED003E06AC /* audio2.mp3 */,
+				6942B38924A432AF006AA736 /* audio.mp3 */,
+			);
+			path = mp3;
 			sourceTree = "<group>";
 		};
 		69452FE8248DC98300EB0361 /* NavigationViewController */ = {
@@ -527,6 +588,7 @@
 		69D311E4247DF3A30006EEB2 /* tableView */ = {
 			isa = PBXGroup;
 			children = (
+				6942B38424A41E37006AA736 /* JYWAudioPlayerView */,
 				693F63BA2480A39B0034AA2B /* selectAudioView */,
 				6940B88B247F586F00C74627 /* tableViewCell */,
 				69D311E7247DF5A20006EEB2 /* JYW_TableViewController.h */,
@@ -535,6 +597,9 @@
 				6940B872247E1CA200C74627 /* JYW_FictionTableViewController.h */,
 				6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */,
 				6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */,
+				6942B37F24A30531006AA736 /* JYW_FictionDetailViewController.h */,
+				6942B38024A30531006AA736 /* JYW_FictionDetailViewController.m */,
+				6942B38124A30531006AA736 /* JYW_FictionDetailViewController.xib */,
 				693F63C52484B84D0034AA2B /* JYW_AddressBookViewController.h */,
 				693F63C62484B84D0034AA2B /* JYW_AddressBookViewController.m */,
 				693F63C72484B84D0034AA2B /* JYW_AddressBookViewController.xib */,
@@ -555,6 +620,7 @@
 		69D311E6247DF3C70006EEB2 /* collectionView */ = {
 			isa = PBXGroup;
 			children = (
+				693FB36B24A5E374003E06AC /* Carousel */,
 				693F63E124875B2F0034AA2B /* collectionViewCell */,
 				69D311F1247DF5C60006EEB2 /* JYW_CollectionViewController.h */,
 				69D311F2247DF5C60006EEB2 /* JYW_CollectionViewController.m */,
@@ -565,6 +631,9 @@
 				693F63EF248899340034AA2B /* JYW_MeituanFoundViewController.h */,
 				693F63F0248899340034AA2B /* JYW_MeituanFoundViewController.m */,
 				693F63F1248899340034AA2B /* JYW_MeituanFoundViewController.xib */,
+				693FB36624A5E358003E06AC /* JYW_CarouselViewController.h */,
+				693FB36724A5E358003E06AC /* JYW_CarouselViewController.m */,
+				693FB36824A5E358003E06AC /* JYW_CarouselViewController.xib */,
 			);
 			path = collectionView;
 			sourceTree = "<group>";
@@ -704,11 +773,16 @@
 				693F63CB2484BA9C0034AA2B /* AddressBookList.plist in Resources */,
 				693F64082489FAD60034AA2B /* video3.mp4 in Resources */,
 				6942B373249CA6AF006AA736 /* JYW_FireworksViewController.xib in Resources */,
+				6942B38324A30531006AA736 /* JYW_FictionDetailViewController.xib in Resources */,
 				693F63EE24879F5F0034AA2B /* video1.mp4 in Resources */,
+				693FB36424A5A8ED003E06AC /* audio1.mp3 in Resources */,
 				69D311B5247D35D80006EEB2 /* LaunchScreen.storyboard in Resources */,
+				693FB36524A5A8ED003E06AC /* audio2.mp3 in Resources */,
 				6942B313249B0DAB006AA736 /* JYW_AnimationViewController.xib in Resources */,
+				693FB36A24A5E358003E06AC /* JYW_CarouselViewController.xib in Resources */,
 				6942AEF324948A4B00C5E570 /* JYW_AVListViewController.xib in Resources */,
 				693F63C92484B84D0034AA2B /* JYW_AddressBookViewController.xib in Resources */,
+				6942B38A24A432AF006AA736 /* audio.mp3 in Resources */,
 				693F63E624875D920034AA2B /* ProductList.plist in Resources */,
 				69D311B2247D35D80006EEB2 /* Assets.xcassets in Resources */,
 				6940B87C247E249500C74627 /* FictionList.plist in Resources */,
@@ -858,10 +932,13 @@
 				69D311EF247DF5B30006EEB2 /* JYW_PictureViewController.m in Sources */,
 				693F63CE2484BCF30034AA2B /* JYW_AddressBookViewModel.m in Sources */,
 				69D311AD247D35D70006EEB2 /* ViewController.m in Sources */,
+				6942B38724A41F8F006AA736 /* JYWAudioPlayerView.m in Sources */,
 				6942AEEB2491EFA100C5E570 /* JYWPlayerToobarView.m in Sources */,
 				69452FEB248DC9E000EB0361 /* JYW_NavigationViewController.m in Sources */,
 				69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */,
 				6942B312249B0DAB006AA736 /* JYW_AnimationViewController.m in Sources */,
+				693FB36E24A5E3D3003E06AC /* JYW_Carousel.m in Sources */,
+				693FB37724A731BA003E06AC /* JYW_CarouselCollectionViewCell.m in Sources */,
 				6942AEF224948A4B00C5E570 /* JYW_AVListViewController.m in Sources */,
 				6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */,
 				6942B37E249DCB46006AA736 /* JYWGradeRing.m in Sources */,
@@ -873,9 +950,11 @@
 				6942B36E249C818B006AA736 /* JYW_Snowflake.m in Sources */,
 				693F63C82484B84D0034AA2B /* JYW_AddressBookViewController.m in Sources */,
 				693F63B924809B680034AA2B /* JYW_FictionMainModel.m in Sources */,
+				693FB37124A6D518003E06AC /* JYW_CarouselFlowLayout.m in Sources */,
 				693F63E424875B760034AA2B /* JYW_ProductListCollectionViewCell.m in Sources */,
 				69D311DD247D36580006EEB2 /* JYW_TestViewController.m in Sources */,
 				693F63D8248746600034AA2B /* JYW_ProductListViewController.m in Sources */,
+				6942B38224A30531006AA736 /* JYW_FictionDetailViewController.m in Sources */,
 				693EEBE9249B08CE00E5EAB3 /* JYWProgressRing1.m in Sources */,
 				6942B377249CA702006AA736 /* JYW_SnowflakeViewController.m in Sources */,
 				693F63C4248108580034AA2B /* UIView+JYW_Border.m in Sources */,
@@ -896,6 +975,7 @@
 				6940B879247E1FA100C74627 /* JYW_FictionModel.m in Sources */,
 				693F640C2489FBA80034AA2B /* JYW_AVPlayerViewModel.m in Sources */,
 				69D311AA247D35D70006EEB2 /* SceneDelegate.m in Sources */,
+				693FB36924A5E358003E06AC /* JYW_CarouselViewController.m in Sources */,
 				693F64042489F6E30034AA2B /* JYW_VideoModel.m in Sources */,
 				6942AEE82491E7DC00C5E570 /* JYW_PlayerFullScreenViewController.m in Sources */,
 			);

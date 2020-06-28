@@ -8,7 +8,7 @@
 
 #import "JYW_CollectionViewController.h"
 #import "JYW_ProductListViewController.h"
-
+#import "JYW_CarouselViewController.h"
 static NSString * identifier = @"cxCellID";
 static NSString * headIdentifier = @"cxHeadID";
 @interface JYW_CollectionViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -30,7 +30,7 @@ static NSString * headIdentifier = @"cxHeadID";
 -(void)pageSettings{
     //设置导航标题
     self.title=@"UICollectionView";
-    collectionDSArray=@[@"产品展示1",@"产品展示2",@"产品展示3"];
+    collectionDSArray=@[@"产品展示1",@"图片轮播"];
     //自动网格布局
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc ] init];
     CGFloat itemWidth = ([UIScreen mainScreen].bounds.size.width - 40) / 2;
@@ -99,6 +99,10 @@ static NSString * headIdentifier = @"cxHeadID";
     {
         JYW_ProductListViewController *jywPLVVC=[[JYW_ProductListViewController alloc] init];
         [self.navigationController pushViewController:jywPLVVC animated:YES];
+    }
+    else if(indexPath.item==1){
+        JYW_CarouselViewController *jywCVC=[[JYW_CarouselViewController alloc] init];
+        [self.navigationController pushViewController:jywCVC animated:YES];
     }
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];//取消选中
      //do something ...

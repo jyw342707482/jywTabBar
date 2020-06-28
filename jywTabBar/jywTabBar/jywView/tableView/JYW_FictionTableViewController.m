@@ -13,7 +13,9 @@
 #import "JYW_FictionTableViewCell.h"
 #import "JYW_SelectAudioView.h"
 #import "UIView+JYW_Border.h"
-@interface JYW_FictionTableViewController ()<JYW_SelectAudioView_Delegate,JYW_FictionViewModel_Delegate>
+//小说播放详情页
+#import "JYW_FictionDetailViewController.h"
+@interface JYW_FictionTableViewController ()<JYW_SelectAudioView_Delegate,JYW_FictionViewModel_Delegate,JYW_FictionTableViewCell_Delegate>
 {
     JYW_FictionMainModel *fictionMainModel;
     //NSMutableArray *tableDSArray;
@@ -139,6 +141,13 @@
         }];
     }
 }
+-(IBAction)playerButton_Click:(id)sender{
+    fictionMainModel.playedIndex=10;
+    JYW_FictionDetailViewController *fictionDetail=[[JYW_FictionDetailViewController alloc] init];
+    fictionDetail.jyw_FictionMainModel=fictionMainModel;
+    fictionDetail.modalPresentationStyle=UIModalPresentationFullScreen;
+    [self presentViewController:fictionDetail animated:YES completion:nil];
+}
 
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -173,7 +182,8 @@
          单元格的样式，该单元格的顶部带有左对齐标签，而其下方则是带有较小灰色文本的左对齐标签。
          */
         cell = [[JYW_FictionTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellTableIndentifier];
-        
+        cell.delegate=self;
+        cell.tag=indexPath.row;
         //自带有两种基础的tableView样式，UITableViewCellStyleValue1、2. 后面的文章会讲解自定义样式
         /*
          accessoryType:
@@ -194,16 +204,17 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  /*
-    //获取storyboard
-    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-
-    //根据storyboard创建控制对象
-     Detail * celldetail = [storyboard instantiateViewControllerWithIdentifier:@"celldetail"];
-
-    [celldetail viewDidLoad];
-
-    [self.navigationController pushViewController:celldetail animated:YES];
-   */
+    fictionMainModel.playedIndex=(int)indexPath.row;
+    JYW_FictionDetailViewController *fictionDetail=[[JYW_FictionDetailViewController alloc] init];
+    fictionDetail.jyw_FictionMainModel=fictionMainModel;
+    fictionDetail.modalPresentationStyle=UIModalPresentationFullScreen;
+    [self presentViewController:fictionDetail animated:YES completion:nil];
+    //[self.navigationController pushViewController:fictionDetail animated:YES];
+    //self.navigationController.navigationBar.hidden=YES;
+    //self.tabBarController.tabBar.hidden=YES;
+}
+//下载完成
+-(void)JYW_FictionTableViewCell_Finish:(long)index{
+    NSLog(@"下载完成,行号:%ld",index);
 }
 @end

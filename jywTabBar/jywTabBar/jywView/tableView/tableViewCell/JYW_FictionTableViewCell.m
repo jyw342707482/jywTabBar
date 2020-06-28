@@ -85,6 +85,11 @@
     
     downloadStateImageView.frame=CGRectMake(cellWith-36, 8, 20, 20);
     //downloadStateImageView.image=[UIImage imageNamed:@"下载"];
+    //添加手势
+    downloadStateImageView.userInteractionEnabled = YES;
+    UITapGestureRecognizer * downloadStateImageView_tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(downloadStateImageView_click:)];
+    [downloadStateImageView addGestureRecognizer:downloadStateImageView_tapGesture];
+    [downloadStateImageView_tapGesture setNumberOfTapsRequired:1];
     
     float line2X=16;
     fileSizeImageView.frame=CGRectMake(line2X, 36, 20, 20);
@@ -141,6 +146,36 @@
     {
         playedTimeLabel.text=@"已播完";
         playedTimeLabel.textColor=[UIColor grayColor];
+    }
+}
+
+-(IBAction)downloadStateImageView_click:(UITapGestureRecognizer *)sender{
+    //渐变加载进度条
+    NSArray *colorArray= @[(__bridge id)[UIColor yellowColor].CGColor,
+    (__bridge id)[UIColor redColor].CGColor];
+    NSArray *locationArray=@[@(0.01),@(1.0)];
+    jywGradeRing=[[JYWGradeRing alloc] initWithFrame:downloadStateImageView.frame colorArray:colorArray locationArray:locationArray];
+    [self.contentView addSubview:jywGradeRing];
+    jywGradeRing.backgroundColor=[UIColor whiteColor];
+    jywGradeRingTimer=[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(jywGradeRingTimer) userInfo:nil repeats:YES];
+}
+-(void)jywGradeRingTimer{
+    if(jywGradeRing.progress>=1){
+        //时间控件销毁
+        [jywGradeRingTimer invalidate];
+        jywGradeRingTimer=nil;
+        //下载动画销毁
+        [jywGradeRing removeFromSuperview];
+        //设置音频状态
+        self.fm.downloadState=2;
+        playedTimeLabel.text=@"已下载";
+        downloadStateImageView.image=[UIImage imageNamed:@"已下载"];
+        //发回下载完成
+        if(self.delegate && [self.delegate respondsToSelector:@selector(JYW_FictionTableViewCell_Finish:)]){
+            [_delegate JYW_FictionTableViewCell_Finish:self.tag];
+        }
+    }else {
+        jywGradeRing.progress+=0.1;
     }
 }
 @end
