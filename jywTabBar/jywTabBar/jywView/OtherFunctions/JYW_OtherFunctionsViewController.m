@@ -7,12 +7,20 @@
 //
 
 #import "JYW_OtherFunctionsViewController.h"
+//视频
 #import "JYW_AVViewController.h"
 #import "JYW_AVListViewController.h"
+//动画
 #import "JYW_AnimationViewController.h"
 #import "JYW_FireworksViewController.h"
 #import "JYW_SnowflakeViewController.h"
+//测试
 #import "JYW_TestViewController.h"
+//多线程
+#import "JYW_GCDViewController.h"
+#import "JYW_GCDDispatchWorkItemViewController.h"
+#import "JYW_GCDDispatchGroupViewController.h"
+#import "JYW_GCDDispatchSourceViewController.h"
 @interface JYW_OtherFunctionsViewController ()
 {
     NSArray *tableDSArray;
@@ -32,7 +40,9 @@
 -(void)pageSettings{
     //设置导航标题
     self.title=@"OtherFunctions";
-    tableDSArray=@[@"自定义AVPlayer播放器",@"视频列表",@"动画",@"烟花动画",@"下雪动画",@"测试"];
+    tableDSArray=@[@"自定义AVPlayer播放器",@"视频列表",@"动画",@"烟花动画",@"下雪动画",
+                   @"GCD多线程-Dispatch Queue",@"GCD多线程-Dispatch Work Item",@"GCD多线程-Dispatch Group",@"GCD多线程-Dispatch Source",
+                   @"测试"];
     /*
     //添加导航右侧按钮，按钮类型为系统加号
     UIBarButtonItem *rightBarButton=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(tbViewAddRow:)];
@@ -130,7 +140,25 @@
         //[self presentViewController:svc animated:YES completion:nil];
         [self.navigationController pushViewController:svc animated:YES];
     }
-    else{
+    else if(indexPath.row==5){
+        JYW_GCDViewController *gcd=[[JYW_GCDViewController alloc] init];
+        [self.navigationController pushViewController:gcd animated:YES];
+    }
+    else if(indexPath.row==6){
+        JYW_GCDDispatchWorkItemViewController *gcd=[[JYW_GCDDispatchWorkItemViewController alloc] init];
+        [self.navigationController pushViewController:gcd animated:YES];
+    }
+    else if(indexPath.row==7)
+    {
+        JYW_GCDDispatchGroupViewController *gcd=[[JYW_GCDDispatchGroupViewController alloc] init];
+        [self.navigationController pushViewController:gcd animated:YES];
+    }
+    else if(indexPath.row==8){
+        JYW_GCDDispatchSourceViewController *gcd=[[JYW_GCDDispatchSourceViewController alloc] init];
+        [self.navigationController pushViewController:gcd animated:YES];
+    }
+    else
+    {
         JYW_TestViewController *avc=[[JYW_TestViewController alloc] init];
         [self.navigationController pushViewController:avc animated:YES];
     }

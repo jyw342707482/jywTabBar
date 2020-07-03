@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JYW_GCDViewController">
+            <connections>
+                <outlet property="messageTextView" destination="036-A0-DLP" id="bpM-tU-jWb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XhH-j9-Cdp">
+                    <rect key="frame" x="0.0" y="44" width="414" height="668"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="9pg-Pl-Pzl"/>
+                        <outlet property="delegate" destination="-1" id="MP3-DN-5nZ"/>
+                    </connections>
+                </tableView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="036-A0-DLP">
+                    <rect key="frame" x="0.0" y="712" width="414" height="150"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="6cC-Gp-F3n"/>
+                    </constraints>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="XhH-j9-Cdp" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="3Gf-4f-ehn"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="036-A0-DLP" secondAttribute="bottom" id="A3g-Zk-FCb"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="XhH-j9-Cdp" secondAttribute="trailing" id="FbP-Ij-mLR"/>
+                <constraint firstItem="XhH-j9-Cdp" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="NlA-Jx-lEP"/>
+                <constraint firstItem="036-A0-DLP" firstAttribute="top" secondItem="XhH-j9-Cdp" secondAttribute="bottom" id="b1m-6Y-WLV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="036-A0-DLP" secondAttribute="trailing" id="fCH-hS-dQa"/>
+                <constraint firstItem="036-A0-DLP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="s8r-sf-MVi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="133"/>
+        </view>
+    </objects>
+</document>

@@ -42,6 +42,16 @@
 		693FB36E24A5E3D3003E06AC /* JYW_Carousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FB36D24A5E3D3003E06AC /* JYW_Carousel.m */; };
 		693FB37124A6D518003E06AC /* JYW_CarouselFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FB37024A6D518003E06AC /* JYW_CarouselFlowLayout.m */; };
 		693FB37724A731BA003E06AC /* JYW_CarouselCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FB37624A731BA003E06AC /* JYW_CarouselCollectionViewCell.m */; };
+		693FB37B24AAD799003E06AC /* JYW_GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FB37924AAD799003E06AC /* JYW_GCDViewController.m */; };
+		693FB37C24AAD799003E06AC /* JYW_GCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FB37A24AAD799003E06AC /* JYW_GCDViewController.xib */; };
+		693FC7D924AD897C00065D7A /* JYW_GCDDispatchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC7D724AD897C00065D7A /* JYW_GCDDispatchGroupViewController.m */; };
+		693FC7DA24AD897C00065D7A /* JYW_GCDDispatchGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7D824AD897C00065D7A /* JYW_GCDDispatchGroupViewController.xib */; };
+		693FC7DE24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC7DC24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.m */; };
+		693FC7DF24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7DD24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.xib */; };
+		693FC7E324ADCBE300065D7A /* dispatchIO_Read.txt in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7E124ADCBE300065D7A /* dispatchIO_Read.txt */; };
+		693FC7E424ADCBE300065D7A /* dispatchIO_Write.txt in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7E224ADCBE300065D7A /* dispatchIO_Write.txt */; };
+		69400A4324AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */; };
+		69400A4424AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */; };
 		6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */; };
 		6940B876247E1CA200C74627 /* JYW_FictionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */; };
 		6940B879247E1FA100C74627 /* JYW_FictionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B878247E1FA100C74627 /* JYW_FictionModel.m */; };
@@ -170,6 +180,20 @@
 		693FB37024A6D518003E06AC /* JYW_CarouselFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_CarouselFlowLayout.m; sourceTree = "<group>"; };
 		693FB37524A731BA003E06AC /* JYW_CarouselCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_CarouselCollectionViewCell.h; sourceTree = "<group>"; };
 		693FB37624A731BA003E06AC /* JYW_CarouselCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_CarouselCollectionViewCell.m; sourceTree = "<group>"; };
+		693FB37824AAD799003E06AC /* JYW_GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_GCDViewController.h; sourceTree = "<group>"; };
+		693FB37924AAD799003E06AC /* JYW_GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_GCDViewController.m; sourceTree = "<group>"; };
+		693FB37A24AAD799003E06AC /* JYW_GCDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_GCDViewController.xib; sourceTree = "<group>"; };
+		693FC7D624AD897C00065D7A /* JYW_GCDDispatchGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_GCDDispatchGroupViewController.h; sourceTree = "<group>"; };
+		693FC7D724AD897C00065D7A /* JYW_GCDDispatchGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_GCDDispatchGroupViewController.m; sourceTree = "<group>"; };
+		693FC7D824AD897C00065D7A /* JYW_GCDDispatchGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_GCDDispatchGroupViewController.xib; sourceTree = "<group>"; };
+		693FC7DB24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_GCDDispatchSourceViewController.h; sourceTree = "<group>"; };
+		693FC7DC24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_GCDDispatchSourceViewController.m; sourceTree = "<group>"; };
+		693FC7DD24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_GCDDispatchSourceViewController.xib; sourceTree = "<group>"; };
+		693FC7E124ADCBE300065D7A /* dispatchIO_Read.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dispatchIO_Read.txt; sourceTree = "<group>"; };
+		693FC7E224ADCBE300065D7A /* dispatchIO_Write.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dispatchIO_Write.txt; sourceTree = "<group>"; };
+		69400A4024AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_GCDDispatchWorkItemViewController.h; sourceTree = "<group>"; };
+		69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_GCDDispatchWorkItemViewController.m; sourceTree = "<group>"; };
+		69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_GCDDispatchWorkItemViewController.xib; sourceTree = "<group>"; };
 		6940B872247E1CA200C74627 /* JYW_FictionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_FictionTableViewController.h; sourceTree = "<group>"; };
 		6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_FictionTableViewController.m; sourceTree = "<group>"; };
 		6940B874247E1CA200C74627 /* JYW_FictionTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_FictionTableViewController.xib; sourceTree = "<group>"; };
@@ -368,6 +392,18 @@
 				6942B374249CA702006AA736 /* JYW_SnowflakeViewController.h */,
 				6942B375249CA702006AA736 /* JYW_SnowflakeViewController.m */,
 				6942B376249CA702006AA736 /* JYW_SnowflakeViewController.xib */,
+				693FB37824AAD799003E06AC /* JYW_GCDViewController.h */,
+				693FB37924AAD799003E06AC /* JYW_GCDViewController.m */,
+				693FB37A24AAD799003E06AC /* JYW_GCDViewController.xib */,
+				69400A4024AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.h */,
+				69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */,
+				69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */,
+				693FC7D624AD897C00065D7A /* JYW_GCDDispatchGroupViewController.h */,
+				693FC7D724AD897C00065D7A /* JYW_GCDDispatchGroupViewController.m */,
+				693FC7D824AD897C00065D7A /* JYW_GCDDispatchGroupViewController.xib */,
+				693FC7DB24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.h */,
+				693FC7DC24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.m */,
+				693FC7DD24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.xib */,
 			);
 			path = OtherFunctions;
 			sourceTree = "<group>";
@@ -395,9 +431,19 @@
 			path = Carousel;
 			sourceTree = "<group>";
 		};
+		693FC7E024ADCBE300065D7A /* dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				693FC7E124ADCBE300065D7A /* dispatchIO_Read.txt */,
+				693FC7E224ADCBE300065D7A /* dispatchIO_Write.txt */,
+			);
+			path = dispatch;
+			sourceTree = "<group>";
+		};
 		6940B87A247E246300C74627 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				693FC7E024ADCBE300065D7A /* dispatch */,
 				6942B38824A43275006AA736 /* mp3 */,
 				693F64052489FAA50034AA2B /* video */,
 				6940B87B247E249500C74627 /* FictionList.plist */,
@@ -775,10 +821,13 @@
 				6942B373249CA6AF006AA736 /* JYW_FireworksViewController.xib in Resources */,
 				6942B38324A30531006AA736 /* JYW_FictionDetailViewController.xib in Resources */,
 				693F63EE24879F5F0034AA2B /* video1.mp4 in Resources */,
+				693FC7E324ADCBE300065D7A /* dispatchIO_Read.txt in Resources */,
+				693FC7E424ADCBE300065D7A /* dispatchIO_Write.txt in Resources */,
 				693FB36424A5A8ED003E06AC /* audio1.mp3 in Resources */,
 				69D311B5247D35D80006EEB2 /* LaunchScreen.storyboard in Resources */,
 				693FB36524A5A8ED003E06AC /* audio2.mp3 in Resources */,
 				6942B313249B0DAB006AA736 /* JYW_AnimationViewController.xib in Resources */,
+				693FB37C24AAD799003E06AC /* JYW_GCDViewController.xib in Resources */,
 				693FB36A24A5E358003E06AC /* JYW_CarouselViewController.xib in Resources */,
 				6942AEF324948A4B00C5E570 /* JYW_AVListViewController.xib in Resources */,
 				693F63C92484B84D0034AA2B /* JYW_AddressBookViewController.xib in Resources */,
@@ -786,6 +835,7 @@
 				693F63E624875D920034AA2B /* ProductList.plist in Resources */,
 				69D311B2247D35D80006EEB2 /* Assets.xcassets in Resources */,
 				6940B87C247E249500C74627 /* FictionList.plist in Resources */,
+				693FC7DA24AD897C00065D7A /* JYW_GCDDispatchGroupViewController.xib in Resources */,
 				6942AEDE2491AE2600C5E570 /* JYW_AVViewController.xib in Resources */,
 				69D311F5247DF5C60006EEB2 /* JYW_CollectionViewController.xib in Resources */,
 				693F63FC2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.xib in Resources */,
@@ -795,9 +845,11 @@
 				693F63D9248746600034AA2B /* JYW_ProductListViewController.xib in Resources */,
 				693F63F3248899340034AA2B /* JYW_MeituanFoundViewController.xib in Resources */,
 				69D311F0247DF5B30006EEB2 /* JYW_PictureViewController.xib in Resources */,
+				69400A4424AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib in Resources */,
 				6942B378249CA702006AA736 /* JYW_SnowflakeViewController.xib in Resources */,
 				693F64092489FAD60034AA2B /* video2.mp4 in Resources */,
 				69D311DE247D36580006EEB2 /* JYW_TestViewController.xib in Resources */,
+				693FC7DF24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -935,6 +987,7 @@
 				6942B38724A41F8F006AA736 /* JYWAudioPlayerView.m in Sources */,
 				6942AEEB2491EFA100C5E570 /* JYWPlayerToobarView.m in Sources */,
 				69452FEB248DC9E000EB0361 /* JYW_NavigationViewController.m in Sources */,
+				693FC7D924AD897C00065D7A /* JYW_GCDDispatchGroupViewController.m in Sources */,
 				69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */,
 				6942B312249B0DAB006AA736 /* JYW_AnimationViewController.m in Sources */,
 				693FB36E24A5E3D3003E06AC /* JYW_Carousel.m in Sources */,
@@ -959,12 +1012,15 @@
 				6942B377249CA702006AA736 /* JYW_SnowflakeViewController.m in Sources */,
 				693F63C4248108580034AA2B /* UIView+JYW_Border.m in Sources */,
 				6942AEE52491B2F100C5E570 /* JYWPlayerModel.m in Sources */,
+				69400A4324AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m in Sources */,
 				6940B882247F479300C74627 /* JYW_FictionViewModel.m in Sources */,
 				6942AEE22491B20200C5E570 /* JYWPlayerView.m in Sources */,
 				6942B37B249D96A2006AA736 /* JYWGrade.m in Sources */,
 				693F63FB2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.m in Sources */,
 				69452FE4248B526600EB0361 /* NSString+JYW_StringWidth.m in Sources */,
+				693FC7DE24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.m in Sources */,
 				693F63D42484BD1E0034AA2B /* JYW_AddressBookGroupModel.m in Sources */,
+				693FB37B24AAD799003E06AC /* JYW_GCDViewController.m in Sources */,
 				69D311F8247DF6190006EEB2 /* JYW_TabBarViewController.m in Sources */,
 				6942B36B249C5CCD006AA736 /* JYWFireworks.m in Sources */,
 				693F63F2248899340034AA2B /* JYW_MeituanFoundViewController.m in Sources */,
