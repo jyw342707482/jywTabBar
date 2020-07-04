@@ -21,9 +21,11 @@
 #import "JYW_GCDDispatchWorkItemViewController.h"
 #import "JYW_GCDDispatchGroupViewController.h"
 #import "JYW_GCDDispatchSourceViewController.h"
+#import "JYW_DispatchSemaphoreViewController.h"
 @interface JYW_OtherFunctionsViewController ()
 {
     NSArray *tableDSArray;
+    NSArray *subtitleArray;
 }
 @end
 
@@ -41,8 +43,9 @@
     //设置导航标题
     self.title=@"OtherFunctions";
     tableDSArray=@[@"自定义AVPlayer播放器",@"视频列表",@"动画",@"烟花动画",@"下雪动画",
-                   @"GCD多线程-Dispatch Queue",@"GCD多线程-Dispatch Work Item",@"GCD多线程-Dispatch Group",@"GCD多线程-Dispatch Source",
+                   @"GCD多线程-Dispatch Queue",@"GCD多线程-Dispatch Work Item",@"GCD多线程-Dispatch Group",@"GCD多线程-Dispatch Source",@"GCD多线程-Dispatch Semaphore",
                    @"测试"];
+    subtitleArray=@[@"类型",@"类型",@"类型",@"类型",@"类型",@"类型",@"块",@"组",@"资源、I/O",@"信号量、Barrier线程阻断",@"类型"];
     /*
     //添加导航右侧按钮，按钮类型为系统加号
     UIBarButtonItem *rightBarButton=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(tbViewAddRow:)];
@@ -107,7 +110,7 @@
     cell.textLabel.text = [tableDSArray objectAtIndex:indexPath.row];
     
     
-    cell.detailTextLabel.text = @"类型";
+    cell.detailTextLabel.text = [subtitleArray objectAtIndex:indexPath.row];
     //添加右侧注释
     
     return cell;
@@ -155,6 +158,10 @@
     }
     else if(indexPath.row==8){
         JYW_GCDDispatchSourceViewController *gcd=[[JYW_GCDDispatchSourceViewController alloc] init];
+        [self.navigationController pushViewController:gcd animated:YES];
+    }
+    else if(indexPath.row==9){
+        JYW_DispatchSemaphoreViewController *gcd=[[JYW_DispatchSemaphoreViewController alloc] init];
         [self.navigationController pushViewController:gcd animated:YES];
     }
     else

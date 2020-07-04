@@ -50,6 +50,8 @@
 		693FC7DF24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7DD24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.xib */; };
 		693FC7E324ADCBE300065D7A /* dispatchIO_Read.txt in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7E124ADCBE300065D7A /* dispatchIO_Read.txt */; };
 		693FC7E424ADCBE300065D7A /* dispatchIO_Write.txt in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7E224ADCBE300065D7A /* dispatchIO_Write.txt */; };
+		693FC7E824B00C5700065D7A /* JYW_DispatchSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC7E624B00C5700065D7A /* JYW_DispatchSemaphoreViewController.m */; };
+		693FC7E924B00C5700065D7A /* JYW_DispatchSemaphoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7E724B00C5700065D7A /* JYW_DispatchSemaphoreViewController.xib */; };
 		69400A4324AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */; };
 		69400A4424AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */; };
 		6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */; };
@@ -191,6 +193,9 @@
 		693FC7DD24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_GCDDispatchSourceViewController.xib; sourceTree = "<group>"; };
 		693FC7E124ADCBE300065D7A /* dispatchIO_Read.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dispatchIO_Read.txt; sourceTree = "<group>"; };
 		693FC7E224ADCBE300065D7A /* dispatchIO_Write.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dispatchIO_Write.txt; sourceTree = "<group>"; };
+		693FC7E524B00C5700065D7A /* JYW_DispatchSemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_DispatchSemaphoreViewController.h; sourceTree = "<group>"; };
+		693FC7E624B00C5700065D7A /* JYW_DispatchSemaphoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_DispatchSemaphoreViewController.m; sourceTree = "<group>"; };
+		693FC7E724B00C5700065D7A /* JYW_DispatchSemaphoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_DispatchSemaphoreViewController.xib; sourceTree = "<group>"; };
 		69400A4024AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_GCDDispatchWorkItemViewController.h; sourceTree = "<group>"; };
 		69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_GCDDispatchWorkItemViewController.m; sourceTree = "<group>"; };
 		69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_GCDDispatchWorkItemViewController.xib; sourceTree = "<group>"; };
@@ -404,6 +409,9 @@
 				693FC7DB24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.h */,
 				693FC7DC24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.m */,
 				693FC7DD24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.xib */,
+				693FC7E524B00C5700065D7A /* JYW_DispatchSemaphoreViewController.h */,
+				693FC7E624B00C5700065D7A /* JYW_DispatchSemaphoreViewController.m */,
+				693FC7E724B00C5700065D7A /* JYW_DispatchSemaphoreViewController.xib */,
 			);
 			path = OtherFunctions;
 			sourceTree = "<group>";
@@ -823,6 +831,7 @@
 				693F63EE24879F5F0034AA2B /* video1.mp4 in Resources */,
 				693FC7E324ADCBE300065D7A /* dispatchIO_Read.txt in Resources */,
 				693FC7E424ADCBE300065D7A /* dispatchIO_Write.txt in Resources */,
+				693FC7E924B00C5700065D7A /* JYW_DispatchSemaphoreViewController.xib in Resources */,
 				693FB36424A5A8ED003E06AC /* audio1.mp3 in Resources */,
 				69D311B5247D35D80006EEB2 /* LaunchScreen.storyboard in Resources */,
 				693FB36524A5A8ED003E06AC /* audio2.mp3 in Resources */,
@@ -993,6 +1002,7 @@
 				693FB36E24A5E3D3003E06AC /* JYW_Carousel.m in Sources */,
 				693FB37724A731BA003E06AC /* JYW_CarouselCollectionViewCell.m in Sources */,
 				6942AEF224948A4B00C5E570 /* JYW_AVListViewController.m in Sources */,
+				693FC7E824B00C5700065D7A /* JYW_DispatchSemaphoreViewController.m in Sources */,
 				6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */,
 				6942B37E249DCB46006AA736 /* JYWGradeRing.m in Sources */,
 				693F63EC2487627C0034AA2B /* JYW_ProductListViewModel.m in Sources */,

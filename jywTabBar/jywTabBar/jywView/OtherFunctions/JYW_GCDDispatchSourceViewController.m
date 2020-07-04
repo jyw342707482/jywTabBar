@@ -83,7 +83,7 @@
 #pragma mark -dispatch I/O Read 文件读取，异步串行
 //转载：https://www.cnblogs.com/theManOfGod/p/5132590.html
 -(void)dispatchIO_Read{
-    NSString *writeFilePath=[[NSBundle mainBundle] pathForResource:@"dispatchIO_Read" ofType:@"txt"];
+    NSString *writeFilePath=[[NSBundle mainBundle] pathForResource:@"dispatchIO_Write" ofType:@"txt"];
     dispatch_fd_t dfdt=open(writeFilePath.UTF8String, O_RDONLY);
     dispatch_queue_attr_t dqAttr=dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_UTILITY, -1);
     dispatch_queue_t dqt=dispatch_queue_create("jyw.jyw.oc.tabBar", dqAttr);
@@ -111,8 +111,8 @@
     });
 }
 #pragma mark -dispatch I/O Read 文件读取，异步并行
--(void)dispatchIO_Read1{
-    NSString *writeFilePath=[[NSBundle mainBundle] pathForResource:@"dispatchIO_Read" ofType:@"txt"];
+-(void)dispatchIO_Read1:(NSString *)fileStr{
+    NSString *writeFilePath=[[NSBundle mainBundle] pathForResource:fileStr ofType:@"txt"];
     dispatch_fd_t dfdt=open(writeFilePath.UTF8String, O_RDONLY);
     dispatch_queue_attr_t dqAttr=dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_UTILITY, -1);
     dispatch_queue_t dqt=dispatch_queue_create("jyw.jyw.oc.tabBar", dqAttr);
@@ -164,16 +164,48 @@
     
     NSString *dataStr=@"a;lkdjalsfjals;dfkalskdfjaslkdjflkajkdjksjfkdfjksdjfksdfjksfj";
     NSData * data=[dataStr dataUsingEncoding:NSUTF8StringEncoding];
-    dispatch_io_write(iot, 0, data, dqt, ^(bool done, dispatch_data_t  _Nullable data, int error) {
+    dispatch_data_t ddt=[self dispatchDataFromNsdata:data];
+    dispatch_io_write(iot, 0, ddt, dqt, ^(bool done, dispatch_data_t  _Nullable data, int error) {
         if(error==0)
         {}
         if(done){
             dispatch_async(dispatch_get_main_queue(), ^{
                 self->messageTextView.text=[NSString stringWithFormat:@"%@;  写入完成",self->messageTextView.text];
             });
+            [self dispatchIO_Read1:@"dispatchIO_Write"];
         }
     });
+    
 }
+#pragma mark -NSData 转 dispatch_data_t
+/// @param nsdata NSData
+- (dispatch_data_t)dispatchDataFromNsdata:(NSData *)nsdata {
+    if (nsdata == nil) {
+        return nil;
+    }
+    Byte byte[nsdata.length];
+    [nsdata getBytes:byte length:nsdata.length];
+    dispatch_data_t data = dispatch_data_create(byte, nsdata.length, nil, DISPATCH_DATA_DESTRUCTOR_DEFAULT);
+    return data;
+}
+
+#pragma mark -dispatch_data_t 转 NSData
+/// @param dispatchData dispatch_data_t
+- (NSData *)nsdataFromDispatchData:(dispatch_data_t)dispatchData {
+    if (dispatchData == nil) {
+        return nil;
+    }
+    const void *buffer = NULL;
+    size_t size = 0;
+    dispatch_data_t new_data_file = dispatch_data_create_map(dispatchData, &buffer, &size);
+    if(new_data_file) {/* to avoid warning really - since dispatch_data_create_map demands we care about the return arg */}
+    NSData *nsdata = [[NSData alloc] initWithBytes:buffer length:size];
+    return nsdata;
+}
+/*
+ dispatch_data_apply
+ 转载：https://blog.csdn.net/buildSetting/article/details/50749465
+ */
 #pragma mark -tableViewDelegate
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -241,7 +273,7 @@
             [self dispatchIO_Read];
             break;
         case 2:
-            [self dispatchIO_Read1];
+            [self dispatchIO_Read1:@"dispatchIO_Read"];
             break;
         case 3:
             [self dispatchIO_Write];
@@ -252,6 +284,7 @@
 }
 
 /*
+ dispatch source
 Creating a Dispatch Source,创建调度源
 dispatch_source_create//创建一个新的调度源以监视低级系统事件。
 dispatch_source_t
@@ -310,6 +343,7 @@ dispatch_source_testcancel
 
 
 /*
+ dispatch I/O
  Creating a Dispatch I/O Object,创建调度I / O对象
  dispatch_io_create
  创建一个调度I / O通道，并将其与指定的文件描述符关联。
@@ -365,5 +399,31 @@ dispatch_source_testcancel
  Synchronizing File Operations,同步文件操作
  dispatch_io_barrier
  调度指定通道上的屏障操作。
+ */
+
+/*
+ dispatch data
+Creating a Dispatch Data Object,创建调度数据对象
+dispatch_data_create//用指定的内存缓冲区创建一个新的调度数据对象。
+dispatch_data_create_map//返回一个新的调度数据对象，其中包含指定对象内存的连续表示形式。
+dispatch_data_create_concat//返回一个新的调度数据对象，该对象由来自其他两个数据对象的串联数据组成。
+dispatch_data_create_subrange//返回一个新的调度数据对象，其内容由另一个对象的内存区域的一部分组成。
+dispatch_data_copy_region//返回一个数据对象，该数据对象包含另一个数据对象中的一部分数据。
+dispatch_data_empty//表示零长度存储区域的调度数据对象。
+dispatch_data_t//一个不可变的对象，表示内存的连续或稀疏区域。
+OS_dispatch_data
+DISPATCH_DATA_DESTRUCTOR_DEFAULT
+调度对象的默认数据析构函数。
+DISPATCH_DATA_DESTRUCTOR_FREE
+使用内存分配例程malloc系列创建内存缓冲区的调度数据对象的析构函数。
+
+
+Getting the Number of Elements,获取元素数
+dispatch_data_get_size//返回由调度数据对象管理的内存的逻辑大小
+
+
+Applying Changes to the Data,将更改应用于数据
+dispatch_data_apply//遍历调度数据对象的内存，并在每个区域上执行自定义代码。
+dispatch_data_applier_t//为数据对象中的每个连续内存区域调用的块。
  */
 @end

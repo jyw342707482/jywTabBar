@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JYW_DispatchSemaphoreViewController">
+            <connections>
+                <outlet property="messageTextView" destination="I44-Do-qd6" id="J1L-qn-PwG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YKB-W2-RRi">
+                    <rect key="frame" x="0.0" y="44" width="414" height="668"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="n41-V9-qFg"/>
+                        <outlet property="delegate" destination="-1" id="law-3v-Gjf"/>
+                    </connections>
+                </tableView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I44-Do-qd6">
+                    <rect key="frame" x="0.0" y="712" width="414" height="150"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="bry-mV-gG6"/>
+                    </constraints>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="I44-Do-qd6" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="9QP-1u-574"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="YKB-W2-RRi" secondAttribute="trailing" id="OSs-qf-Fcc"/>
+                <constraint firstItem="I44-Do-qd6" firstAttribute="top" secondItem="YKB-W2-RRi" secondAttribute="bottom" id="Wdf-42-GEo"/>
+                <constraint firstItem="YKB-W2-RRi" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="dJ2-xC-QLC"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="I44-Do-qd6" secondAttribute="trailing" id="dgs-zm-Ad7"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="I44-Do-qd6" secondAttribute="bottom" id="fKh-zN-X4k"/>
+                <constraint firstItem="YKB-W2-RRi" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="sSs-qj-6R0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="133"/>
+        </view>
+    </objects>
+</document>
