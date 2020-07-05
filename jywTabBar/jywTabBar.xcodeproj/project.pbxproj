@@ -324,7 +324,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		693EEBE6249B080F00E5EAB3 /* JYWAnimation */ = {
+		693EEBE6249B080F00E5EAB3 /* JYWAnimationExamples */ = {
 			isa = PBXGroup;
 			children = (
 				693EEBE7249B08CE00E5EAB3 /* JYWProgressRing1.h */,
@@ -340,7 +340,7 @@
 				6942B37C249DCB46006AA736 /* JYWGradeRing.h */,
 				6942B37D249DCB46006AA736 /* JYWGradeRing.m */,
 			);
-			path = JYWAnimation;
+			path = JYWAnimationExamples;
 			sourceTree = "<group>";
 		};
 		693F63BA2480A39B0034AA2B /* selectAudioView */ = {
@@ -377,7 +377,9 @@
 		693F63F72489DCCA0034AA2B /* OtherFunctions */ = {
 			isa = PBXGroup;
 			children = (
-				693EEBE6249B080F00E5EAB3 /* JYWAnimation */,
+				693FC7EB24B1694600065D7A /* JYWAnimation */,
+				693FC7EA24B168FB00065D7A /* GCD多线程 */,
+				693EEBE6249B080F00E5EAB3 /* JYWAnimationExamples */,
 				6942AEDF2491B1C200C5E570 /* JYWPlayerView */,
 				693F63F82489DCEC0034AA2B /* JYW_OtherFunctionsViewController.h */,
 				693F63F92489DCEC0034AA2B /* JYW_OtherFunctionsViewController.m */,
@@ -397,21 +399,6 @@
 				6942B374249CA702006AA736 /* JYW_SnowflakeViewController.h */,
 				6942B375249CA702006AA736 /* JYW_SnowflakeViewController.m */,
 				6942B376249CA702006AA736 /* JYW_SnowflakeViewController.xib */,
-				693FB37824AAD799003E06AC /* JYW_GCDViewController.h */,
-				693FB37924AAD799003E06AC /* JYW_GCDViewController.m */,
-				693FB37A24AAD799003E06AC /* JYW_GCDViewController.xib */,
-				69400A4024AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.h */,
-				69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */,
-				69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */,
-				693FC7D624AD897C00065D7A /* JYW_GCDDispatchGroupViewController.h */,
-				693FC7D724AD897C00065D7A /* JYW_GCDDispatchGroupViewController.m */,
-				693FC7D824AD897C00065D7A /* JYW_GCDDispatchGroupViewController.xib */,
-				693FC7DB24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.h */,
-				693FC7DC24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.m */,
-				693FC7DD24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.xib */,
-				693FC7E524B00C5700065D7A /* JYW_DispatchSemaphoreViewController.h */,
-				693FC7E624B00C5700065D7A /* JYW_DispatchSemaphoreViewController.m */,
-				693FC7E724B00C5700065D7A /* JYW_DispatchSemaphoreViewController.xib */,
 			);
 			path = OtherFunctions;
 			sourceTree = "<group>";
@@ -446,6 +433,35 @@
 				693FC7E224ADCBE300065D7A /* dispatchIO_Write.txt */,
 			);
 			path = dispatch;
+			sourceTree = "<group>";
+		};
+		693FC7EA24B168FB00065D7A /* GCD多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				693FB37824AAD799003E06AC /* JYW_GCDViewController.h */,
+				693FB37924AAD799003E06AC /* JYW_GCDViewController.m */,
+				693FB37A24AAD799003E06AC /* JYW_GCDViewController.xib */,
+				69400A4024AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.h */,
+				69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */,
+				69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */,
+				693FC7D624AD897C00065D7A /* JYW_GCDDispatchGroupViewController.h */,
+				693FC7D724AD897C00065D7A /* JYW_GCDDispatchGroupViewController.m */,
+				693FC7D824AD897C00065D7A /* JYW_GCDDispatchGroupViewController.xib */,
+				693FC7DB24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.h */,
+				693FC7DC24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.m */,
+				693FC7DD24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.xib */,
+				693FC7E524B00C5700065D7A /* JYW_DispatchSemaphoreViewController.h */,
+				693FC7E624B00C5700065D7A /* JYW_DispatchSemaphoreViewController.m */,
+				693FC7E724B00C5700065D7A /* JYW_DispatchSemaphoreViewController.xib */,
+			);
+			path = "GCD多线程";
+			sourceTree = "<group>";
+		};
+		693FC7EB24B1694600065D7A /* JYWAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JYWAnimation;
 			sourceTree = "<group>";
 		};
 		6940B87A247E246300C74627 /* Data */ = {
