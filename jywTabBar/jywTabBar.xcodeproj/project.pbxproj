@@ -52,6 +52,29 @@
 		693FC7E424ADCBE300065D7A /* dispatchIO_Write.txt in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7E224ADCBE300065D7A /* dispatchIO_Write.txt */; };
 		693FC7E824B00C5700065D7A /* JYW_DispatchSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC7E624B00C5700065D7A /* JYW_DispatchSemaphoreViewController.m */; };
 		693FC7E924B00C5700065D7A /* JYW_DispatchSemaphoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7E724B00C5700065D7A /* JYW_DispatchSemaphoreViewController.xib */; };
+		693FC7EF24B1732F00065D7A /* JYW_Animation1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC7ED24B1732F00065D7A /* JYW_Animation1ViewController.m */; };
+		693FC7F024B1732F00065D7A /* JYW_Animation1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7EE24B1732F00065D7A /* JYW_Animation1ViewController.xib */; };
+		693FC7F424B2F5DB00065D7A /* JYW_Animation2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC7F224B2F5DB00065D7A /* JYW_Animation2ViewController.m */; };
+		693FC7F524B2F5DB00065D7A /* JYW_Animation2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7F324B2F5DB00065D7A /* JYW_Animation2ViewController.xib */; };
+		693FC7F924B313EA00065D7A /* JYW_Animation3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC7F724B313EA00065D7A /* JYW_Animation3ViewController.m */; };
+		693FC7FA24B313EA00065D7A /* JYW_Animation3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7F824B313EA00065D7A /* JYW_Animation3ViewController.xib */; };
+		693FC7FE24B4094400065D7A /* JYW_Animation4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC7FC24B4094400065D7A /* JYW_Animation4ViewController.m */; };
+		693FC7FF24B4094400065D7A /* JYW_Animation4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC7FD24B4094400065D7A /* JYW_Animation4ViewController.xib */; };
+		693FC80324B4188300065D7A /* JYW_Animation5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC80124B4188300065D7A /* JYW_Animation5ViewController.m */; };
+		693FC80424B4188300065D7A /* JYW_Animation5ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC80224B4188300065D7A /* JYW_Animation5ViewController.xib */; };
+		693FC80824B42A1200065D7A /* JYW_UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC80624B42A1200065D7A /* JYW_UIBezierPathViewController.m */; };
+		693FC80924B42A1200065D7A /* JYW_UIBezierPathViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC80724B42A1200065D7A /* JYW_UIBezierPathViewController.xib */; };
+		693FC80D24B45BF400065D7A /* JYW_BezierPathView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC80C24B45BF400065D7A /* JYW_BezierPathView1.m */; };
+		693FC81024B46B5E00065D7A /* JYW_BezierPathView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC80F24B46B5E00065D7A /* JYW_BezierPathView2.m */; };
+		693FC81324B46C9300065D7A /* JYW_BezierPathView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC81224B46C9300065D7A /* JYW_BezierPathView3.m */; };
+		693FC81624B46D6F00065D7A /* JYW_BezierPathView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC81524B46D6F00065D7A /* JYW_BezierPathView4.m */; };
+		693FC81924B46E1600065D7A /* JYW_BezierPathView5.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC81824B46E1600065D7A /* JYW_BezierPathView5.m */; };
+		693FC81C24B46F2600065D7A /* JYW_BezierPathView6.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC81B24B46F2600065D7A /* JYW_BezierPathView6.m */; };
+		693FC81F24B4704B00065D7A /* JYW_BezierPathView7.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC81E24B4704B00065D7A /* JYW_BezierPathView7.m */; };
+		693FC82224B471B200065D7A /* JYW_BezierPathView8.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC82124B471B200065D7A /* JYW_BezierPathView8.m */; };
+		693FC82624B5485000065D7A /* JYW_TextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC82524B5485000065D7A /* JYW_TextLayer.m */; };
+		693FC82A24B54E8200065D7A /* JYW_CALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC82824B54E8200065D7A /* JYW_CALayerViewController.m */; };
+		693FC82B24B54E8200065D7A /* JYW_CALayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC82924B54E8200065D7A /* JYW_CALayerViewController.xib */; };
 		69400A4324AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */; };
 		69400A4424AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */; };
 		6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */; };
@@ -196,6 +219,45 @@
 		693FC7E524B00C5700065D7A /* JYW_DispatchSemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_DispatchSemaphoreViewController.h; sourceTree = "<group>"; };
 		693FC7E624B00C5700065D7A /* JYW_DispatchSemaphoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_DispatchSemaphoreViewController.m; sourceTree = "<group>"; };
 		693FC7E724B00C5700065D7A /* JYW_DispatchSemaphoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_DispatchSemaphoreViewController.xib; sourceTree = "<group>"; };
+		693FC7EC24B1732F00065D7A /* JYW_Animation1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_Animation1ViewController.h; sourceTree = "<group>"; };
+		693FC7ED24B1732F00065D7A /* JYW_Animation1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_Animation1ViewController.m; sourceTree = "<group>"; };
+		693FC7EE24B1732F00065D7A /* JYW_Animation1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_Animation1ViewController.xib; sourceTree = "<group>"; };
+		693FC7F124B2F5DB00065D7A /* JYW_Animation2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_Animation2ViewController.h; sourceTree = "<group>"; };
+		693FC7F224B2F5DB00065D7A /* JYW_Animation2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_Animation2ViewController.m; sourceTree = "<group>"; };
+		693FC7F324B2F5DB00065D7A /* JYW_Animation2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_Animation2ViewController.xib; sourceTree = "<group>"; };
+		693FC7F624B313EA00065D7A /* JYW_Animation3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_Animation3ViewController.h; sourceTree = "<group>"; };
+		693FC7F724B313EA00065D7A /* JYW_Animation3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_Animation3ViewController.m; sourceTree = "<group>"; };
+		693FC7F824B313EA00065D7A /* JYW_Animation3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_Animation3ViewController.xib; sourceTree = "<group>"; };
+		693FC7FB24B4094400065D7A /* JYW_Animation4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_Animation4ViewController.h; sourceTree = "<group>"; };
+		693FC7FC24B4094400065D7A /* JYW_Animation4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_Animation4ViewController.m; sourceTree = "<group>"; };
+		693FC7FD24B4094400065D7A /* JYW_Animation4ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_Animation4ViewController.xib; sourceTree = "<group>"; };
+		693FC80024B4188300065D7A /* JYW_Animation5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_Animation5ViewController.h; sourceTree = "<group>"; };
+		693FC80124B4188300065D7A /* JYW_Animation5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_Animation5ViewController.m; sourceTree = "<group>"; };
+		693FC80224B4188300065D7A /* JYW_Animation5ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_Animation5ViewController.xib; sourceTree = "<group>"; };
+		693FC80524B42A1200065D7A /* JYW_UIBezierPathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_UIBezierPathViewController.h; sourceTree = "<group>"; };
+		693FC80624B42A1200065D7A /* JYW_UIBezierPathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_UIBezierPathViewController.m; sourceTree = "<group>"; };
+		693FC80724B42A1200065D7A /* JYW_UIBezierPathViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_UIBezierPathViewController.xib; sourceTree = "<group>"; };
+		693FC80B24B45BF400065D7A /* JYW_BezierPathView1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_BezierPathView1.h; sourceTree = "<group>"; };
+		693FC80C24B45BF400065D7A /* JYW_BezierPathView1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_BezierPathView1.m; sourceTree = "<group>"; };
+		693FC80E24B46B5E00065D7A /* JYW_BezierPathView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_BezierPathView2.h; sourceTree = "<group>"; };
+		693FC80F24B46B5E00065D7A /* JYW_BezierPathView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_BezierPathView2.m; sourceTree = "<group>"; };
+		693FC81124B46C9300065D7A /* JYW_BezierPathView3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_BezierPathView3.h; sourceTree = "<group>"; };
+		693FC81224B46C9300065D7A /* JYW_BezierPathView3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_BezierPathView3.m; sourceTree = "<group>"; };
+		693FC81424B46D6F00065D7A /* JYW_BezierPathView4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_BezierPathView4.h; sourceTree = "<group>"; };
+		693FC81524B46D6F00065D7A /* JYW_BezierPathView4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_BezierPathView4.m; sourceTree = "<group>"; };
+		693FC81724B46E1600065D7A /* JYW_BezierPathView5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_BezierPathView5.h; sourceTree = "<group>"; };
+		693FC81824B46E1600065D7A /* JYW_BezierPathView5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_BezierPathView5.m; sourceTree = "<group>"; };
+		693FC81A24B46F2600065D7A /* JYW_BezierPathView6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_BezierPathView6.h; sourceTree = "<group>"; };
+		693FC81B24B46F2600065D7A /* JYW_BezierPathView6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_BezierPathView6.m; sourceTree = "<group>"; };
+		693FC81D24B4704B00065D7A /* JYW_BezierPathView7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_BezierPathView7.h; sourceTree = "<group>"; };
+		693FC81E24B4704B00065D7A /* JYW_BezierPathView7.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_BezierPathView7.m; sourceTree = "<group>"; };
+		693FC82024B471B200065D7A /* JYW_BezierPathView8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_BezierPathView8.h; sourceTree = "<group>"; };
+		693FC82124B471B200065D7A /* JYW_BezierPathView8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_BezierPathView8.m; sourceTree = "<group>"; };
+		693FC82424B5485000065D7A /* JYW_TextLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_TextLayer.h; sourceTree = "<group>"; };
+		693FC82524B5485000065D7A /* JYW_TextLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_TextLayer.m; sourceTree = "<group>"; };
+		693FC82724B54E8200065D7A /* JYW_CALayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_CALayerViewController.h; sourceTree = "<group>"; };
+		693FC82824B54E8200065D7A /* JYW_CALayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_CALayerViewController.m; sourceTree = "<group>"; };
+		693FC82924B54E8200065D7A /* JYW_CALayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_CALayerViewController.xib; sourceTree = "<group>"; };
 		69400A4024AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_GCDDispatchWorkItemViewController.h; sourceTree = "<group>"; };
 		69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_GCDDispatchWorkItemViewController.m; sourceTree = "<group>"; };
 		69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_GCDDispatchWorkItemViewController.xib; sourceTree = "<group>"; };
@@ -460,8 +522,63 @@
 		693FC7EB24B1694600065D7A /* JYWAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				693FC82324B5481D00065D7A /* CALayer */,
+				693FC80A24B45BC500065D7A /* UIBezierPathView */,
+				693FC7EC24B1732F00065D7A /* JYW_Animation1ViewController.h */,
+				693FC7ED24B1732F00065D7A /* JYW_Animation1ViewController.m */,
+				693FC7EE24B1732F00065D7A /* JYW_Animation1ViewController.xib */,
+				693FC7F124B2F5DB00065D7A /* JYW_Animation2ViewController.h */,
+				693FC7F224B2F5DB00065D7A /* JYW_Animation2ViewController.m */,
+				693FC7F324B2F5DB00065D7A /* JYW_Animation2ViewController.xib */,
+				693FC7F624B313EA00065D7A /* JYW_Animation3ViewController.h */,
+				693FC7F724B313EA00065D7A /* JYW_Animation3ViewController.m */,
+				693FC7F824B313EA00065D7A /* JYW_Animation3ViewController.xib */,
+				693FC7FB24B4094400065D7A /* JYW_Animation4ViewController.h */,
+				693FC7FC24B4094400065D7A /* JYW_Animation4ViewController.m */,
+				693FC7FD24B4094400065D7A /* JYW_Animation4ViewController.xib */,
+				693FC80024B4188300065D7A /* JYW_Animation5ViewController.h */,
+				693FC80124B4188300065D7A /* JYW_Animation5ViewController.m */,
+				693FC80224B4188300065D7A /* JYW_Animation5ViewController.xib */,
+				693FC80524B42A1200065D7A /* JYW_UIBezierPathViewController.h */,
+				693FC80624B42A1200065D7A /* JYW_UIBezierPathViewController.m */,
+				693FC80724B42A1200065D7A /* JYW_UIBezierPathViewController.xib */,
+				693FC82724B54E8200065D7A /* JYW_CALayerViewController.h */,
+				693FC82824B54E8200065D7A /* JYW_CALayerViewController.m */,
+				693FC82924B54E8200065D7A /* JYW_CALayerViewController.xib */,
 			);
 			path = JYWAnimation;
+			sourceTree = "<group>";
+		};
+		693FC80A24B45BC500065D7A /* UIBezierPathView */ = {
+			isa = PBXGroup;
+			children = (
+				693FC80B24B45BF400065D7A /* JYW_BezierPathView1.h */,
+				693FC80C24B45BF400065D7A /* JYW_BezierPathView1.m */,
+				693FC80E24B46B5E00065D7A /* JYW_BezierPathView2.h */,
+				693FC80F24B46B5E00065D7A /* JYW_BezierPathView2.m */,
+				693FC81124B46C9300065D7A /* JYW_BezierPathView3.h */,
+				693FC81224B46C9300065D7A /* JYW_BezierPathView3.m */,
+				693FC81424B46D6F00065D7A /* JYW_BezierPathView4.h */,
+				693FC81524B46D6F00065D7A /* JYW_BezierPathView4.m */,
+				693FC81724B46E1600065D7A /* JYW_BezierPathView5.h */,
+				693FC81824B46E1600065D7A /* JYW_BezierPathView5.m */,
+				693FC81A24B46F2600065D7A /* JYW_BezierPathView6.h */,
+				693FC81B24B46F2600065D7A /* JYW_BezierPathView6.m */,
+				693FC81D24B4704B00065D7A /* JYW_BezierPathView7.h */,
+				693FC81E24B4704B00065D7A /* JYW_BezierPathView7.m */,
+				693FC82024B471B200065D7A /* JYW_BezierPathView8.h */,
+				693FC82124B471B200065D7A /* JYW_BezierPathView8.m */,
+			);
+			path = UIBezierPathView;
+			sourceTree = "<group>";
+		};
+		693FC82324B5481D00065D7A /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				693FC82424B5485000065D7A /* JYW_TextLayer.h */,
+				693FC82524B5485000065D7A /* JYW_TextLayer.m */,
+			);
+			path = CALayer;
 			sourceTree = "<group>";
 		};
 		6940B87A247E246300C74627 /* Data */ = {
@@ -844,29 +961,35 @@
 				693F64082489FAD60034AA2B /* video3.mp4 in Resources */,
 				6942B373249CA6AF006AA736 /* JYW_FireworksViewController.xib in Resources */,
 				6942B38324A30531006AA736 /* JYW_FictionDetailViewController.xib in Resources */,
+				693FC80924B42A1200065D7A /* JYW_UIBezierPathViewController.xib in Resources */,
 				693F63EE24879F5F0034AA2B /* video1.mp4 in Resources */,
 				693FC7E324ADCBE300065D7A /* dispatchIO_Read.txt in Resources */,
 				693FC7E424ADCBE300065D7A /* dispatchIO_Write.txt in Resources */,
 				693FC7E924B00C5700065D7A /* JYW_DispatchSemaphoreViewController.xib in Resources */,
+				693FC7FA24B313EA00065D7A /* JYW_Animation3ViewController.xib in Resources */,
 				693FB36424A5A8ED003E06AC /* audio1.mp3 in Resources */,
 				69D311B5247D35D80006EEB2 /* LaunchScreen.storyboard in Resources */,
 				693FB36524A5A8ED003E06AC /* audio2.mp3 in Resources */,
 				6942B313249B0DAB006AA736 /* JYW_AnimationViewController.xib in Resources */,
 				693FB37C24AAD799003E06AC /* JYW_GCDViewController.xib in Resources */,
+				693FC82B24B54E8200065D7A /* JYW_CALayerViewController.xib in Resources */,
 				693FB36A24A5E358003E06AC /* JYW_CarouselViewController.xib in Resources */,
 				6942AEF324948A4B00C5E570 /* JYW_AVListViewController.xib in Resources */,
 				693F63C92484B84D0034AA2B /* JYW_AddressBookViewController.xib in Resources */,
 				6942B38A24A432AF006AA736 /* audio.mp3 in Resources */,
 				693F63E624875D920034AA2B /* ProductList.plist in Resources */,
 				69D311B2247D35D80006EEB2 /* Assets.xcassets in Resources */,
+				693FC80424B4188300065D7A /* JYW_Animation5ViewController.xib in Resources */,
 				6940B87C247E249500C74627 /* FictionList.plist in Resources */,
 				693FC7DA24AD897C00065D7A /* JYW_GCDDispatchGroupViewController.xib in Resources */,
 				6942AEDE2491AE2600C5E570 /* JYW_AVViewController.xib in Resources */,
 				69D311F5247DF5C60006EEB2 /* JYW_CollectionViewController.xib in Resources */,
 				693F63FC2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.xib in Resources */,
+				693FC7F024B1732F00065D7A /* JYW_Animation1ViewController.xib in Resources */,
 				6940B876247E1CA200C74627 /* JYW_FictionTableViewController.xib in Resources */,
 				69D311EB247DF5A20006EEB2 /* JYW_TableViewController.xib in Resources */,
 				69D311B0247D35D70006EEB2 /* Main.storyboard in Resources */,
+				693FC7F524B2F5DB00065D7A /* JYW_Animation2ViewController.xib in Resources */,
 				693F63D9248746600034AA2B /* JYW_ProductListViewController.xib in Resources */,
 				693F63F3248899340034AA2B /* JYW_MeituanFoundViewController.xib in Resources */,
 				69D311F0247DF5B30006EEB2 /* JYW_PictureViewController.xib in Resources */,
@@ -874,6 +997,7 @@
 				6942B378249CA702006AA736 /* JYW_SnowflakeViewController.xib in Resources */,
 				693F64092489FAD60034AA2B /* video2.mp4 in Resources */,
 				69D311DE247D36580006EEB2 /* JYW_TestViewController.xib in Resources */,
+				693FC7FF24B4094400065D7A /* JYW_Animation4ViewController.xib in Resources */,
 				693FC7DF24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1002,12 +1126,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693FC80824B42A1200065D7A /* JYW_UIBezierPathViewController.m in Sources */,
 				6942B372249CA6AF006AA736 /* JYW_FireworksViewController.m in Sources */,
+				693FC80324B4188300065D7A /* JYW_Animation5ViewController.m in Sources */,
 				69D311EA247DF5A20006EEB2 /* JYW_TableViewController.m in Sources */,
 				693F63BD2480A4320034AA2B /* JYW_SelectAudioView.m in Sources */,
 				6942B316249B5BA4006AA736 /* JYWFinish.m in Sources */,
 				69D311EF247DF5B30006EEB2 /* JYW_PictureViewController.m in Sources */,
 				693F63CE2484BCF30034AA2B /* JYW_AddressBookViewModel.m in Sources */,
+				693FC81C24B46F2600065D7A /* JYW_BezierPathView6.m in Sources */,
 				69D311AD247D35D70006EEB2 /* ViewController.m in Sources */,
 				6942B38724A41F8F006AA736 /* JYWAudioPlayerView.m in Sources */,
 				6942AEEB2491EFA100C5E570 /* JYWPlayerToobarView.m in Sources */,
@@ -1016,9 +1143,11 @@
 				69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */,
 				6942B312249B0DAB006AA736 /* JYW_AnimationViewController.m in Sources */,
 				693FB36E24A5E3D3003E06AC /* JYW_Carousel.m in Sources */,
+				693FC7EF24B1732F00065D7A /* JYW_Animation1ViewController.m in Sources */,
 				693FB37724A731BA003E06AC /* JYW_CarouselCollectionViewCell.m in Sources */,
 				6942AEF224948A4B00C5E570 /* JYW_AVListViewController.m in Sources */,
 				693FC7E824B00C5700065D7A /* JYW_DispatchSemaphoreViewController.m in Sources */,
+				693FC82A24B54E8200065D7A /* JYW_CALayerViewController.m in Sources */,
 				6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */,
 				6942B37E249DCB46006AA736 /* JYWGradeRing.m in Sources */,
 				693F63EC2487627C0034AA2B /* JYW_ProductListViewModel.m in Sources */,
@@ -1028,6 +1157,7 @@
 				693F63F62488A3EF0034AA2B /* JYW_FlowLayout1.m in Sources */,
 				6942B36E249C818B006AA736 /* JYW_Snowflake.m in Sources */,
 				693F63C82484B84D0034AA2B /* JYW_AddressBookViewController.m in Sources */,
+				693FC82624B5485000065D7A /* JYW_TextLayer.m in Sources */,
 				693F63B924809B680034AA2B /* JYW_FictionMainModel.m in Sources */,
 				693FB37124A6D518003E06AC /* JYW_CarouselFlowLayout.m in Sources */,
 				693F63E424875B760034AA2B /* JYW_ProductListCollectionViewCell.m in Sources */,
@@ -1035,13 +1165,16 @@
 				693F63D8248746600034AA2B /* JYW_ProductListViewController.m in Sources */,
 				6942B38224A30531006AA736 /* JYW_FictionDetailViewController.m in Sources */,
 				693EEBE9249B08CE00E5EAB3 /* JYWProgressRing1.m in Sources */,
+				693FC7F924B313EA00065D7A /* JYW_Animation3ViewController.m in Sources */,
 				6942B377249CA702006AA736 /* JYW_SnowflakeViewController.m in Sources */,
 				693F63C4248108580034AA2B /* UIView+JYW_Border.m in Sources */,
 				6942AEE52491B2F100C5E570 /* JYWPlayerModel.m in Sources */,
 				69400A4324AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m in Sources */,
+				693FC81324B46C9300065D7A /* JYW_BezierPathView3.m in Sources */,
 				6940B882247F479300C74627 /* JYW_FictionViewModel.m in Sources */,
 				6942AEE22491B20200C5E570 /* JYWPlayerView.m in Sources */,
 				6942B37B249D96A2006AA736 /* JYWGrade.m in Sources */,
+				693FC81F24B4704B00065D7A /* JYW_BezierPathView7.m in Sources */,
 				693F63FB2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.m in Sources */,
 				69452FE4248B526600EB0361 /* NSString+JYW_StringWidth.m in Sources */,
 				693FC7DE24ADAAB300065D7A /* JYW_GCDDispatchSourceViewController.m in Sources */,
@@ -1049,16 +1182,23 @@
 				693FB37B24AAD799003E06AC /* JYW_GCDViewController.m in Sources */,
 				69D311F8247DF6190006EEB2 /* JYW_TabBarViewController.m in Sources */,
 				6942B36B249C5CCD006AA736 /* JYWFireworks.m in Sources */,
+				693FC81924B46E1600065D7A /* JYW_BezierPathView5.m in Sources */,
 				693F63F2248899340034AA2B /* JYW_MeituanFoundViewController.m in Sources */,
 				6942AEEE24946E3B00C5E570 /* JYWAnimationView.m in Sources */,
 				693F63E92487601F0034AA2B /* JYW_ProductModel.m in Sources */,
+				693FC82224B471B200065D7A /* JYW_BezierPathView8.m in Sources */,
 				69D311F4247DF5C60006EEB2 /* JYW_CollectionViewController.m in Sources */,
 				69D311B8247D35D80006EEB2 /* main.m in Sources */,
 				6940B879247E1FA100C74627 /* JYW_FictionModel.m in Sources */,
 				693F640C2489FBA80034AA2B /* JYW_AVPlayerViewModel.m in Sources */,
+				693FC81024B46B5E00065D7A /* JYW_BezierPathView2.m in Sources */,
+				693FC7F424B2F5DB00065D7A /* JYW_Animation2ViewController.m in Sources */,
 				69D311AA247D35D70006EEB2 /* SceneDelegate.m in Sources */,
+				693FC81624B46D6F00065D7A /* JYW_BezierPathView4.m in Sources */,
 				693FB36924A5E358003E06AC /* JYW_CarouselViewController.m in Sources */,
+				693FC7FE24B4094400065D7A /* JYW_Animation4ViewController.m in Sources */,
 				693F64042489F6E30034AA2B /* JYW_VideoModel.m in Sources */,
+				693FC80D24B45BF400065D7A /* JYW_BezierPathView1.m in Sources */,
 				6942AEE82491E7DC00C5E570 /* JYW_PlayerFullScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

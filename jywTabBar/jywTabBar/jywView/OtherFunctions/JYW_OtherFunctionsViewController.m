@@ -22,6 +22,14 @@
 #import "JYW_GCDDispatchGroupViewController.h"
 #import "JYW_GCDDispatchSourceViewController.h"
 #import "JYW_DispatchSemaphoreViewController.h"
+//Code Animation动画
+#import "JYW_Animation1ViewController.h"
+#import "JYW_Animation2ViewController.h"
+#import "JYW_Animation3ViewController.h"
+#import "JYW_Animation4ViewController.h"
+#import "JYW_Animation5ViewController.h"
+#import "JYW_UIBezierPathViewController.h"
+#import "JYW_CALayerViewController.h"
 @interface JYW_OtherFunctionsViewController ()
 {
     NSArray *tableDSArray;
@@ -44,8 +52,10 @@
     self.title=@"OtherFunctions";
     tableDSArray=@[@"自定义AVPlayer播放器",@"视频列表",@"动画",@"烟花动画",@"下雪动画",
                    @"GCD多线程-Dispatch Queue",@"GCD多线程-Dispatch Work Item",@"GCD多线程-Dispatch Group",@"GCD多线程-Dispatch Source",@"GCD多线程-Dispatch Semaphore",
+                   @"Code Animation CALayer",@"Code Animation CABasicAnimation",@"Code Animation CAKeyAnimation",@"Code Animation CASpringAnimation",@"Code Animation CATransition",@"UIBezierPath",
+                   @"CALayer",
                    @"测试"];
-    subtitleArray=@[@"类型",@"类型",@"类型",@"类型",@"类型",@"类型",@"块",@"组",@"资源、I/O",@"信号量、Barrier线程阻断",@"类型"];
+    subtitleArray=@[@"类型",@"类型",@"类型",@"类型",@"类型",@"类型",@"块",@"组",@"资源、I/O",@"信号量、Barrier线程阻断",@"presentationLayer(展示层)/modelLayer(模型层)",@"动画",@"动画",@"弹簧动画",@"转场动画",@"贝塞尔曲线",@"CALayer",@"类型"];
     /*
     //添加导航右侧按钮，按钮类型为系统加号
     UIBarButtonItem *rightBarButton=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(tbViewAddRow:)];
@@ -143,6 +153,7 @@
         //[self presentViewController:svc animated:YES completion:nil];
         [self.navigationController pushViewController:svc animated:YES];
     }
+    //GCD
     else if(indexPath.row==5){
         JYW_GCDViewController *gcd=[[JYW_GCDViewController alloc] init];
         [self.navigationController pushViewController:gcd animated:YES];
@@ -163,6 +174,35 @@
     else if(indexPath.row==9){
         JYW_DispatchSemaphoreViewController *gcd=[[JYW_DispatchSemaphoreViewController alloc] init];
         [self.navigationController pushViewController:gcd animated:YES];
+    }
+    //Code Animation
+    else if(indexPath.row==10){
+        JYW_Animation1ViewController *animation=[[JYW_Animation1ViewController alloc] init];
+        [self.navigationController pushViewController:animation animated:YES];
+    }
+    else if(indexPath.row==11){
+        JYW_Animation2ViewController *animation=[[JYW_Animation2ViewController alloc] init];
+        [self.navigationController pushViewController:animation animated:YES];
+    }
+    else if(indexPath.row==12){
+        JYW_Animation3ViewController *animation=[[JYW_Animation3ViewController alloc] init];
+        [self.navigationController pushViewController:animation animated:YES];
+    }
+    else if(indexPath.row==13){
+        JYW_Animation4ViewController *animation=[[JYW_Animation4ViewController alloc] init];
+        [self.navigationController pushViewController:animation animated:YES];
+    }
+    else if(indexPath.row==14){
+        JYW_Animation5ViewController *animation=[[JYW_Animation5ViewController alloc] init];
+        [self.navigationController pushViewController:animation animated:YES];
+    }
+    else if(indexPath.row==15){
+        JYW_UIBezierPathViewController *animation=[[JYW_UIBezierPathViewController alloc] init];
+        [self.navigationController pushViewController:animation animated:YES];
+    }
+    else if(indexPath.row==16){
+        JYW_CALayerViewController *animation=[[JYW_CALayerViewController alloc] init];
+        [self.navigationController pushViewController:animation animated:YES];
     }
     else
     {
