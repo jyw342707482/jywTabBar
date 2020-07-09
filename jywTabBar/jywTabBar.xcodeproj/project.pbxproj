@@ -75,6 +75,11 @@
 		693FC82624B5485000065D7A /* JYW_TextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC82524B5485000065D7A /* JYW_TextLayer.m */; };
 		693FC82A24B54E8200065D7A /* JYW_CALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC82824B54E8200065D7A /* JYW_CALayerViewController.m */; };
 		693FC82B24B54E8200065D7A /* JYW_CALayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC82924B54E8200065D7A /* JYW_CALayerViewController.xib */; };
+		693FC82E24B558F500065D7A /* JYW_ShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC82D24B558F500065D7A /* JYW_ShapeLayer.m */; };
+		693FC83124B5609300065D7A /* JYW_GradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC83024B5609300065D7A /* JYW_GradientLayer.m */; };
+		693FC83424B5667300065D7A /* JYW_ShapeAndGradientFusion.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC83324B5667300065D7A /* JYW_ShapeAndGradientFusion.m */; };
+		693FC83724B5894300065D7A /* JYW_EmitterLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC83624B5894300065D7A /* JYW_EmitterLayer.m */; };
+		693FC83A24B5A5F000065D7A /* JYW_ReplicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC83924B5A5F000065D7A /* JYW_ReplicatorLayer.m */; };
 		69400A4324AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */; };
 		69400A4424AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */; };
 		6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */; };
@@ -258,6 +263,16 @@
 		693FC82724B54E8200065D7A /* JYW_CALayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_CALayerViewController.h; sourceTree = "<group>"; };
 		693FC82824B54E8200065D7A /* JYW_CALayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_CALayerViewController.m; sourceTree = "<group>"; };
 		693FC82924B54E8200065D7A /* JYW_CALayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_CALayerViewController.xib; sourceTree = "<group>"; };
+		693FC82C24B558F500065D7A /* JYW_ShapeLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_ShapeLayer.h; sourceTree = "<group>"; };
+		693FC82D24B558F500065D7A /* JYW_ShapeLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_ShapeLayer.m; sourceTree = "<group>"; };
+		693FC82F24B5609300065D7A /* JYW_GradientLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_GradientLayer.h; sourceTree = "<group>"; };
+		693FC83024B5609300065D7A /* JYW_GradientLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_GradientLayer.m; sourceTree = "<group>"; };
+		693FC83224B5667300065D7A /* JYW_ShapeAndGradientFusion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_ShapeAndGradientFusion.h; sourceTree = "<group>"; };
+		693FC83324B5667300065D7A /* JYW_ShapeAndGradientFusion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_ShapeAndGradientFusion.m; sourceTree = "<group>"; };
+		693FC83524B5894300065D7A /* JYW_EmitterLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_EmitterLayer.h; sourceTree = "<group>"; };
+		693FC83624B5894300065D7A /* JYW_EmitterLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_EmitterLayer.m; sourceTree = "<group>"; };
+		693FC83824B5A5F000065D7A /* JYW_ReplicatorLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_ReplicatorLayer.h; sourceTree = "<group>"; };
+		693FC83924B5A5F000065D7A /* JYW_ReplicatorLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_ReplicatorLayer.m; sourceTree = "<group>"; };
 		69400A4024AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_GCDDispatchWorkItemViewController.h; sourceTree = "<group>"; };
 		69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_GCDDispatchWorkItemViewController.m; sourceTree = "<group>"; };
 		69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_GCDDispatchWorkItemViewController.xib; sourceTree = "<group>"; };
@@ -577,6 +592,16 @@
 			children = (
 				693FC82424B5485000065D7A /* JYW_TextLayer.h */,
 				693FC82524B5485000065D7A /* JYW_TextLayer.m */,
+				693FC82C24B558F500065D7A /* JYW_ShapeLayer.h */,
+				693FC82D24B558F500065D7A /* JYW_ShapeLayer.m */,
+				693FC82F24B5609300065D7A /* JYW_GradientLayer.h */,
+				693FC83024B5609300065D7A /* JYW_GradientLayer.m */,
+				693FC83224B5667300065D7A /* JYW_ShapeAndGradientFusion.h */,
+				693FC83324B5667300065D7A /* JYW_ShapeAndGradientFusion.m */,
+				693FC83524B5894300065D7A /* JYW_EmitterLayer.h */,
+				693FC83624B5894300065D7A /* JYW_EmitterLayer.m */,
+				693FC83824B5A5F000065D7A /* JYW_ReplicatorLayer.h */,
+				693FC83924B5A5F000065D7A /* JYW_ReplicatorLayer.m */,
 			);
 			path = CALayer;
 			sourceTree = "<group>";
@@ -1127,6 +1152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				693FC80824B42A1200065D7A /* JYW_UIBezierPathViewController.m in Sources */,
+				693FC82E24B558F500065D7A /* JYW_ShapeLayer.m in Sources */,
 				6942B372249CA6AF006AA736 /* JYW_FireworksViewController.m in Sources */,
 				693FC80324B4188300065D7A /* JYW_Animation5ViewController.m in Sources */,
 				69D311EA247DF5A20006EEB2 /* JYW_TableViewController.m in Sources */,
@@ -1151,10 +1177,12 @@
 				6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */,
 				6942B37E249DCB46006AA736 /* JYWGradeRing.m in Sources */,
 				693F63EC2487627C0034AA2B /* JYW_ProductListViewModel.m in Sources */,
+				693FC83A24B5A5F000065D7A /* JYW_ReplicatorLayer.m in Sources */,
 				693F63D12484BD070034AA2B /* JYW_AddressBookModel.m in Sources */,
 				6942AEDD2491AE2600C5E570 /* JYW_AVViewController.m in Sources */,
 				6940B889247F586800C74627 /* JYW_FictionTableViewCell.m in Sources */,
 				693F63F62488A3EF0034AA2B /* JYW_FlowLayout1.m in Sources */,
+				693FC83424B5667300065D7A /* JYW_ShapeAndGradientFusion.m in Sources */,
 				6942B36E249C818B006AA736 /* JYW_Snowflake.m in Sources */,
 				693F63C82484B84D0034AA2B /* JYW_AddressBookViewController.m in Sources */,
 				693FC82624B5485000065D7A /* JYW_TextLayer.m in Sources */,
@@ -1167,6 +1195,7 @@
 				693EEBE9249B08CE00E5EAB3 /* JYWProgressRing1.m in Sources */,
 				693FC7F924B313EA00065D7A /* JYW_Animation3ViewController.m in Sources */,
 				6942B377249CA702006AA736 /* JYW_SnowflakeViewController.m in Sources */,
+				693FC83124B5609300065D7A /* JYW_GradientLayer.m in Sources */,
 				693F63C4248108580034AA2B /* UIView+JYW_Border.m in Sources */,
 				6942AEE52491B2F100C5E570 /* JYWPlayerModel.m in Sources */,
 				69400A4324AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m in Sources */,
@@ -1174,6 +1203,7 @@
 				6940B882247F479300C74627 /* JYW_FictionViewModel.m in Sources */,
 				6942AEE22491B20200C5E570 /* JYWPlayerView.m in Sources */,
 				6942B37B249D96A2006AA736 /* JYWGrade.m in Sources */,
+				693FC83724B5894300065D7A /* JYW_EmitterLayer.m in Sources */,
 				693FC81F24B4704B00065D7A /* JYW_BezierPathView7.m in Sources */,
 				693F63FB2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.m in Sources */,
 				69452FE4248B526600EB0361 /* NSString+JYW_StringWidth.m in Sources */,
