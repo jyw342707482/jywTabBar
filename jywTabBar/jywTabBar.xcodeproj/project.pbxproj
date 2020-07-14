@@ -80,6 +80,10 @@
 		693FC83424B5667300065D7A /* JYW_ShapeAndGradientFusion.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC83324B5667300065D7A /* JYW_ShapeAndGradientFusion.m */; };
 		693FC83724B5894300065D7A /* JYW_EmitterLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC83624B5894300065D7A /* JYW_EmitterLayer.m */; };
 		693FC83A24B5A5F000065D7A /* JYW_ReplicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC83924B5A5F000065D7A /* JYW_ReplicatorLayer.m */; };
+		693FC83E24B6F19200065D7A /* JYW_SharedAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC83C24B6F19200065D7A /* JYW_SharedAddressBookViewController.m */; };
+		693FC83F24B6F19200065D7A /* JYW_SharedAddressBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC83D24B6F19200065D7A /* JYW_SharedAddressBookViewController.xib */; };
+		693FC84424B99C3200065D7A /* JYW_GroupEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC84224B99C3200065D7A /* JYW_GroupEditViewController.m */; };
+		693FC84524B99C3200065D7A /* JYW_GroupEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC84324B99C3200065D7A /* JYW_GroupEditViewController.xib */; };
 		69400A4324AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */; };
 		69400A4424AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */; };
 		6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */; };
@@ -273,6 +277,12 @@
 		693FC83624B5894300065D7A /* JYW_EmitterLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_EmitterLayer.m; sourceTree = "<group>"; };
 		693FC83824B5A5F000065D7A /* JYW_ReplicatorLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_ReplicatorLayer.h; sourceTree = "<group>"; };
 		693FC83924B5A5F000065D7A /* JYW_ReplicatorLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_ReplicatorLayer.m; sourceTree = "<group>"; };
+		693FC83B24B6F19200065D7A /* JYW_SharedAddressBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_SharedAddressBookViewController.h; sourceTree = "<group>"; };
+		693FC83C24B6F19200065D7A /* JYW_SharedAddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_SharedAddressBookViewController.m; sourceTree = "<group>"; };
+		693FC83D24B6F19200065D7A /* JYW_SharedAddressBookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_SharedAddressBookViewController.xib; sourceTree = "<group>"; };
+		693FC84124B99C3200065D7A /* JYW_GroupEditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_GroupEditViewController.h; sourceTree = "<group>"; };
+		693FC84224B99C3200065D7A /* JYW_GroupEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_GroupEditViewController.m; sourceTree = "<group>"; };
+		693FC84324B99C3200065D7A /* JYW_GroupEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_GroupEditViewController.xib; sourceTree = "<group>"; };
 		69400A4024AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_GCDDispatchWorkItemViewController.h; sourceTree = "<group>"; };
 		69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_GCDDispatchWorkItemViewController.m; sourceTree = "<group>"; };
 		69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_GCDDispatchWorkItemViewController.xib; sourceTree = "<group>"; };
@@ -606,6 +616,19 @@
 			path = CALayer;
 			sourceTree = "<group>";
 		};
+		693FC84024B99BF900065D7A /* SharedAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				693FC83B24B6F19200065D7A /* JYW_SharedAddressBookViewController.h */,
+				693FC83C24B6F19200065D7A /* JYW_SharedAddressBookViewController.m */,
+				693FC83D24B6F19200065D7A /* JYW_SharedAddressBookViewController.xib */,
+				693FC84124B99C3200065D7A /* JYW_GroupEditViewController.h */,
+				693FC84224B99C3200065D7A /* JYW_GroupEditViewController.m */,
+				693FC84324B99C3200065D7A /* JYW_GroupEditViewController.xib */,
+			);
+			path = SharedAddressBook;
+			sourceTree = "<group>";
+		};
 		6940B87A247E246300C74627 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -800,6 +823,7 @@
 		69D311E4247DF3A30006EEB2 /* tableView */ = {
 			isa = PBXGroup;
 			children = (
+				693FC84024B99BF900065D7A /* SharedAddressBook */,
 				6942B38424A41E37006AA736 /* JYWAudioPlayerView */,
 				693F63BA2480A39B0034AA2B /* selectAudioView */,
 				6940B88B247F586F00C74627 /* tableViewCell */,
@@ -994,6 +1018,7 @@
 				693FC7FA24B313EA00065D7A /* JYW_Animation3ViewController.xib in Resources */,
 				693FB36424A5A8ED003E06AC /* audio1.mp3 in Resources */,
 				69D311B5247D35D80006EEB2 /* LaunchScreen.storyboard in Resources */,
+				693FC83F24B6F19200065D7A /* JYW_SharedAddressBookViewController.xib in Resources */,
 				693FB36524A5A8ED003E06AC /* audio2.mp3 in Resources */,
 				6942B313249B0DAB006AA736 /* JYW_AnimationViewController.xib in Resources */,
 				693FB37C24AAD799003E06AC /* JYW_GCDViewController.xib in Resources */,
@@ -1008,6 +1033,7 @@
 				6940B87C247E249500C74627 /* FictionList.plist in Resources */,
 				693FC7DA24AD897C00065D7A /* JYW_GCDDispatchGroupViewController.xib in Resources */,
 				6942AEDE2491AE2600C5E570 /* JYW_AVViewController.xib in Resources */,
+				693FC84524B99C3200065D7A /* JYW_GroupEditViewController.xib in Resources */,
 				69D311F5247DF5C60006EEB2 /* JYW_CollectionViewController.xib in Resources */,
 				693F63FC2489DCEC0034AA2B /* JYW_OtherFunctionsViewController.xib in Resources */,
 				693FC7F024B1732F00065D7A /* JYW_Animation1ViewController.xib in Resources */,
@@ -1162,6 +1188,7 @@
 				693F63CE2484BCF30034AA2B /* JYW_AddressBookViewModel.m in Sources */,
 				693FC81C24B46F2600065D7A /* JYW_BezierPathView6.m in Sources */,
 				69D311AD247D35D70006EEB2 /* ViewController.m in Sources */,
+				693FC84424B99C3200065D7A /* JYW_GroupEditViewController.m in Sources */,
 				6942B38724A41F8F006AA736 /* JYWAudioPlayerView.m in Sources */,
 				6942AEEB2491EFA100C5E570 /* JYWPlayerToobarView.m in Sources */,
 				69452FEB248DC9E000EB0361 /* JYW_NavigationViewController.m in Sources */,
@@ -1215,6 +1242,7 @@
 				693FC81924B46E1600065D7A /* JYW_BezierPathView5.m in Sources */,
 				693F63F2248899340034AA2B /* JYW_MeituanFoundViewController.m in Sources */,
 				6942AEEE24946E3B00C5E570 /* JYWAnimationView.m in Sources */,
+				693FC83E24B6F19200065D7A /* JYW_SharedAddressBookViewController.m in Sources */,
 				693F63E92487601F0034AA2B /* JYW_ProductModel.m in Sources */,
 				693FC82224B471B200065D7A /* JYW_BezierPathView8.m in Sources */,
 				69D311F4247DF5C60006EEB2 /* JYW_CollectionViewController.m in Sources */,
