@@ -30,6 +30,9 @@
 #import "JYW_Animation5ViewController.h"
 #import "JYW_UIBezierPathViewController.h"
 #import "JYW_CALayerViewController.h"
+//runtime
+#import "JYW_RuntimeExamplesViewController.h"
+#import "JYW_ApplicationScenarioViewController.h"
 @interface JYW_OtherFunctionsViewController ()
 {
     NSArray *tableDSArray;
@@ -53,9 +56,9 @@
     tableDSArray=@[@"自定义AVPlayer播放器",@"视频列表",@"动画",@"烟花动画",@"下雪动画",
                    @"GCD多线程-Dispatch Queue",@"GCD多线程-Dispatch Work Item",@"GCD多线程-Dispatch Group",@"GCD多线程-Dispatch Source",@"GCD多线程-Dispatch Semaphore",
                    @"Code Animation CALayer",@"Code Animation CABasicAnimation",@"Code Animation CAKeyAnimation",@"Code Animation CASpringAnimation",@"Code Animation CATransition",@"UIBezierPath",
-                   @"CALayer",
+                   @"CALayer",@"runtime",@"runtime应用场景",
                    @"测试"];
-    subtitleArray=@[@"类型",@"类型",@"类型",@"类型",@"类型",@"类型",@"块",@"组",@"资源、I/O",@"信号量、Barrier线程阻断",@"presentationLayer(展示层)/modelLayer(模型层)",@"动画",@"动画",@"弹簧动画",@"转场动画",@"贝塞尔曲线",@"CALayer",@"类型"];
+    subtitleArray=@[@"类型",@"类型",@"类型",@"类型",@"类型",@"类型",@"块",@"组",@"资源、I/O",@"信号量、Barrier线程阻断",@"presentationLayer(展示层)/modelLayer(模型层)",@"动画",@"动画",@"弹簧动画",@"转场动画",@"贝塞尔曲线",@"CALayer",@"实例",@"实例",@"类型"];
     /*
     //添加导航右侧按钮，按钮类型为系统加号
     UIBarButtonItem *rightBarButton=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(tbViewAddRow:)];
@@ -203,6 +206,14 @@
     else if(indexPath.row==16){
         JYW_CALayerViewController *animation=[[JYW_CALayerViewController alloc] init];
         [self.navigationController pushViewController:animation animated:YES];
+    }
+    else if(indexPath.row==17){
+        JYW_RuntimeExamplesViewController *runT=[[JYW_RuntimeExamplesViewController alloc] init];
+        [self.navigationController pushViewController:runT animated:YES];
+    }
+    else if(indexPath.row==18){
+        JYW_ApplicationScenarioViewController *runT=[[JYW_ApplicationScenarioViewController alloc] init];
+        [self.navigationController pushViewController:runT animated:YES];
     }
     else
     {

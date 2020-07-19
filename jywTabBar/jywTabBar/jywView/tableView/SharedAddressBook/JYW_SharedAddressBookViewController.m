@@ -489,9 +489,6 @@ CNContactViewControllerDelegate>
     CNContactStore *store = [[CNContactStore alloc] init];
     NSPredicate *predicate=[CNContact predicateForContactsInGroupWithIdentifier:group.identifier];
     NSError *er=[[NSError alloc] init];
-    
-    NSArray *gArray=[store groupsMatchingPredicate:predicate error:&er];
-    NSLog(@"%@,",er.localizedDescription);
     BOOL returnM=[store executeSaveRequest:saveRequest error:&er];
     NSLog(@"%@,",er.localizedDescription);
 }

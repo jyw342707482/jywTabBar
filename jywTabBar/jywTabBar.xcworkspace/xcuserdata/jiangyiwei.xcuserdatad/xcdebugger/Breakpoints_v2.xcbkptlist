@@ -83,8 +83,8 @@
             filePath = "jywTabBar/jywView/tableView/SharedAddressBook/JYW_SharedAddressBookViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "609"
-            endingLineNumber = "609"
+            startingLineNumber = "606"
+            endingLineNumber = "606"
             landmarkName = "-addContact:"
             landmarkType = "7">
          </BreakpointContent>
@@ -92,16 +92,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D6019510-3B2E-4057-877D-4693300B64C8"
+            uuid = "53E25C05-2C43-42BC-A8B0-F710334F8B31"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "jywTabBar/jywView/tableView/SharedAddressBook/JYW_SharedAddressBookViewController.m"
+            filePath = "jywTabBar/jywView/OtherFunctions/runtimeExamples/JYW_RuntimeExamplesViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "493"
-            endingLineNumber = "493"
-            landmarkName = "-addMemberWithContact:toGroup:"
+            startingLineNumber = "551"
+            endingLineNumber = "551"
+            landmarkName = "-objc_getRequiredClass"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

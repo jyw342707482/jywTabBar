@@ -35,6 +35,10 @@
 		693F64082489FAD60034AA2B /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 693F64062489FAD60034AA2B /* video3.mp4 */; };
 		693F64092489FAD60034AA2B /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 693F64072489FAD60034AA2B /* video2.mp4 */; };
 		693F640C2489FBA80034AA2B /* JYW_AVPlayerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F640B2489FBA80034AA2B /* JYW_AVPlayerViewModel.m */; };
+		693F76B324BEDC93007F0F61 /* JYW_RuntimeExplanation.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F76B224BEDC93007F0F61 /* JYW_RuntimeExplanation.m */; };
+		693F76B724BEEB39007F0F61 /* JYW_RuntimeExamplesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F76B624BEEB39007F0F61 /* JYW_RuntimeExamplesModel.m */; };
+		693F76BB24BEEBBB007F0F61 /* JYW_RuntimeExamplesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F76B924BEEBBB007F0F61 /* JYW_RuntimeExamplesViewController.m */; };
+		693F76BC24BEEBBB007F0F61 /* JYW_RuntimeExamplesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693F76BA24BEEBBB007F0F61 /* JYW_RuntimeExamplesViewController.xib */; };
 		693FB36424A5A8ED003E06AC /* audio1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 693FB36224A5A8ED003E06AC /* audio1.mp3 */; };
 		693FB36524A5A8ED003E06AC /* audio2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 693FB36324A5A8ED003E06AC /* audio2.mp3 */; };
 		693FB36924A5E358003E06AC /* JYW_CarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FB36724A5E358003E06AC /* JYW_CarouselViewController.m */; };
@@ -84,6 +88,7 @@
 		693FC83F24B6F19200065D7A /* JYW_SharedAddressBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC83D24B6F19200065D7A /* JYW_SharedAddressBookViewController.xib */; };
 		693FC84424B99C3200065D7A /* JYW_GroupEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FC84224B99C3200065D7A /* JYW_GroupEditViewController.m */; };
 		693FC84524B99C3200065D7A /* JYW_GroupEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693FC84324B99C3200065D7A /* JYW_GroupEditViewController.xib */; };
+		693FD11B24BDA4570028FF3D /* JYW_NSObjectExplanation.m in Sources */ = {isa = PBXBuildFile; fileRef = 693FD11A24BDA4570028FF3D /* JYW_NSObjectExplanation.m */; };
 		69400A4324AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */; };
 		69400A4424AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */; };
 		6940B875247E1CA200C74627 /* JYW_FictionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940B873247E1CA200C74627 /* JYW_FictionTableViewController.m */; };
@@ -118,6 +123,12 @@
 		6942B38A24A432AF006AA736 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6942B38924A432AF006AA736 /* audio.mp3 */; };
 		69452FE4248B526600EB0361 /* NSString+JYW_StringWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = 69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */; };
 		69452FEB248DC9E000EB0361 /* JYW_NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69452FEA248DC9E000EB0361 /* JYW_NavigationViewController.m */; };
+		6949174B24C4234800742729 /* UIViewController+JYW_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6949174A24C4234800742729 /* UIViewController+JYW_Category.m */; };
+		6949175024C4294400742729 /* JYW_ApplicationScenarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6949174E24C4294400742729 /* JYW_ApplicationScenarioViewController.m */; };
+		6949175124C4294400742729 /* JYW_ApplicationScenarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6949174F24C4294400742729 /* JYW_ApplicationScenarioViewController.xib */; };
+		6949175624C42B4100742729 /* JYW_ButtonDoubleClickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6949175424C42B4100742729 /* JYW_ButtonDoubleClickViewController.m */; };
+		6949175724C42B4100742729 /* JYW_ButtonDoubleClickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6949175524C42B4100742729 /* JYW_ButtonDoubleClickViewController.xib */; };
+		6949175A24C42CC500742729 /* UIButton+JYW_UIButtonMultiClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 6949175924C42CC500742729 /* UIButton+JYW_UIButtonMultiClick.m */; };
 		69D311A7247D35D70006EEB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311A6247D35D70006EEB2 /* AppDelegate.m */; };
 		69D311AA247D35D70006EEB2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311A9247D35D70006EEB2 /* SceneDelegate.m */; };
 		69D311AD247D35D70006EEB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D311AC247D35D70006EEB2 /* ViewController.m */; };
@@ -203,6 +214,13 @@
 		693F64072489FAD60034AA2B /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
 		693F640A2489FBA80034AA2B /* JYW_AVPlayerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_AVPlayerViewModel.h; sourceTree = "<group>"; };
 		693F640B2489FBA80034AA2B /* JYW_AVPlayerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_AVPlayerViewModel.m; sourceTree = "<group>"; };
+		693F76B124BEDC93007F0F61 /* JYW_RuntimeExplanation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_RuntimeExplanation.h; sourceTree = "<group>"; };
+		693F76B224BEDC93007F0F61 /* JYW_RuntimeExplanation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_RuntimeExplanation.m; sourceTree = "<group>"; };
+		693F76B524BEEB39007F0F61 /* JYW_RuntimeExamplesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_RuntimeExamplesModel.h; sourceTree = "<group>"; };
+		693F76B624BEEB39007F0F61 /* JYW_RuntimeExamplesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_RuntimeExamplesModel.m; sourceTree = "<group>"; };
+		693F76B824BEEBBB007F0F61 /* JYW_RuntimeExamplesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_RuntimeExamplesViewController.h; sourceTree = "<group>"; };
+		693F76B924BEEBBB007F0F61 /* JYW_RuntimeExamplesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_RuntimeExamplesViewController.m; sourceTree = "<group>"; };
+		693F76BA24BEEBBB007F0F61 /* JYW_RuntimeExamplesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_RuntimeExamplesViewController.xib; sourceTree = "<group>"; };
 		693FB36224A5A8ED003E06AC /* audio1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio1.mp3; sourceTree = "<group>"; };
 		693FB36324A5A8ED003E06AC /* audio2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio2.mp3; sourceTree = "<group>"; };
 		693FB36624A5E358003E06AC /* JYW_CarouselViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_CarouselViewController.h; sourceTree = "<group>"; };
@@ -283,6 +301,8 @@
 		693FC84124B99C3200065D7A /* JYW_GroupEditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_GroupEditViewController.h; sourceTree = "<group>"; };
 		693FC84224B99C3200065D7A /* JYW_GroupEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_GroupEditViewController.m; sourceTree = "<group>"; };
 		693FC84324B99C3200065D7A /* JYW_GroupEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_GroupEditViewController.xib; sourceTree = "<group>"; };
+		693FD11924BDA4570028FF3D /* JYW_NSObjectExplanation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_NSObjectExplanation.h; sourceTree = "<group>"; };
+		693FD11A24BDA4570028FF3D /* JYW_NSObjectExplanation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_NSObjectExplanation.m; sourceTree = "<group>"; };
 		69400A4024AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_GCDDispatchWorkItemViewController.h; sourceTree = "<group>"; };
 		69400A4124AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_GCDDispatchWorkItemViewController.m; sourceTree = "<group>"; };
 		69400A4224AD5E8C00653D82 /* JYW_GCDDispatchWorkItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_GCDDispatchWorkItemViewController.xib; sourceTree = "<group>"; };
@@ -342,6 +362,16 @@
 		69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JYW_StringWidth.m"; sourceTree = "<group>"; };
 		69452FE9248DC9E000EB0361 /* JYW_NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_NavigationViewController.h; sourceTree = "<group>"; };
 		69452FEA248DC9E000EB0361 /* JYW_NavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_NavigationViewController.m; sourceTree = "<group>"; };
+		6949174924C4234800742729 /* UIViewController+JYW_Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JYW_Category.h"; sourceTree = "<group>"; };
+		6949174A24C4234800742729 /* UIViewController+JYW_Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JYW_Category.m"; sourceTree = "<group>"; };
+		6949174D24C4294400742729 /* JYW_ApplicationScenarioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_ApplicationScenarioViewController.h; sourceTree = "<group>"; };
+		6949174E24C4294400742729 /* JYW_ApplicationScenarioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_ApplicationScenarioViewController.m; sourceTree = "<group>"; };
+		6949174F24C4294400742729 /* JYW_ApplicationScenarioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_ApplicationScenarioViewController.xib; sourceTree = "<group>"; };
+		6949175324C42B4100742729 /* JYW_ButtonDoubleClickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYW_ButtonDoubleClickViewController.h; sourceTree = "<group>"; };
+		6949175424C42B4100742729 /* JYW_ButtonDoubleClickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYW_ButtonDoubleClickViewController.m; sourceTree = "<group>"; };
+		6949175524C42B4100742729 /* JYW_ButtonDoubleClickViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYW_ButtonDoubleClickViewController.xib; sourceTree = "<group>"; };
+		6949175824C42CC500742729 /* UIButton+JYW_UIButtonMultiClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+JYW_UIButtonMultiClick.h"; sourceTree = "<group>"; };
+		6949175924C42CC500742729 /* UIButton+JYW_UIButtonMultiClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JYW_UIButtonMultiClick.m"; sourceTree = "<group>"; };
 		69D311A2247D35D70006EEB2 /* jywTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jywTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D311A5247D35D70006EEB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69D311A6247D35D70006EEB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -446,6 +476,8 @@
 				693F63C3248108580034AA2B /* UIView+JYW_Border.m */,
 				69452FE2248B526600EB0361 /* NSString+JYW_StringWidth.h */,
 				69452FE3248B526600EB0361 /* NSString+JYW_StringWidth.m */,
+				6949174924C4234800742729 /* UIViewController+JYW_Category.h */,
+				6949174A24C4234800742729 /* UIViewController+JYW_Category.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -464,6 +496,8 @@
 		693F63F72489DCCA0034AA2B /* OtherFunctions */ = {
 			isa = PBXGroup;
 			children = (
+				6949174C24C4290F00742729 /* runtimeApplicationScenario */,
+				693F76B424BEEB0B007F0F61 /* runtimeExamples */,
 				693FC7EB24B1694600065D7A /* JYWAnimation */,
 				693FC7EA24B168FB00065D7A /* GCD多线程 */,
 				693EEBE6249B080F00E5EAB3 /* JYWAnimationExamples */,
@@ -498,6 +532,18 @@
 				693F63ED24879F5F0034AA2B /* video1.mp4 */,
 			);
 			path = video;
+			sourceTree = "<group>";
+		};
+		693F76B424BEEB0B007F0F61 /* runtimeExamples */ = {
+			isa = PBXGroup;
+			children = (
+				693F76B524BEEB39007F0F61 /* JYW_RuntimeExamplesModel.h */,
+				693F76B624BEEB39007F0F61 /* JYW_RuntimeExamplesModel.m */,
+				693F76B824BEEBBB007F0F61 /* JYW_RuntimeExamplesViewController.h */,
+				693F76B924BEEBBB007F0F61 /* JYW_RuntimeExamplesViewController.m */,
+				693F76BA24BEEBBB007F0F61 /* JYW_RuntimeExamplesViewController.xib */,
+			);
+			path = runtimeExamples;
 			sourceTree = "<group>";
 		};
 		693FB36B24A5E374003E06AC /* Carousel */ = {
@@ -629,6 +675,17 @@
 			path = SharedAddressBook;
 			sourceTree = "<group>";
 		};
+		693FD11C24BDA45E0028FF3D /* Explanation */ = {
+			isa = PBXGroup;
+			children = (
+				693FD11924BDA4570028FF3D /* JYW_NSObjectExplanation.h */,
+				693FD11A24BDA4570028FF3D /* JYW_NSObjectExplanation.m */,
+				693F76B124BEDC93007F0F61 /* JYW_RuntimeExplanation.h */,
+				693F76B224BEDC93007F0F61 /* JYW_RuntimeExplanation.m */,
+			);
+			path = Explanation;
+			sourceTree = "<group>";
+		};
 		6940B87A247E246300C74627 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -704,6 +761,29 @@
 			path = NavigationViewController;
 			sourceTree = "<group>";
 		};
+		6949174C24C4290F00742729 /* runtimeApplicationScenario */ = {
+			isa = PBXGroup;
+			children = (
+				6949174D24C4294400742729 /* JYW_ApplicationScenarioViewController.h */,
+				6949174E24C4294400742729 /* JYW_ApplicationScenarioViewController.m */,
+				6949174F24C4294400742729 /* JYW_ApplicationScenarioViewController.xib */,
+				6949175224C42A8D00742729 /* group1 */,
+			);
+			path = runtimeApplicationScenario;
+			sourceTree = "<group>";
+		};
+		6949175224C42A8D00742729 /* group1 */ = {
+			isa = PBXGroup;
+			children = (
+				6949175324C42B4100742729 /* JYW_ButtonDoubleClickViewController.h */,
+				6949175424C42B4100742729 /* JYW_ButtonDoubleClickViewController.m */,
+				6949175524C42B4100742729 /* JYW_ButtonDoubleClickViewController.xib */,
+				6949175824C42CC500742729 /* UIButton+JYW_UIButtonMultiClick.h */,
+				6949175924C42CC500742729 /* UIButton+JYW_UIButtonMultiClick.m */,
+			);
+			path = group1;
+			sourceTree = "<group>";
+		};
 		69D31199247D35D70006EEB2 = {
 			isa = PBXGroup;
 			children = (
@@ -730,6 +810,7 @@
 		69D311A4247D35D70006EEB2 /* jywTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				693FD11C24BDA45E0028FF3D /* Explanation */,
 				69452FE8248DC98300EB0361 /* NavigationViewController */,
 				693F63BE2481056D0034AA2B /* category */,
 				6940B87A247E246300C74627 /* Data */,
@@ -1012,6 +1093,7 @@
 				6942B38324A30531006AA736 /* JYW_FictionDetailViewController.xib in Resources */,
 				693FC80924B42A1200065D7A /* JYW_UIBezierPathViewController.xib in Resources */,
 				693F63EE24879F5F0034AA2B /* video1.mp4 in Resources */,
+				6949175124C4294400742729 /* JYW_ApplicationScenarioViewController.xib in Resources */,
 				693FC7E324ADCBE300065D7A /* dispatchIO_Read.txt in Resources */,
 				693FC7E424ADCBE300065D7A /* dispatchIO_Write.txt in Resources */,
 				693FC7E924B00C5700065D7A /* JYW_DispatchSemaphoreViewController.xib in Resources */,
@@ -1025,6 +1107,7 @@
 				693FC82B24B54E8200065D7A /* JYW_CALayerViewController.xib in Resources */,
 				693FB36A24A5E358003E06AC /* JYW_CarouselViewController.xib in Resources */,
 				6942AEF324948A4B00C5E570 /* JYW_AVListViewController.xib in Resources */,
+				693F76BC24BEEBBB007F0F61 /* JYW_RuntimeExamplesViewController.xib in Resources */,
 				693F63C92484B84D0034AA2B /* JYW_AddressBookViewController.xib in Resources */,
 				6942B38A24A432AF006AA736 /* audio.mp3 in Resources */,
 				693F63E624875D920034AA2B /* ProductList.plist in Resources */,
@@ -1041,6 +1124,7 @@
 				69D311EB247DF5A20006EEB2 /* JYW_TableViewController.xib in Resources */,
 				69D311B0247D35D70006EEB2 /* Main.storyboard in Resources */,
 				693FC7F524B2F5DB00065D7A /* JYW_Animation2ViewController.xib in Resources */,
+				6949175724C42B4100742729 /* JYW_ButtonDoubleClickViewController.xib in Resources */,
 				693F63D9248746600034AA2B /* JYW_ProductListViewController.xib in Resources */,
 				693F63F3248899340034AA2B /* JYW_MeituanFoundViewController.xib in Resources */,
 				69D311F0247DF5B30006EEB2 /* JYW_PictureViewController.xib in Resources */,
@@ -1179,6 +1263,7 @@
 			files = (
 				693FC80824B42A1200065D7A /* JYW_UIBezierPathViewController.m in Sources */,
 				693FC82E24B558F500065D7A /* JYW_ShapeLayer.m in Sources */,
+				693F76B724BEEB39007F0F61 /* JYW_RuntimeExamplesModel.m in Sources */,
 				6942B372249CA6AF006AA736 /* JYW_FireworksViewController.m in Sources */,
 				693FC80324B4188300065D7A /* JYW_Animation5ViewController.m in Sources */,
 				69D311EA247DF5A20006EEB2 /* JYW_TableViewController.m in Sources */,
@@ -1207,10 +1292,13 @@
 				693FC83A24B5A5F000065D7A /* JYW_ReplicatorLayer.m in Sources */,
 				693F63D12484BD070034AA2B /* JYW_AddressBookModel.m in Sources */,
 				6942AEDD2491AE2600C5E570 /* JYW_AVViewController.m in Sources */,
+				693F76B324BEDC93007F0F61 /* JYW_RuntimeExplanation.m in Sources */,
 				6940B889247F586800C74627 /* JYW_FictionTableViewCell.m in Sources */,
 				693F63F62488A3EF0034AA2B /* JYW_FlowLayout1.m in Sources */,
 				693FC83424B5667300065D7A /* JYW_ShapeAndGradientFusion.m in Sources */,
 				6942B36E249C818B006AA736 /* JYW_Snowflake.m in Sources */,
+				6949175024C4294400742729 /* JYW_ApplicationScenarioViewController.m in Sources */,
+				6949175624C42B4100742729 /* JYW_ButtonDoubleClickViewController.m in Sources */,
 				693F63C82484B84D0034AA2B /* JYW_AddressBookViewController.m in Sources */,
 				693FC82624B5485000065D7A /* JYW_TextLayer.m in Sources */,
 				693F63B924809B680034AA2B /* JYW_FictionMainModel.m in Sources */,
@@ -1219,6 +1307,7 @@
 				69D311DD247D36580006EEB2 /* JYW_TestViewController.m in Sources */,
 				693F63D8248746600034AA2B /* JYW_ProductListViewController.m in Sources */,
 				6942B38224A30531006AA736 /* JYW_FictionDetailViewController.m in Sources */,
+				6949175A24C42CC500742729 /* UIButton+JYW_UIButtonMultiClick.m in Sources */,
 				693EEBE9249B08CE00E5EAB3 /* JYWProgressRing1.m in Sources */,
 				693FC7F924B313EA00065D7A /* JYW_Animation3ViewController.m in Sources */,
 				6942B377249CA702006AA736 /* JYW_SnowflakeViewController.m in Sources */,
@@ -1252,10 +1341,13 @@
 				693FC81024B46B5E00065D7A /* JYW_BezierPathView2.m in Sources */,
 				693FC7F424B2F5DB00065D7A /* JYW_Animation2ViewController.m in Sources */,
 				69D311AA247D35D70006EEB2 /* SceneDelegate.m in Sources */,
+				693F76BB24BEEBBB007F0F61 /* JYW_RuntimeExamplesViewController.m in Sources */,
 				693FC81624B46D6F00065D7A /* JYW_BezierPathView4.m in Sources */,
 				693FB36924A5E358003E06AC /* JYW_CarouselViewController.m in Sources */,
 				693FC7FE24B4094400065D7A /* JYW_Animation4ViewController.m in Sources */,
+				693FD11B24BDA4570028FF3D /* JYW_NSObjectExplanation.m in Sources */,
 				693F64042489F6E30034AA2B /* JYW_VideoModel.m in Sources */,
+				6949174B24C4234800742729 /* UIViewController+JYW_Category.m in Sources */,
 				693FC80D24B45BF400065D7A /* JYW_BezierPathView1.m in Sources */,
 				6942AEE82491E7DC00C5E570 /* JYW_PlayerFullScreenViewController.m in Sources */,
 			);
@@ -1429,6 +1521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JDSS8SSG5K;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = jywTabBar/Info.plist;
@@ -1450,6 +1543,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JDSS8SSG5K;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = jywTabBar/Info.plist;
