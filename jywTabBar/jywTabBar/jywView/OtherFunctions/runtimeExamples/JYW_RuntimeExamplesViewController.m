@@ -310,7 +310,7 @@ static NSString *CellTableIndentifier = @"CellTableIdentifier";
     
     [rem performSelector:@selector(alertMessage:) withObject:@"向具有给定名称和实现的类中添加新方法"];
 }
-//class_getInstanceMethod(返回给定类的指定实例方法。)
+//class_getInstanceMethod(返回给定类的指定实例方法。返回类的对象方法，-(void))
 -(void)class_getInstanceMethod{
     JYW_RuntimeExamplesModel *rem=[[JYW_RuntimeExamplesModel alloc] init];
     
@@ -318,7 +318,7 @@ static NSString *CellTableIndentifier = @"CellTableIdentifier";
     const char *codeChar=method_getTypeEncoding(m);
     messageTextView.text=[NSString stringWithFormat:@"返回给定类的指定实例方法:%s",codeChar];
 }
-//class_getClassMethod(返回一个指向描述给定类的给定类方法的数据结构的指针)
+//class_getClassMethod(返回一个指向描述给定类的给定类方法的数据结构的指针,返回类的类对象+(void))
 //转载:https://blog.csdn.net/baidu_25743639/article/details/51793764
 -(void)class_getClassMethod{
     //JYW_RuntimeExamplesModel *rem=[[JYW_RuntimeExamplesModel alloc] init];

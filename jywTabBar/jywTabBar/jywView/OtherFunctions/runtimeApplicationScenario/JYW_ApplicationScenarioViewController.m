@@ -7,7 +7,16 @@
 //
 
 #import "JYW_ApplicationScenarioViewController.h"
+//防止UIButton连点
 #import "JYW_ButtonDoubleClickViewController.h"
+//防止数组越界
+#import "JYW_NSArrayCrashViewController.h"
+//归档、解档
+#import "JYW_EncodeAndUnEncodeViewController.h"
+//添加属性
+#import "JYW_AddPropertyViewController.h"
+//字典转模型
+#import "JYW_DictionaryTurnModelViewController.h"
 
 @interface JYW_ApplicationScenarioViewController ()
 {
@@ -20,8 +29,20 @@ static NSString *CellTableIndentifier = @"CellTableIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    tableDSArray=@[@"防止UIButton按钮重复点击"];
-    subtitleArray=@[@"使用到方法交换，对象关联"];
+    tableDSArray=@[@"防止UIButton按钮重复点击",
+                   @"防止NSArray、NSMutableArray访问越界",
+                   @"归档、解档",
+                   @"快速接受新工程",
+                   @"添加属性",
+                   @"字典转模型"
+    ];
+    subtitleArray=@[@"使用到方法交换，对象关联",
+                    @"使用到方法交换",
+                    @"使用class_copyIvarList,获取类对象的实例",
+                    @"UIViewController (JYW_Category)",
+                    @"私用对象关联",
+                    @"使用获取类的属性"
+    ];
 }
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -78,6 +99,28 @@ static NSString *CellTableIndentifier = @"CellTableIdentifier";
     if(indexPath.row==0){
         JYW_ButtonDoubleClickViewController *bv=[[JYW_ButtonDoubleClickViewController alloc] init];
         [self.navigationController pushViewController:bv animated:YES];
+    }
+    else if(indexPath.row==1){
+        JYW_NSArrayCrashViewController *cv=[[JYW_NSArrayCrashViewController alloc] init];
+        [self.navigationController pushViewController:cv animated:YES];
+    }
+    else if(indexPath.row==2){
+        JYW_EncodeAndUnEncodeViewController *eaue=[[JYW_EncodeAndUnEncodeViewController alloc] init];
+        [self.navigationController pushViewController:eaue animated:YES];
+    }
+    else if(indexPath.row==3){
+        UIAlertController *aController=[UIAlertController alertControllerWithTitle:@"提示" message:@"实现文件：UIViewController+JYW_Category" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *aAction=[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
+        [aController addAction:aAction];
+        [self presentViewController:aController animated:YES completion:nil];
+    }
+    else if(indexPath.row==4){
+        JYW_AddPropertyViewController *addP=[[JYW_AddPropertyViewController alloc] init];
+        [self.navigationController pushViewController:addP animated:YES];
+    }
+    else if(indexPath.row==5){
+        JYW_DictionaryTurnModelViewController *addP=[[JYW_DictionaryTurnModelViewController alloc] init];
+        [self.navigationController pushViewController:addP animated:YES];
     }
 }
 

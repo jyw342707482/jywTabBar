@@ -33,6 +33,9 @@
 //runtime
 #import "JYW_RuntimeExamplesViewController.h"
 #import "JYW_ApplicationScenarioViewController.h"
+//runloop
+#import "JYW_RunLoopExamplesViewController.h"
+#import "JYW_CFRunLoopExamplesViewController.h"
 @interface JYW_OtherFunctionsViewController ()
 {
     NSArray *tableDSArray;
@@ -57,8 +60,9 @@
                    @"GCD多线程-Dispatch Queue",@"GCD多线程-Dispatch Work Item",@"GCD多线程-Dispatch Group",@"GCD多线程-Dispatch Source",@"GCD多线程-Dispatch Semaphore",
                    @"Code Animation CALayer",@"Code Animation CABasicAnimation",@"Code Animation CAKeyAnimation",@"Code Animation CASpringAnimation",@"Code Animation CATransition",@"UIBezierPath",
                    @"CALayer",@"runtime",@"runtime应用场景",
+                   @"runloop",@"CFRunloop",
                    @"测试"];
-    subtitleArray=@[@"类型",@"类型",@"类型",@"类型",@"类型",@"类型",@"块",@"组",@"资源、I/O",@"信号量、Barrier线程阻断",@"presentationLayer(展示层)/modelLayer(模型层)",@"动画",@"动画",@"弹簧动画",@"转场动画",@"贝塞尔曲线",@"CALayer",@"实例",@"实例",@"类型"];
+    subtitleArray=@[@"类型",@"类型",@"类型",@"类型",@"类型",@"类型",@"块",@"组",@"资源、I/O",@"信号量、Barrier线程阻断",@"presentationLayer(展示层)/modelLayer(模型层)",@"动画",@"动画",@"弹簧动画",@"转场动画",@"贝塞尔曲线",@"CALayer",@"实例",@"实例",@"实例",@"实例",@"类型"];
     /*
     //添加导航右侧按钮，按钮类型为系统加号
     UIBarButtonItem *rightBarButton=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(tbViewAddRow:)];
@@ -214,6 +218,14 @@
     else if(indexPath.row==18){
         JYW_ApplicationScenarioViewController *runT=[[JYW_ApplicationScenarioViewController alloc] init];
         [self.navigationController pushViewController:runT animated:YES];
+    }
+    else if(indexPath.row==19){
+        JYW_RunLoopExamplesViewController *runloop=[[JYW_RunLoopExamplesViewController alloc] init];
+        [self.navigationController pushViewController:runloop animated:YES];
+    }
+    else if(indexPath.row==20){
+        JYW_CFRunLoopExamplesViewController *runloop=[[JYW_CFRunLoopExamplesViewController alloc] init];
+        [self.navigationController pushViewController:runloop animated:YES];
     }
     else
     {

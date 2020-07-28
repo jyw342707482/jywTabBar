@@ -10,6 +10,7 @@
 #import "JYW_FictionTableViewController.h"
 #import "JYW_AddressBookViewController.h"
 #import "JYW_SharedAddressBookViewController.h"
+#import "JYW_RunLoopTableViewViewController.h"
 @interface JYW_TableViewController ()
 {
     NSArray *tableDSArray;
@@ -30,7 +31,7 @@
 -(void)pageSettings{
     //设置导航标题
     self.title=@"UITableView";
-    tableDSArray=@[@"小说播放列表",@"通讯录",@"系统通讯录"];
+    tableDSArray=@[@"小说播放列表",@"通讯录",@"系统通讯录",@"runloop加速tableview加载高清图片"];
     /*
     //添加导航右侧按钮，按钮类型为系统加号
     UIBarButtonItem *rightBarButton=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(tbViewAddRow:)];
@@ -117,6 +118,10 @@
     else if(indexPath.row==2){
         JYW_SharedAddressBookViewController *sabvc=[[JYW_SharedAddressBookViewController alloc] init];
         [self.navigationController pushViewController:sabvc animated:YES];
+    }
+    else if(indexPath.row==3){
+        JYW_RunLoopTableViewViewController *rtvc=[[JYW_RunLoopTableViewViewController alloc] init];
+        [self.navigationController pushViewController:rtvc animated:YES];
     }
     
 }

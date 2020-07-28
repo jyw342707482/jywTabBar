@@ -105,6 +105,7 @@
 }
 
 #pragma mark -dispatch_queue_create,创建一个新的调度队列，您可以向其提交块。
+//转载：https://blog.csdn.net/learner_sky/article/details/65104399
 -(void)dispatchQueueCreate{
     /*
      转载：https://blog.csdn.net/liudongxinios/article/details/51463513
